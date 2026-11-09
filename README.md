@@ -27,6 +27,16 @@ The app's content lives in a versioned JSON data bundle, **separate from the cod
 new Adventurers, monsters, team comps, rotations and images are delivered as
 *data updates* — no new APK install required.
 
+## What's in v0.3.0
+
+- **Full data set** — all 13 launch Adventurers plus the Fated Adventurer, each with an official portrait, class, weapon, element, full skill kit and Ultimate.
+- **34 monsters** — the 21 launch monsters plus all 13 Radiant forms, with top elemental weaknesses, breakable parts and drop tables where databases publish them (Rathalos, Ruger Aidal).
+- **A counter team for every monster** — 6 community-sourced squads (element-resonance comps, incl. an all-free starter) plus a derived counter comp per monster, built from its published weakness.
+- **Circular portraits** everywhere, served from this repo through the jsDelivr CDN and cached on-device.
+- **Data lives in [`data/`](data/)** (`data.json` + `version.json` + `images/`): the app fetches it on launch, so data updates ship without a new APK; APK updates are offered in-app.
+
+Data sources: mhodb, GameWith and Game8. Weakness tables list the top published weakness only — where a database has not published data yet (e.g. Nergigante), the app says so instead of guessing.
+
 ## Features
 
 **Available in the foundation build**
