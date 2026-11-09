@@ -99,29 +99,7 @@ private fun AdventurerCard(adv: Adventurer, onClick: () -> Unit) {
             modifier = Modifier.padding(12.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            if (adv.imageUrl.isNotEmpty()) {
-                AsyncImage(
-                    model = adv.imageUrl,
-                    contentDescription = adv.nameEn,
-                    contentScale = ContentScale.Crop,
-                    modifier = Modifier
-                        .size(64.dp)
-                        .clip(CircleShape)
-                        .background(MaterialTheme.colorScheme.surfaceVariant)
-                )
-            } else {
-                Box(
-                    modifier = Modifier
-                        .size(64.dp)
-                        .clip(RoundedCornerShape(12.dp)),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text(
-                        adv.nameEn.take(1),
-                        style = MaterialTheme.typography.headlineMedium
-                    )
-                }
-            }
+            GoldPortrait(adv.imageUrl, adv.nameEn, 64.dp)
             Spacer(Modifier.width(12.dp))
             Column {
                 Text(adv.nameEn, style = MaterialTheme.typography.titleMedium)
@@ -168,15 +146,7 @@ fun AdventurerDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
                         modifier = Modifier.fillMaxWidth(),
                         contentAlignment = Alignment.Center
                     ) {
-                        AsyncImage(
-                            model = adv.imageUrl,
-                            contentDescription = adv.nameEn,
-                            contentScale = ContentScale.Crop,
-                            modifier = Modifier
-                                .size(168.dp)
-                                .clip(CircleShape)
-                                .background(MaterialTheme.colorScheme.surfaceVariant)
-                        )
+                        GoldPortrait(adv.imageUrl, adv.nameEn, 184.dp, glow = true)
                     }
                 }
             }

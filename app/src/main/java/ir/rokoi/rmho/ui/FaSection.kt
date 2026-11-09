@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun FaSection(text: String, title: String = "توضیح فارسی") {
     if (text.isEmpty()) return
+    if (!UiPrefs.showFa) return
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
         Column {
             Text(

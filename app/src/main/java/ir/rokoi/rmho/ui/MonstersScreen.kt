@@ -72,29 +72,7 @@ private fun MonsterCard(mon: Monster, onClick: () -> Unit) {
             modifier = Modifier.padding(12.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            if (mon.imageUrl.isNotEmpty()) {
-                AsyncImage(
-                    model = mon.imageUrl,
-                    contentDescription = mon.nameEn,
-                    contentScale = ContentScale.Crop,
-                    modifier = Modifier
-                        .size(64.dp)
-                        .clip(CircleShape)
-                        .background(MaterialTheme.colorScheme.surfaceVariant)
-                )
-            } else {
-                Box(
-                    modifier = Modifier
-                        .size(64.dp)
-                        .clip(RoundedCornerShape(12.dp)),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text(
-                        mon.nameEn.take(1),
-                        style = MaterialTheme.typography.headlineMedium
-                    )
-                }
-            }
+            RedPortrait(mon.imageUrl, mon.nameEn, 64.dp)
             Spacer(Modifier.width(12.dp))
             Column {
                 Text(mon.nameEn, style = MaterialTheme.typography.titleMedium)
@@ -139,15 +117,7 @@ fun MonsterDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
                         modifier = Modifier.fillMaxWidth(),
                         contentAlignment = Alignment.Center
                     ) {
-                        AsyncImage(
-                            model = mon.imageUrl,
-                            contentDescription = mon.nameEn,
-                            contentScale = ContentScale.Crop,
-                            modifier = Modifier
-                                .size(168.dp)
-                                .clip(CircleShape)
-                                .background(MaterialTheme.colorScheme.surfaceVariant)
-                        )
+                        RedPortrait(mon.imageUrl, mon.nameEn, 184.dp, glow = true)
                     }
                 }
             }

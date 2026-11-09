@@ -13,8 +13,8 @@ android {
         applicationId = "ir.rokoi.rmho"
         minSdk = 26
         targetSdk = 34
-        versionCode = 4
-        versionName = "0.3.1"
+        versionCode = 5
+        versionName = "0.4.0"
     }
 
     // Permanent signing key (GitHub Secrets) so every build shares ONE
