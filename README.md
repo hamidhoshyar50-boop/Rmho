@@ -27,6 +27,14 @@ The app's content lives in a versioned JSON data bundle, **separate from the cod
 new Adventurers, monsters, team comps, rotations and images are delivered as
 *data updates* — no new APK install required.
 
+## What's in v0.4.0
+
+- **New Home** — hero header, live stats, an Adventurer of the Day and a Monster of the Day, and quick links.
+- **Side drawer menu** (top hamburger): **Settings** (Persian-descriptions toggle, manual data refresh, image-cache clear), **Update** (with an availability badge), and **About** (sources + disclaimer).
+- **Portraits with identity** — Adventurers sit in gold-gradient circles with a gold ring; Monsters in deep-red circles with a red ring.
+- **Every monster has art now** — official icons/art for all 34 monsters, served via the same CDN pipeline.
+- **Persian, rewritten** — all Persian descriptions and team strategies were rewritten from scratch in fluent, natural Persian (no translationese, no jargon labels).
+
 ## What's in v0.3.0
 
 - **Full data set** — all 13 launch Adventurers plus the Fated Adventurer, each with an official portrait, class, weapon, element, full skill kit and Ultimate.
