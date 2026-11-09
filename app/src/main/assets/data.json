@@ -1,1 +1,159 @@
-{"adventurers":[{"classType":"ASSAULT","description":"Graceful Long Sword duelist. Evasive, fluid playstyle; some skills build her Spirit Gauge faster than usual.","element":"FIRE","id":"midori","imageUrl":"","nameEn":"Midori","skills":[{"description":"Core Long Sword combo chain that fills the Spirit Gauge.","nameEn":"Spirit Blade","type":"ACTIVE"},{"description":"Counter slash from the special sheathe stance.","nameEn":"Iai Spirit Slash","type":"ACTIVE"}],"strengths":["High mobility","Strong counter play"],"ultimate":{"description":"High-damage finishing flourish.","nameEn":"Sakura Slash","type":"ULTIMATE"},"weaknesses":["Needs gauge management"],"weapon":"LONG_SWORD"},{"classType":"DISRUPTOR","description":"Relentless Dual Blades fighter. Demon Mode fuels endless combos and constant pressure with enhanced follow-ups.","element":"DRAGON","id":"keres","imageUrl":"","nameEn":"Keres","skills":[{"description":"Empowered stance with new moves; drains stamina.","nameEn":"Demon Mode","type":"ACTIVE"},{"description":"Long spinning combo, best on downed monsters.","nameEn":"Demon Dance","type":"ACTIVE"}],"strengths":["Top-tier sustained DPS","Very fast attacks"],"ultimate":null,"weaknesses":["Stamina-hungry","Short reach"],"weapon":"DUAL_BLADES"},{"classType":"ASSAULT","description":"Mobile archer. Dodging builds the charge gauge; Thunder Coating turns arrows into piercing lightning shots.","element":"THUNDER","id":"luka","imageUrl":"","nameEn":"Luka","skills":[{"description":"Charged shot; core of the bow rotation.","nameEn":"Power Shot","type":"ACTIVE"},{"description":"Arrows gain thunder element and piercing.","nameEn":"Thunder Coating","type":"PASSIVE"}],"strengths":["Safe range","Great elemental output"],"ultimate":null,"weaknesses":["Positioning-sensitive"],"weapon":"BOW"},{"classType":"ASSAULT","description":"Endures attacks to fuel huge burst damage. Charged strikes can shatter a monster's defense.","element":"DRAGON","id":"pyro","imageUrl":"","nameEn":"Pyro","skills":[{"description":"The Great Sword's signature full-charge blow.","nameEn":"True Charged Slash","type":"ACTIVE"},{"description":"Shoulder bash with super armor; keeps the charge going.","nameEn":"Tackle","type":"ACTIVE"}],"strengths":["Massive burst","Can tank through hits"],"ultimate":null,"weaknesses":["Slow, committal swings"],"weapon":"GREAT_SWORD"}],"dataVersion":1,"monsters":[{"breakableParts":["Head","Wings","Tail (severable)"],"drops":["Rathalos Scale","Rathalos Plate","Flame Sac"],"elementWeakness":{"DRAGON":3,"FIRE":0,"ICE":1,"THUNDER":2,"WATER":1},"id":"rathalos","imageUrl":"","nameEn":"Rathalos","notes":"Starter dataset — values to be verified in the data stage."}],"rotations":[],"teamComps":[]}
+{
+  "adventurers": [
+    {
+      "classType": "ASSAULT",
+      "description": "Graceful Long Sword duelist. Evasive, fluid playstyle; some skills build her Spirit Gauge faster than usual.",
+      "element": "FIRE",
+      "id": "midori",
+      "imageUrl": "",
+      "nameEn": "Midori",
+      "skills": [
+        {
+          "description": "Core Long Sword combo chain that fills the Spirit Gauge.",
+          "nameEn": "Spirit Blade",
+          "type": "ACTIVE"
+        },
+        {
+          "description": "Counter slash from the special sheathe stance.",
+          "nameEn": "Iai Spirit Slash",
+          "type": "ACTIVE"
+        }
+      ],
+      "strengths": [
+        "High mobility",
+        "Strong counter play"
+      ],
+      "ultimate": {
+        "description": "High-damage finishing flourish.",
+        "nameEn": "Sakura Slash",
+        "type": "ULTIMATE"
+      },
+      "weaknesses": [
+        "Needs gauge management"
+      ],
+      "weapon": "LONG_SWORD",
+      "descriptionFa": "دوشیزه‌ای چابک با شمشیر بلند؛ سبک بازیش بر پایهٔ جاخالی و ضدحمله است و بعضی مهارت‌هایش نوار روح (Spirit Gauge) را سریع‌تر از حالت معمول پر می‌کنند."
+    },
+    {
+      "classType": "DISRUPTOR",
+      "description": "Relentless Dual Blades fighter. Demon Mode fuels endless combos and constant pressure with enhanced follow-ups.",
+      "element": "DRAGON",
+      "id": "keres",
+      "imageUrl": "",
+      "nameEn": "Keres",
+      "skills": [
+        {
+          "description": "Empowered stance with new moves; drains stamina.",
+          "nameEn": "Demon Mode",
+          "type": "ACTIVE"
+        },
+        {
+          "description": "Long spinning combo, best on downed monsters.",
+          "nameEn": "Demon Dance",
+          "type": "ACTIVE"
+        }
+      ],
+      "strengths": [
+        "Top-tier sustained DPS",
+        "Very fast attacks"
+      ],
+      "ultimate": null,
+      "weaknesses": [
+        "Stamina-hungry",
+        "Short reach"
+      ],
+      "weapon": "DUAL_BLADES",
+      "descriptionFa": "مبارزی بی‌امان با تیغه‌های دوقلو؛ حالت شیطانی (Demon Mode) کمبوهای پی‌درپی و فشار دائمی روی هیولا می‌سازد و ضربه‌های بعدی قوی‌ترند."
+    },
+    {
+      "classType": "ASSAULT",
+      "description": "Mobile archer. Dodging builds the charge gauge; Thunder Coating turns arrows into piercing lightning shots.",
+      "element": "THUNDER",
+      "id": "luka",
+      "imageUrl": "",
+      "nameEn": "Luka",
+      "skills": [
+        {
+          "description": "Charged shot; core of the bow rotation.",
+          "nameEn": "Power Shot",
+          "type": "ACTIVE"
+        },
+        {
+          "description": "Arrows gain thunder element and piercing.",
+          "nameEn": "Thunder Coating",
+          "type": "PASSIVE"
+        }
+      ],
+      "strengths": [
+        "Safe range",
+        "Great elemental output"
+      ],
+      "ultimate": null,
+      "weaknesses": [
+        "Positioning-sensitive"
+      ],
+      "weapon": "BOW",
+      "descriptionFa": "کمانداری متحرک؛ جاخالی‌دادن نوار شارژ را پر می‌کند و پوشش رعدی (Thunder Coating) تیرها را به صاعقه‌های نفوذی تبدیل می‌کند."
+    },
+    {
+      "classType": "ASSAULT",
+      "description": "Endures attacks to fuel huge burst damage. Charged strikes can shatter a monster's defense.",
+      "element": "DRAGON",
+      "id": "pyro",
+      "imageUrl": "",
+      "nameEn": "Pyro",
+      "skills": [
+        {
+          "description": "The Great Sword's signature full-charge blow.",
+          "nameEn": "True Charged Slash",
+          "type": "ACTIVE"
+        },
+        {
+          "description": "Shoulder bash with super armor; keeps the charge going.",
+          "nameEn": "Tackle",
+          "type": "ACTIVE"
+        }
+      ],
+      "strengths": [
+        "Massive burst",
+        "Can tank through hits"
+      ],
+      "ultimate": null,
+      "weaknesses": [
+        "Slow, committal swings"
+      ],
+      "weapon": "GREAT_SWORD",
+      "descriptionFa": "با گریت‌سورد ضربه‌ها را تحمل می‌کند تا انرژی یک ضربهٔ انفجاری را جمع کند؛ ضربه‌های شارژشده‌اش می‌توانند دفاع هیولا را بشکنند."
+    }
+  ],
+  "dataVersion": 1,
+  "monsters": [
+    {
+      "breakableParts": [
+        "Head",
+        "Wings",
+        "Tail (severable)"
+      ],
+      "drops": [
+        "Rathalos Scale",
+        "Rathalos Plate",
+        "Flame Sac"
+      ],
+      "elementWeakness": {
+        "DRAGON": 3,
+        "FIRE": 0,
+        "ICE": 1,
+        "THUNDER": 2,
+        "WATER": 1
+      },
+      "id": "rathalos",
+      "imageUrl": "",
+      "nameEn": "Rathalos",
+      "notes": "Starter dataset — values to be verified in the data stage.",
+      "description": "King of the Skies — a flying wyvern that rules from above with fire breath and poisonous talons.",
+      "descriptionFa": "پادشاه آسمان‌ها؛ ویورن پرنده‌ای که با نفس آتشین و چنگال‌های سمّی از بالا حکومت می‌کند. در برابر اژدها بیشترین آسیب را می‌خورد."
+    }
+  ],
+  "rotations": [],
+  "teamComps": []
+}

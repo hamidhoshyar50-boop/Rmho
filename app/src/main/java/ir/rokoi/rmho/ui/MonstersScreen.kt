@@ -1,0 +1,201 @@
+package ir.rokoi.rmho.ui
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.SuggestionChip
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.unit.dp
+import coil.compose.AsyncImage
+import ir.rokoi.rmho.data.DataBundle
+import ir.rokoi.rmho.data.Monster
+
+private val ElementOrder = listOf("FIRE", "WATER", "THUNDER", "ICE", "DRAGON")
+
+@Composable
+fun MonstersScreen(data: DataBundle, onOpen: (String) -> Unit) {
+    Column(Modifier.fillMaxSize()) {
+        Text(
+            "Monsters",
+            style = MaterialTheme.typography.headlineMedium,
+            modifier = Modifier.padding(20.dp, 20.dp, 20.dp, 8.dp)
+        )
+        LazyColumn(
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+            modifier = Modifier.padding(horizontal = 20.dp)
+        ) {
+            items(data.monsters, key = { it.id }) { mon ->
+                MonsterCard(mon) { onOpen(mon.id) }
+            }
+            item { Spacer(Modifier.height(12.dp)) }
+        }
+    }
+}
+
+@Composable
+private fun MonsterCard(mon: Monster, onClick: () -> Unit) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable(onClick = onClick),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surface
+        )
+    ) {
+        Row(
+            modifier = Modifier.padding(12.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            if (mon.imageUrl.isNotEmpty()) {
+                AsyncImage(
+                    model = mon.imageUrl,
+                    contentDescription = mon.nameEn,
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .size(64.dp)
+                        .clip(RoundedCornerShape(12.dp))
+                )
+            } else {
+                Box(
+                    modifier = Modifier
+                        .size(64.dp)
+                        .clip(RoundedCornerShape(12.dp)),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        mon.nameEn.take(1),
+                        style = MaterialTheme.typography.headlineMedium
+                    )
+                }
+            }
+            Spacer(Modifier.width(12.dp))
+            Column {
+                Text(mon.nameEn, style = MaterialTheme.typography.titleMedium)
+                val top = mon.elementWeakness.entries
+                    .filter { it.value > 0 }
+                    .sortedByDescending { it.value }
+                    .take(2)
+                    .joinToString(" · ") { "${elementLabel(it.key)} ${"★".repeat(it.value)}" }
+                if (top.isNotEmpty()) {
+                    Text(
+                        "Weak: $top",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun MonsterDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
+    val mon = data.monsters.firstOrNull { it.id == id }
+    Column(Modifier.fillMaxSize()) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            IconButton(onClick = onBack) {
+                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Back")
+            }
+            Text(mon?.nameEn ?: "Monster", style = MaterialTheme.typography.titleLarge)
+        }
+        if (mon == null) {
+            Text("Not found.", modifier = Modifier.padding(20.dp))
+            return
+        }
+        LazyColumn(
+            modifier = Modifier.padding(horizontal = 20.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp)
+        ) {
+            if (mon.imageUrl.isNotEmpty()) {
+                item {
+                    AsyncImage(
+                        model = mon.imageUrl,
+                        contentDescription = mon.nameEn,
+                        contentScale = ContentScale.FillWidth,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(16.dp))
+                    )
+                }
+            }
+            if (mon.description.isNotEmpty()) {
+                item { Text(mon.description, style = MaterialTheme.typography.bodyLarge) }
+            }
+            if (mon.descriptionFa.isNotEmpty()) {
+                item { FaSection(mon.descriptionFa) }
+            }
+            if (mon.elementWeakness.isNotEmpty()) {
+                item {
+                    Text("Elemental weakness", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    ElementOrder.forEach { el ->
+                        val stars = mon.elementWeakness[el] ?: 0
+                        Row {
+                            Text(
+                                elementLabel(el),
+                                modifier = Modifier.width(90.dp),
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                            Text(
+                                if (stars > 0) "★".repeat(stars) + "☆".repeat(3 - stars) else "—",
+                                color = MaterialTheme.colorScheme.secondary
+                            )
+                        }
+                    }
+                }
+            }
+            if (mon.breakableParts.isNotEmpty()) {
+                item {
+                    Text("Breakable parts", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        mon.breakableParts.forEach { part ->
+                            SuggestionChip(onClick = {}, label = { Text(part) })
+                        }
+                    }
+                }
+            }
+            if (mon.drops.isNotEmpty()) {
+                item {
+                    Text("Loot", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    mon.drops.forEach { d -> Text("• $d") }
+                }
+            }
+            if (mon.notes.isNotEmpty()) {
+                item {
+                    Text(
+                        mon.notes,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+            item { Spacer(Modifier.height(16.dp)) }
+        }
+    }
+}

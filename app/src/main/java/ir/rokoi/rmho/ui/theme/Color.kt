@@ -2,15 +2,15 @@ package ir.rokoi.rmho.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// Rmho palette — deep forest night + jade + amber (hunter vibe)
-val RmhoBg = Color(0xFF0E1512)
-val RmhoSurface = Color(0xFF16211B)
-val RmhoSurfaceVariant = Color(0xFF1E2D24)
-val RmhoPrimary = Color(0xFF7ED491)
-val RmhoOnPrimary = Color(0xFF0B2413)
-val RmhoSecondary = Color(0xFFE8B34B)
-val RmhoText = Color(0xFFE9F2EC)
-val RmhoTextDim = Color(0xFFA7BCAF)
+// Rmho palette — deep blue night + sky blue + hunter yellow
+val RmhoBg = Color(0xFF0A1730)
+val RmhoSurface = Color(0xFF10223F)
+val RmhoSurfaceVariant = Color(0xFF1A2F52)
+val RmhoPrimary = Color(0xFF4DA3FF)
+val RmhoOnPrimary = Color(0xFF06182E)
+val RmhoSecondary = Color(0xFFFFC400)
+val RmhoText = Color(0xFFEBF3FF)
+val RmhoTextDim = Color(0xFF9DB8D9)
 val RmhoError = Color(0xFFEF7D7D)
 
 // Element accents

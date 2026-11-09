@@ -5,9 +5,9 @@
     android:viewportHeight="108">
     <!-- Stylised "R" blade mark for Rmho -->
     <path
-        android:fillColor="#7ED491"
+        android:fillColor="#4DA3FF"
         android:pathData="M38,26 L62,26 C74,26 82,34 82,45 C82,54 76,61 66,63 L84,84 L70,84 L54,64 L46,64 L46,84 L38,84 Z M46,34 L46,56 L61,56 C68,56 73,51.5 73,45 C73,38.5 68,34 61,34 Z" />
     <path
-        android:fillColor="#E8B34B"
+        android:fillColor="#FFC400"
         android:pathData="M54,88 L84,88 L84,92 L54,92 Z" />
 </vector>

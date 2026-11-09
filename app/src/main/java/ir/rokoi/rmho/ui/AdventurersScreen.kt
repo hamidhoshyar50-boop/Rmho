@@ -181,6 +181,9 @@ fun AdventurerDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
             if (adv.description.isNotEmpty()) {
                 item { Text(adv.description, style = MaterialTheme.typography.bodyLarge) }
             }
+            if (adv.descriptionFa.isNotEmpty()) {
+                item { FaSection(adv.descriptionFa) }
+            }
             if (adv.skills.isNotEmpty()) {
                 item {
                     Text("Skills", style = MaterialTheme.typography.titleMedium)

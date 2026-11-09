@@ -2,11 +2,12 @@ package ir.rokoi.rmho.data
 
 import android.content.Context
 import kotlinx.serialization.json.Json
+import java.io.File
 
 /**
- * Loads the bundled data.json from assets. The remote-update layer
- * (version check + download + replace) plugs in here next stage —
- * the rest of the app only ever talks to this repository.
+ * Loads the app's data bundle. Local priority: the last remotely-updated
+ * bundle cached in filesDir wins; otherwise the bundle shipped in assets.
+ * Remote updates are fetched by [UpdateManager] and stored via [cacheBundle].
  */
 class DataRepository(private val context: Context) {
 
@@ -15,14 +16,18 @@ class DataRepository(private val context: Context) {
         isLenient = true
     }
 
-    fun loadBundled(): DataBundle {
-        val raw = context.assets.open("data.json").bufferedReader().use { it.readText() }
+    private val cacheFile: File get() = File(context.filesDir, "data.json")
+
+    fun loadLocal(): DataBundle {
+        val raw = if (cacheFile.exists()) {
+            cacheFile.readText()
+        } else {
+            context.assets.open("data.json").bufferedReader().use { it.readText() }
+        }
         return json.decodeFromString(DataBundle.serializer(), raw)
     }
 
-    companion object {
-        /** Remote bundle location (filled in at the data-pipeline stage). */
-        const val REMOTE_DATA_URL = ""
-        const val REMOTE_VERSION_URL = ""
+    fun cacheBundle(bundle: DataBundle) {
+        cacheFile.writeText(json.encodeToString(DataBundle.serializer(), bundle))
     }
 }

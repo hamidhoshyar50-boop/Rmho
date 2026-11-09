@@ -26,6 +26,7 @@ data class Adventurer(
     val element: String = "NONE",   // FIRE / WATER / THUNDER / ICE / DRAGON / NONE
     val imageUrl: String = "",
     val description: String = "",
+    val descriptionFa: String = "",
     val skills: List<Skill> = emptyList(),
     val ultimate: Skill? = null,
     val strengths: List<String> = emptyList(),
@@ -45,6 +46,8 @@ data class Monster(
     val id: String,
     val nameEn: String,
     val imageUrl: String = "",
+    val description: String = "",
+    val descriptionFa: String = "",
     val elementWeakness: Map<String, Int> = emptyMap(),  // element -> stars (0-3)
     val breakableParts: List<String> = emptyList(),
     val drops: List<String> = emptyList(),
