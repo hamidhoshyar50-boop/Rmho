@@ -226,10 +226,9 @@ fun AppRoot() {
                         MonsterDetailScreen(data, id) { navController.popBackStack() }
                     }
                     composable("teams") {
-                        SectionPlaceholder(
-                            "Team Comps",
-                            "The best four-hunter squads for each monster and play style — filled in during the data stage."
-                        )
+                        TeamsScreen(data) { id ->
+                            navController.navigate("adventurer/$id")
+                        }
                     }
                     composable("coach") {
                         SectionPlaceholder(
@@ -296,8 +295,8 @@ private fun HomeScreen(data: DataBundle, updateStatus: String, onCheckUpdates: (
         )
         Spacer(Modifier.height(14.dp))
         FaSection(
-            "رم‌هو راهنمای هواداری مانستر هانتر اوتلندرز است: ادونچررها، هیولاها، ترکیب تیم و روتیشن‌ها، با توضیح فارسی برای هر بخش. دیتا و نسخه‌های تازه از داخل خود برنامه آپدیت می‌شوند.",
-            title = "دربارهٔ رم‌هو"
+            "Rmho راهنمای هواداری مانستر هانتر اوتلندرز است: ادونچررها، هیولاها، ترکیب تیم و روتیشن‌ها، با توضیح فارسی برای هر بخش. دیتا و نسخه‌های تازه از داخل خود برنامه آپدیت می‌شوند.",
+            title = "دربارهٔ Rmho"
         )
         Spacer(Modifier.height(20.dp))
         Card(

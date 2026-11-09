@@ -1,159 +1,1791 @@
 {
-  "adventurers": [
+ "dataVersion": 2,
+ "adventurers": [
+  {
+   "id": "midori",
+   "nameEn": "Midori",
+   "classType": "ASSAULT",
+   "weapon": "LONG_SWORD",
+   "element": "FIRE",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/midori.webp",
+   "description": "Graceful Long Sword duelist who hides her blade in a shamisen. A Perfect Evade fills her Spirit Gauge in one go, fuelling relentless Spirit Slash chains.",
+   "descriptionFa": "دوشیزه‌ای چابک با شمشیر بلند که تیغه‌اش را در شامیسن پنهان می‌کند. جاخالیِ بی‌نقص نوار روحش را یک‌باره پر می‌کند و زنجیرهٔ ضربات روحی بی‌امانی می‌سازد.",
+   "skills": [
     {
-      "classType": "ASSAULT",
-      "description": "Graceful Long Sword duelist. Evasive, fluid playstyle; some skills build her Spirit Gauge faster than usual.",
-      "element": "FIRE",
-      "id": "midori",
-      "imageUrl": "",
-      "nameEn": "Midori",
-      "skills": [
-        {
-          "description": "Core Long Sword combo chain that fills the Spirit Gauge.",
-          "nameEn": "Spirit Blade",
-          "type": "ACTIVE"
-        },
-        {
-          "description": "Counter slash from the special sheathe stance.",
-          "nameEn": "Iai Spirit Slash",
-          "type": "ACTIVE"
-        }
-      ],
-      "strengths": [
-        "High mobility",
-        "Strong counter play"
-      ],
-      "ultimate": {
-        "description": "High-damage finishing flourish.",
-        "nameEn": "Sakura Slash",
-        "type": "ULTIMATE"
-      },
-      "weaknesses": [
-        "Needs gauge management"
-      ],
-      "weapon": "LONG_SWORD",
-      "descriptionFa": "دوشیزه‌ای چابک با شمشیر بلند؛ سبک بازیش بر پایهٔ جاخالی و ضدحمله است و بعضی مهارت‌هایش نوار روح (Spirit Gauge) را سریع‌تر از حالت معمول پر می‌کنند."
+     "nameEn": "Chain Slash",
+     "type": "BASIC",
+     "description": ""
     },
     {
-      "classType": "DISRUPTOR",
-      "description": "Relentless Dual Blades fighter. Demon Mode fuels endless combos and constant pressure with enhanced follow-ups.",
-      "element": "DRAGON",
-      "id": "keres",
-      "imageUrl": "",
-      "nameEn": "Keres",
-      "skills": [
-        {
-          "description": "Empowered stance with new moves; drains stamina.",
-          "nameEn": "Demon Mode",
-          "type": "ACTIVE"
-        },
-        {
-          "description": "Long spinning combo, best on downed monsters.",
-          "nameEn": "Demon Dance",
-          "type": "ACTIVE"
-        }
-      ],
-      "strengths": [
-        "Top-tier sustained DPS",
-        "Very fast attacks"
-      ],
-      "ultimate": null,
-      "weaknesses": [
-        "Stamina-hungry",
-        "Short reach"
-      ],
-      "weapon": "DUAL_BLADES",
-      "descriptionFa": "مبارزی بی‌امان با تیغه‌های دوقلو؛ حالت شیطانی (Demon Mode) کمبوهای پی‌درپی و فشار دائمی روی هیولا می‌سازد و ضربه‌های بعدی قوی‌ترند."
+     "nameEn": "Spirit Slash",
+     "type": "ACTIVE",
+     "description": ""
     },
     {
-      "classType": "ASSAULT",
-      "description": "Mobile archer. Dodging builds the charge gauge; Thunder Coating turns arrows into piercing lightning shots.",
-      "element": "THUNDER",
-      "id": "luka",
-      "imageUrl": "",
-      "nameEn": "Luka",
-      "skills": [
-        {
-          "description": "Charged shot; core of the bow rotation.",
-          "nameEn": "Power Shot",
-          "type": "ACTIVE"
-        },
-        {
-          "description": "Arrows gain thunder element and piercing.",
-          "nameEn": "Thunder Coating",
-          "type": "PASSIVE"
-        }
-      ],
-      "strengths": [
-        "Safe range",
-        "Great elemental output"
-      ],
-      "ultimate": null,
-      "weaknesses": [
-        "Positioning-sensitive"
-      ],
-      "weapon": "BOW",
-      "descriptionFa": "کمانداری متحرک؛ جاخالی‌دادن نوار شارژ را پر می‌کند و پوشش رعدی (Thunder Coating) تیرها را به صاعقه‌های نفوذی تبدیل می‌کند."
+     "nameEn": "Blade of Truth",
+     "type": "ACTIVE",
+     "description": ""
     },
     {
-      "classType": "ASSAULT",
-      "description": "Endures attacks to fuel huge burst damage. Charged strikes can shatter a monster's defense.",
-      "element": "DRAGON",
-      "id": "pyro",
-      "imageUrl": "",
-      "nameEn": "Pyro",
-      "skills": [
-        {
-          "description": "The Great Sword's signature full-charge blow.",
-          "nameEn": "True Charged Slash",
-          "type": "ACTIVE"
-        },
-        {
-          "description": "Shoulder bash with super armor; keeps the charge going.",
-          "nameEn": "Tackle",
-          "type": "ACTIVE"
-        }
-      ],
-      "strengths": [
-        "Massive burst",
-        "Can tank through hits"
-      ],
-      "ultimate": null,
-      "weaknesses": [
-        "Slow, committal swings"
-      ],
-      "weapon": "GREAT_SWORD",
-      "descriptionFa": "با گریت‌سورد ضربه‌ها را تحمل می‌کند تا انرژی یک ضربهٔ انفجاری را جمع کند؛ ضربه‌های شارژشده‌اش می‌توانند دفاع هیولا را بشکنند."
+     "nameEn": "Moment of Insight",
+     "type": "BURST",
+     "description": ""
     }
-  ],
-  "dataVersion": 1,
-  "monsters": [
+   ],
+   "ultimate": {
+    "nameEn": "Final Curtain",
+    "type": "ULTIMATE",
+    "description": ""
+   },
+   "strengths": [
+    "Fast Spirit Gauge",
+    "Strong evasion game"
+   ],
+   "weaknesses": [
+    "Needs Perfect Evade timing"
+   ]
+  },
+  {
+   "id": "luka",
+   "nameEn": "Luka",
+   "classType": "ASSAULT",
+   "weapon": "BOW",
+   "element": "THUNDER",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/luka.webp",
+   "description": "Highly mobile archer (free from the launch event). His piercing arrows gain hits as the charge level rises, and Thunder Coatings turn every volley into lightning.",
+   "descriptionFa": "کمانداری بسیار متحرک (رایگان از رویداد لانچ)؛ تیرهای نفوذی‌اش با بالا رفتن سطح شارژ اصابت بیشتری پیدا می‌کنند و پوشش رعدی هر رگبار را به صاعقه تبدیل می‌کند.",
+   "skills": [
     {
-      "breakableParts": [
-        "Head",
-        "Wings",
-        "Tail (severable)"
-      ],
-      "drops": [
-        "Rathalos Scale",
-        "Rathalos Plate",
-        "Flame Sac"
-      ],
-      "elementWeakness": {
-        "DRAGON": 3,
-        "FIRE": 0,
-        "ICE": 1,
-        "THUNDER": 2,
-        "WATER": 1
-      },
-      "id": "rathalos",
-      "imageUrl": "",
-      "nameEn": "Rathalos",
-      "notes": "Starter dataset — values to be verified in the data stage.",
-      "description": "King of the Skies — a flying wyvern that rules from above with fire breath and poisonous talons.",
-      "descriptionFa": "پادشاه آسمان‌ها؛ ویورن پرنده‌ای که با نفس آتشین و چنگال‌های سمّی از بالا حکومت می‌کند. در برابر اژدها بیشترین آسیب را می‌خورد."
+     "nameEn": "Rapid Fire",
+     "type": "BASIC",
+     "description": ""
+    },
+    {
+     "nameEn": "Slide Shot / Thunderous Spin",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Arc Drift",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Swift Volley",
+     "type": "BURST",
+     "description": ""
     }
-  ],
-  "rotations": [],
-  "teamComps": []
+   ],
+   "ultimate": {
+    "nameEn": "Voltic Volley",
+    "type": "ULTIMATE",
+    "description": "Enters Thunderclap state for 15 s and instantly reloads 2 Thunder Coatings."
+   },
+   "strengths": [
+    "Top mobility",
+    "Piercing multi-hit arrows"
+   ],
+   "weaknesses": [
+    "Charge management"
+   ]
+  },
+  {
+   "id": "rhodes",
+   "nameEn": "Rhodes",
+   "classType": "ASSAULT",
+   "weapon": "HAMMER",
+   "element": "ICE",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/rhodes.webp",
+   "description": "Steam-powered Hammer bruiser — the roster's only Ice Adventurer. Charged attacks build Steam and Core Energy, cashed out in the explosive Steam Skyrender.",
+   "descriptionFa": "چکش‌زن بخارمحور و تنها ادونچرر یخی بازی؛ ضربه‌های شارژشده انرژی بخار و هسته می‌سازند که در ضربهٔ انفجاری Steam Skyrender خالی می‌شوند.",
+   "skills": [
+    {
+     "nameEn": "Overhead Smash",
+     "type": "BASIC",
+     "description": ""
+    },
+    {
+     "nameEn": "Charge / Skating Charge",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Steam Stance",
+     "type": "ACTIVE",
+     "description": "Parry stance."
+    },
+    {
+     "nameEn": "Steam Skyrender",
+     "type": "BURST",
+     "description": "Spends full Core Energy for explosive burst."
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Mega Hammer",
+    "type": "ULTIMATE",
+    "description": ""
+   },
+   "strengths": [
+    "Huge burst",
+    "Parry stance for defence"
+   ],
+   "weaknesses": [
+    "Slow, committal swings"
+   ]
+  },
+  {
+   "id": "pyro",
+   "nameEn": "Pyro",
+   "classType": "ASSAULT",
+   "weapon": "GREAT_SWORD",
+   "element": "DRAGON",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/pyro.webp",
+   "description": "Endures hits to raise his Fervor Level, then releases earth-shattering charged blows (free from the launch event). Fervor falls if he stops attacking — never let up.",
+   "descriptionFa": "ضربه‌ها را تحمل می‌کند تا سطح شور (Fervor) بالا برود و بعد ضربه‌های شارژشدهٔ ویرانگر رها می‌کند (رایگان از رویداد لانچ)؛ اگر دست از حمله بکشد شورش می‌ریزد — نباید لحظه‌ای توقف کند.",
+   "skills": [
+    {
+     "nameEn": "Charged Slash",
+     "type": "BASIC",
+     "description": ""
+    },
+    {
+     "nameEn": "Heat Tackle",
+     "type": "ACTIVE",
+     "description": "Parry."
+    },
+    {
+     "nameEn": "Reckless Charge Slash",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Fortifying Slash",
+     "type": "BURST",
+     "description": ""
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Blazing Fury",
+    "type": "ULTIMATE",
+    "description": ""
+   },
+   "strengths": [
+    "Massive burst damage",
+    "Parry built into the kit"
+   ],
+   "weaknesses": [
+    "Fervor resets when passive"
+   ]
+  },
+  {
+   "id": "ouyang-varen",
+   "nameEn": "Ouyang Varen",
+   "classType": "ASSAULT",
+   "weapon": "LANCE",
+   "element": "WATER",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/ouyang-varen.webp",
+   "description": "Perfect Guards and parries build up to 3 Sharpness stacks — at a full red glow he spends them on a devastating Rending Sweep. Free SR.",
+   "descriptionFa": "گارد بی‌نقص و پری‌ها تا ۳ لایه تیزی (Sharpness) می‌سازند؛ در اوج درخشش قرمز، آن‌ها را خرج ضربهٔ ویرانگر Rending Sweep می‌کند. SR رایگان.",
+   "skills": [
+    {
+     "nameEn": "Thrust",
+     "type": "BASIC",
+     "description": ""
+    },
+    {
+     "nameEn": "Defensive Stance",
+     "type": "ACTIVE",
+     "description": "Counter Thrust on guard."
+    },
+    {
+     "nameEn": "Defensive Maneuver",
+     "type": "ACTIVE",
+     "description": "Builds to Rending Sweep (Burst)."
+    },
+    {
+     "nameEn": "Piercing Thrust",
+     "type": "ACTIVE",
+     "description": "Charged thrust."
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Sentinel Thrust",
+    "type": "ULTIMATE",
+    "description": "Parry stance that shields nearby allies, then a counter that always staggers."
+   },
+   "strengths": [
+    "Excellent defence",
+    "Huge payoff at 3 stacks"
+   ],
+   "weaknesses": [
+    "Needs guard timing"
+   ]
+  },
+  {
+   "id": "pepper",
+   "nameEn": "Pepper",
+   "classType": "DISRUPTOR",
+   "weapon": "HEAVY_BOWGUN",
+   "element": "WATER",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/pepper.webp",
+   "description": "Airborne gunner. Bouncy Dash launches her skyward for rapid fire, Concentration stacks feed Pressurized Blast, and her Ultimate paralyzes the monster.",
+   "descriptionFa": "تیراندازی هوایی؛ Bouncy Dash او را به آسمان می‌فرستد تا از بالا رگبار ببندد، لایه‌های تمرکز شلیک فشرده را تقویت می‌کنند و اولتیمیتش هیولا را فلج می‌کند.",
+   "skills": [
+    {
+     "nameEn": "Shoot",
+     "type": "BASIC",
+     "description": "Always Spread Ammo."
+    },
+    {
+     "nameEn": "Guard / Aerial Slam",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Bouncy Dash",
+     "type": "ACTIVE",
+     "description": "Airborne Basic becomes Firepower Pursuit."
+    },
+    {
+     "nameEn": "Pressurized Blast",
+     "type": "BURST",
+     "description": "Can parry."
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Fluffy, Attack!",
+    "type": "ULTIMATE",
+    "description": "Paralysis + suppression for 8 s."
+   },
+   "strengths": [
+    "Constant airborne DPS",
+    "Paralysis on demand"
+   ],
+   "weaknesses": [
+    "Positioning-sensitive"
+   ]
+  },
+  {
+   "id": "keres",
+   "nameEn": "Keres",
+   "classType": "DISRUPTOR",
+   "weapon": "DUAL_BLADES",
+   "element": "DRAGON",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/keres.webp",
+   "description": "Relentless Demon Mode combos. His Ultimate plants a bone-spike mark: the monster takes +13% dragon damage, and even more at the spiked part.",
+   "descriptionFa": "کمبوهای بی‌امان در حالت شیطانی؛ اولتیمیتش نشان استخوانی می‌کارد که آسیب اژدهای دریافتی هیولا را ۱۳٪ بیشتر می‌کند و روی همان نقطه بیشتر هم می‌شود.",
+   "skills": [
+    {
+     "nameEn": "Demon Mode",
+     "type": "ACTIVE",
+     "description": "Needs at least 40% Demon Gauge."
+    },
+    {
+     "nameEn": "Evasive Fang",
+     "type": "ACTIVE",
+     "description": "Parry."
+    },
+    {
+     "nameEn": "Wolf Howl",
+     "type": "ACTIVE",
+     "description": ""
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Bone Frenzy",
+    "type": "ULTIMATE",
+    "description": "Plants the bone-spike mark for 30 s."
+   },
+   "strengths": [
+    "Top sustained DPS",
+    "Team-wide dragon amp"
+   ],
+   "weaknesses": [
+    "Needs gauge to start"
+   ]
+  },
+  {
+   "id": "luxheart",
+   "nameEn": "Luxheart",
+   "classType": "DISRUPTOR",
+   "weapon": "GREAT_SWORD",
+   "element": "THUNDER",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/luxheart.webp",
+   "description": "Heat switches his stance between Charged Slash and the swift Fleeting Star; Perfect Guards feed the fireworks of Grand Performance. Free SR.",
+   "descriptionFa": "گرما (Heat) ایستادنش را بین ضربهٔ شارژی و ستارهٔ گذرا عوض می‌کند؛ گاردهای بی‌نقص، آتش‌بازی Grand Performance را تغذیه می‌کنند. SR رایگان.",
+   "skills": [
+    {
+     "nameEn": "Charged Slash / Fleeting Star",
+     "type": "BASIC",
+     "description": "Stance depends on Heat."
+    },
+    {
+     "nameEn": "Guard",
+     "type": "ACTIVE",
+     "description": "Perfect Guard grants +1 Heat."
+    },
+    {
+     "nameEn": "Starlight Burst: Ignition",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Grand Performance",
+     "type": "BURST",
+     "description": "Consumes 4+ Heat."
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Heating Up",
+    "type": "ULTIMATE",
+    "description": "Firework bombs that daze and suppress; up to 3 charges."
+   },
+   "strengths": [
+    "Flexible stances",
+    "Daze + suppression"
+   ],
+   "weaknesses": [
+    "Heat management"
+   ]
+  },
+  {
+   "id": "raya",
+   "nameEn": "Raya",
+   "classType": "DISRUPTOR",
+   "weapon": "DUAL_BLADES",
+   "element": "FIRE",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/raya.webp",
+   "description": "Dance-like spinning blades. Hits fill her Demon Gauge — combo hits grant even more — and her Ultimate restrains the monster with traps. Free SR.",
+   "descriptionFa": "تیغه‌های چرخان رقص‌گونه؛ ضربه‌ها نوار شیطانی‌اش را پر می‌کنند و ضربه‌های کمبو بیشتر هم می‌دهند؛ اولتیمیتش هیولا را با تله مهار می‌کند. SR رایگان.",
+   "skills": [
+    {
+     "nameEn": "Chain Slash",
+     "type": "BASIC",
+     "description": ""
+    },
+    {
+     "nameEn": "Demon Mode",
+     "type": "ACTIVE",
+     "description": "Needs a full gauge."
+    },
+    {
+     "nameEn": "Whirling Dance",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Chain Dance",
+     "type": "ACTIVE",
+     "description": ""
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Berserker Dance",
+    "type": "ULTIMATE",
+    "description": "Suppression; her Buddy sets pitfall traps (4 s control). Does not work on Elder Dragons."
+   },
+   "strengths": [
+    "Fast gauge build",
+    "Trap control"
+   ],
+   "weaknesses": [
+    "Traps fail on Elder Dragons"
+   ]
+  },
+  {
+   "id": "haze",
+   "nameEn": "Haze",
+   "classType": "SUPPORT",
+   "weapon": "DUAL_BLADES",
+   "element": "THUNDER",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/haze.webp",
+   "description": "The premier all-round buffer (Guild Shop: 24,000 Emblems). Her squadmate skill charges allies' Ultimates, and her Ultimate raises the whole squad's Elemental Critical Damage — she fits every team.",
+   "descriptionFa": "بهترین بافر همه‌کارهٔ بازی (فروشگاه گیلد: ۲۴٬۰۰۰ مدال)؛ مهارت هم‌تیمی‌اش اولتیمیت هم‌تیمی‌ها را شارژ می‌کند و اولتیمیت خودش آسیب بحرانی المنتال کل تیم را بالا می‌برد — در هر تیمی جا می‌شود.",
+   "skills": [
+    {
+     "nameEn": "Demon Mode",
+     "type": "ACTIVE",
+     "description": "Evolves into Archdemon Mode."
+    },
+    {
+     "nameEn": "Circling Chain Slash",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Waning Moon",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Crimson Fang Slash",
+     "type": "ACTIVE",
+     "description": "Archdemon follow-up; activates her Serpent's Shadow trait."
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Ultimate (name TBA)",
+    "type": "ULTIMATE",
+    "description": "Squad-wide Elemental Critical Damage buff once her mark bursts; stronger after she lands 12 hits."
+   },
+   "strengths": [
+    "Universal buffer",
+    "Charges ally Ultimates"
+   ],
+   "weaknesses": [
+    "Personal DPS is modest"
+   ]
+  },
+  {
+   "id": "madelyn",
+   "nameEn": "Madelyn",
+   "classType": "SUPPORT",
+   "weapon": "BOW",
+   "element": "WATER",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/madelyn.webp",
+   "description": "Medic-archer. Every shot loads a Catalyst Coating that raises the monster's spore level; Detonating Shot ruptures them, and her Ultimate is a big heal plus a damage buff. Free SR.",
+   "descriptionFa": "کماندار درمانگر؛ هر تیر پوشش کاتالیزوری می‌نشاند که سطح اسپور هیولا را بالا می‌برد و شلیک انفجاری آن‌ها را می‌ترکاند؛ اولتیمیتش درمان بزرگ و باف آسیب است. SR رایگان.",
+   "skills": [
+    {
+     "nameEn": "Rapid Fire / Charged Shot",
+     "type": "BASIC",
+     "description": ""
+    },
+    {
+     "nameEn": "Slide Shot / Detonating Shot",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Catalyst Burst",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Spore Adhesion",
+     "type": "ACTIVE",
+     "description": ""
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Stellar Injection",
+    "type": "ULTIMATE",
+    "description": "Large heal to all Adventurers in radius + damage buff + regen for 10 s."
+   },
+   "strengths": [
+    "Strong healing",
+    "Spore burst damage"
+   ],
+   "weaknesses": [
+    "Needs spore setup time"
+   ]
+  },
+  {
+   "id": "ryunosuke",
+   "nameEn": "Ryunosuke",
+   "classType": "SUPPORT",
+   "weapon": "LONG_SWORD",
+   "element": "FIRE",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/ryunosuke.webp",
+   "description": "A feasting swordsman. Gathering Feast, Craving and Ravenous Energy together makes him Well-fed and supercharges his kit; his Ultimate buffs squad fire damage with ailment immunity. Free SR.",
+   "descriptionFa": "شمشیرزن اهل ضیافت؛ جمع‌کردن هم‌زمان سه انرژی ضیافت او را سیر (Well-fed) و کل کیتش را تقویت می‌کند؛ اولتیمیتش آسیب آتش تیم را بالا می‌برد و مصونیت وضعیت می‌دهد. SR رایگان.",
+   "skills": [
+    {
+     "nameEn": "Chain Slash",
+     "type": "BASIC",
+     "description": ""
+    },
+    {
+     "nameEn": "Spirit Slash",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Inebriated: Swig",
+     "type": "ACTIVE",
+     "description": "Parry."
+    },
+    {
+     "nameEn": "Piercing Flavors",
+     "type": "ACTIVE",
+     "description": ""
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Grand Feast",
+    "type": "ULTIMATE",
+    "description": "All allies: fire damage up + ailment immunity for 10 s."
+   },
+   "strengths": [
+    "Team fire buffer",
+    "Self-sustaining loop"
+   ],
+   "weaknesses": [
+    "Needs all three energies for full power"
+   ]
+  },
+  {
+   "id": "arkaya",
+   "nameEn": "Arkaya",
+   "classType": "SUPPORT",
+   "weapon": "LANCE",
+   "element": "DRAGON",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/arkaya.webp",
+   "description": "Tank-support. Attacks build Battle Spirit (Resolve); spending 3 fires Earthrend Finisher — massive damage plus a squad shield. Her Ultimate shields everyone and grants affinity.",
+   "descriptionFa": "تانک-ساپورت؛ حمله‌ها روح نبرد (Resolve) می‌سازند و خرج ۳ واحدش ضربهٔ عظیم Earthrend Finisher با سپر تیمی است؛ اولتیمیتش به همه سپر و شانس بحرانی می‌دهد.",
+   "skills": [
+    {
+     "nameEn": "Thrust",
+     "type": "BASIC",
+     "description": ""
+    },
+    {
+     "nameEn": "Boulder Stance",
+     "type": "ACTIVE",
+     "description": "Perfect Guard builds to Reprisal Finisher."
+    },
+    {
+     "nameEn": "Driving Assault",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Pierce / Relentless Thrust",
+     "type": "ACTIVE",
+     "description": ""
+    },
+    {
+     "nameEn": "Earthrend Finisher",
+     "type": "BURST",
+     "description": "Spends 3 Battle Spirit."
+    }
+   ],
+   "ultimate": {
+    "nameEn": "Indomitable Oath",
+    "type": "ULTIMATE",
+    "description": "Squad shield + 8% affinity for 30 s; instantly grants 3 Battle Spirit."
+   },
+   "strengths": [
+    "Best squad defence",
+    "Finisher damage"
+   ],
+   "weaknesses": [
+    "Slow lance mobility"
+   ]
+  },
+  {
+   "id": "fated",
+   "nameEn": "Fated Adventurer",
+   "classType": "FATED",
+   "weapon": "ANY",
+   "element": "NONE",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/fated.webp",
+   "description": "You — the customizable hunter. Any of the 8 weapon types and any element through gear; in team comps, your element and weapon fill the squad's gaps.",
+   "descriptionFa": "خودت هستی — هانتر قابل‌شخصی‌سازی. هر ۸ نوع سلاح و با تجهیزات هر المنتی؛ در ترکیب‌های تیم، المنت و سلاح تو جاهای خالی تیم را پر می‌کند.",
+   "skills": [],
+   "ultimate": null,
+   "strengths": [
+    "Fully flexible"
+   ],
+   "weaknesses": []
+  }
+ ],
+ "monsters": [
+  {
+   "id": "great-jagras",
+   "nameEn": "Great Jagras",
+   "imageUrl": "",
+   "description": "A fanged wyvern that swallows prey whole and fights with its swollen belly.",
+   "descriptionFa": "ویورن دندان‌داری که شکار را درسته می‌بلعد و با شکم بادکرده می‌جنگد.",
+   "elementWeakness": {
+    "FIRE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "kulu-ya-ku",
+   "nameEn": "Kulu-Ya-Ku",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/kulu-ya-ku.webp",
+   "description": "A bird wyvern that digs up rocks — and even crystal shards — to shield itself and smash hunters.",
+   "descriptionFa": "ویورن پرنده‌ای که سنگ و حتی خرده‌های کریستال را از زمین می‌کند تا سپر بگیرد و ضربه بزند.",
+   "elementWeakness": {
+    "WATER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "pukei-pukei",
+   "nameEn": "Pukei-Pukei",
+   "imageUrl": "",
+   "description": "A bird wyvern that sprays poison from its mouth and tail; watch its bulging throat sac.",
+   "descriptionFa": "ویورن پرنده‌ای که از دهان و دمش سم می‌پاشد؛ کیسهٔ گلوی بادکرده‌اش را زیر نظر بگیر.",
+   "elementWeakness": {
+    "THUNDER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "great-girros",
+   "nameEn": "Great Girros",
+   "imageUrl": "",
+   "description": "Pack leader of the Girros; its paralyzing fangs command the whole swarm.",
+   "descriptionFa": "رهبر گلهٔ گیروس‌ها؛ دندان‌های فلج‌کننده‌اش کل گله را فرمان می‌دهد.",
+   "elementWeakness": {
+    "WATER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "barroth",
+   "nameEn": "Barroth",
+   "imageUrl": "",
+   "description": "A brute wyvern that charges head-first and cakes itself in mud armour.",
+   "descriptionFa": "ویورن وحشی‌ای که با سر شیرجه می‌زند و خودش را با زرهٔ گِلی می‌پوشاند.",
+   "elementWeakness": {
+    "FIRE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "While mud-covered, its top weakness becomes Water ★3."
+  },
+  {
+   "id": "jyuratodus",
+   "nameEn": "Jyuratodus",
+   "imageUrl": "",
+   "description": "A mud-dwelling piscine wyvern that ambushes from swamps and sludge.",
+   "descriptionFa": "ویورن ماهی‌واری که در گِل و مرداب کمین می‌کند.",
+   "elementWeakness": {
+    "THUNDER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "While mud-covered, its top weakness becomes Water ★3."
+  },
+  {
+   "id": "anjanath",
+   "nameEn": "Anjanath",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/anjanath.webp",
+   "description": "A brute wyvern with a nose crest and fire breath when its throat glows.",
+   "descriptionFa": "ویورن وحشی با تاج بینی که وقتی گلویش می‌درخشد نفس آتشین می‌کشد.",
+   "elementWeakness": {
+    "WATER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "tobi-kadachi",
+   "nameEn": "Tobi-Kadachi",
+   "imageUrl": "",
+   "description": "A gliding fanged wyvern that builds static charge in its fur and tail.",
+   "descriptionFa": "ویورن دندان‌دار سرخورنده‌ای که در خز و دمش بار ساکن جمع می‌کند.",
+   "elementWeakness": {
+    "FIRE": 2,
+    "WATER": 2,
+    "ICE": 2
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "No ★3 weakness — Fire, Water and Ice are all ★2."
+  },
+  {
+   "id": "rathian",
+   "nameEn": "Rathian",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/rathian.webp",
+   "description": "The Queen of the Land — a flying wyvern whose tail flips deliver poison.",
+   "descriptionFa": "ملکهٔ زمین؛ ویورن پرنده‌ای که ضربات چرخشی دمش سم تزریق می‌کند.",
+   "elementWeakness": {
+    "DRAGON": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "pink-rathian",
+   "nameEn": "Pink Rathian",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/pink-rathian.webp",
+   "description": "A cherry-blossom Rathian subspecies with a harder shell and fiercer tail.",
+   "descriptionFa": "زیرگونهٔ صورتی راثیان با پوستهٔ سخت‌تر و دم خشن‌تر.",
+   "elementWeakness": {
+    "DRAGON": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Weakness data is single-source for now."
+  },
+  {
+   "id": "rathalos",
+   "nameEn": "Rathalos",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/rathalos.webp",
+   "description": "King of the Skies — a flying wyvern that rules from above with fire breath and poisonous talons.",
+   "descriptionFa": "پادشاه آسمان‌ها؛ ویورن پرنده‌ای که با نفس آتشین و چنگال‌های سمّی از بالا حکومت می‌کند.",
+   "elementWeakness": {
+    "DRAGON": 3
+   },
+   "breakableParts": [
+    "Head",
+    "Left Wing",
+    "Right Wing",
+    "Tail (severable)"
+   ],
+   "drops": [
+    "Rathalos Scale III (body break)",
+    "Rathalos Shell III (head break)",
+    "Rathalos Webbing III (wing break / capture)",
+    "Rathalos Tail III (severed tail carve)",
+    "Rathalos Plate III (rare)"
+   ],
+   "notes": "Thunder is a secondary weakness (star rating not yet published). Habitats: Outlands, Great Sand Sea, Misty Forest."
+  },
+  {
+   "id": "diablos",
+   "nameEn": "Diablos",
+   "imageUrl": "https://cdn.jsdelivr.net/gh/hamidhoshyar50-boop/Rmho@main/data/images/diablos.webp",
+   "description": "The desert tyrant. It burrows under the sand and erupts beneath hunters; deafening roars precede its charges.",
+   "descriptionFa": "ستمگر صحرا؛ زیر شن نقب می‌زند و زیر پای هانترها فوران می‌کند و نعره‌های کرکننده‌اش پیش‌درآمد یورش‌هایش است.",
+   "elementWeakness": {
+    "ICE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "black-diablos",
+   "nameEn": "Black Diablos",
+   "imageUrl": "",
+   "description": "A female Diablos in breeding season — black, faster and far more aggressive.",
+   "descriptionFa": "دیابلوس ماده در فصل جفت‌گیری؛ سیاه، سریع‌تر و بسیار پرخاشگرتر.",
+   "elementWeakness": {
+    "ICE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Weakness data is single-source for now."
+  },
+  {
+   "id": "tzitzi-ya-ku",
+   "nameEn": "Tzitzi-Ya-Ku",
+   "imageUrl": "",
+   "description": "A bird wyvern that flashes blinding light from its head crest to stun its prey.",
+   "descriptionFa": "ویورن پرنده‌ای که از تاج سرش نور خیره‌کننده می‌تاباند تا شکار را گیج کند.",
+   "elementWeakness": {
+    "THUNDER": 3,
+    "ICE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "paolumu",
+   "nameEn": "Paolumu",
+   "imageUrl": "",
+   "description": "A bat-like flying wyvern that inflates its neck pouch to float and drift on the wind.",
+   "descriptionFa": "ویورن پرندهٔ خفاش‌مانندی که کیسهٔ گردنش را باد می‌کند تا روی باد شناور شود.",
+   "elementWeakness": {
+    "FIRE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "legiana",
+   "nameEn": "Legiana",
+   "imageUrl": "",
+   "description": "The graceful apex of the highlands; shrieking ice winds trail its dives.",
+   "descriptionFa": "فرمانروای باوقار بلندی‌ها؛ شیرجه‌هایش با بادهای یخی جیغ‌مانند همراه است.",
+   "elementWeakness": {
+    "THUNDER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "odogaron",
+   "nameEn": "Odogaron",
+   "imageUrl": "",
+   "description": "A relentless fanged wyvern whose claws inflict bleeding; it drags carcasses back to its lair.",
+   "descriptionFa": "ویورن دندان‌دار بی‌امانی که چنگال‌هایش خونریزی می‌دهند و لاشه‌ها را به لانه‌اش می‌کشد.",
+   "elementWeakness": {
+    "ICE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "radobaan",
+   "nameEn": "Radobaan",
+   "imageUrl": "",
+   "description": "A brute wyvern that rolls in a ball of bone and tar, ploughing through hunters.",
+   "descriptionFa": "ویورن وحشی‌ای که در گلوله‌ای از استخوان و قیر غلت می‌زند و از روی هانترها رد می‌شود.",
+   "elementWeakness": {
+    "DRAGON": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": ""
+  },
+  {
+   "id": "kushala-daora",
+   "nameEn": "Kushala Daora",
+   "imageUrl": "",
+   "description": "An Elder Dragon wreathed in storms; its wind barrier deflects attacks until it is broken.",
+   "descriptionFa": "اژدهای ارشدی پوشیده در طوفان؛ دیوار بادش تا وقتی نشکند ضربه‌ها را منحرف می‌کند.",
+   "elementWeakness": {
+    "THUNDER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Elder Dragon — traps do not work on it. Weakness is single-source for now."
+  },
+  {
+   "id": "nergigante",
+   "nameEn": "Nergigante",
+   "imageUrl": "",
+   "description": "The Eater of Elders — an Elder Dragon whose spikes regrow harder the longer the fight lasts.",
+   "descriptionFa": "بلعندهٔ ارشدها؛ اژدهای ارشدی که خارهایش هرچه نبرد طولانی‌تر شود سخت‌تر بازمی‌رویند.",
+   "elementWeakness": {},
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Elemental weakness not yet published by databases — bring a balanced squad. Elder Dragon: traps do not work."
+  },
+  {
+   "id": "ruger-aidal",
+   "nameEn": "Ruger Aidal",
+   "imageUrl": "",
+   "description": "The flagship Elder Dragon of Aesoland. Its crystal horns channel fire, and freshly formed crystals shatter under repeated hits.",
+   "descriptionFa": "اژدهای ارشد پرچم‌دار ایسولند؛ شاخک‌های کریستالی‌اش آتش را هدایت می‌کنند و کریستال‌های تازه‌تشکیل‌شده با ضربات پی‌درپی خرد می‌شوند.",
+   "elementWeakness": {
+    "FIRE": 3,
+    "ICE": 3
+   },
+   "breakableParts": [
+    "Head",
+    "Torso",
+    "Wings",
+    "Forelegs",
+    "Hind Legs",
+    "Tail"
+   ],
+   "drops": [
+    "Ruger Aidal Crownhorn",
+    "Prism Scale (body/tail breaks)",
+    "Prism Shell (body/tail breaks)",
+    "Tail Blade (tail break)",
+    "Skyglow Mane",
+    "Gleaming Wingclaw (wing break)",
+    "Crown Spikes (wing break)",
+    "Crystal Gem",
+    "Gleaming Claw (foreleg break)",
+    "Skyglow Radiantite (body/head breaks)"
+   ],
+   "notes": "Elder Dragon — cannot be captured and traps do not work. Farmed in the Apex Challenge after Chapter 6; its materials craft Apex Weapons with a player-chosen element."
+  },
+  {
+   "id": "radiant-great-jagras",
+   "nameEn": "Radiant Great Jagras",
+   "imageUrl": "",
+   "description": "The Radiant form of Great Jagras — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Great Jagras — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "FIRE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form."
+  },
+  {
+   "id": "radiant-kulu-ya-ku",
+   "nameEn": "Radiant Kulu-Ya-Ku",
+   "imageUrl": "",
+   "description": "The Radiant form of Kulu-Ya-Ku — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Kulu-Ya-Ku — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "WATER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form."
+  },
+  {
+   "id": "radiant-pukei-pukei",
+   "nameEn": "Radiant Pukei-Pukei",
+   "imageUrl": "",
+   "description": "The Radiant form of Pukei-Pukei — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Pukei-Pukei — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "THUNDER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form."
+  },
+  {
+   "id": "radiant-great-girros",
+   "nameEn": "Radiant Great Girros",
+   "imageUrl": "",
+   "description": "The Radiant form of Great Girros — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Great Girros — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "DRAGON": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form. Radiant form flips the base weakness from Water to Dragon."
+  },
+  {
+   "id": "radiant-barroth",
+   "nameEn": "Radiant Barroth",
+   "imageUrl": "",
+   "description": "The Radiant form of Barroth — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Barroth — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "FIRE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form."
+  },
+  {
+   "id": "radiant-anjanath",
+   "nameEn": "Radiant Anjanath",
+   "imageUrl": "",
+   "description": "The Radiant form of Anjanath — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Anjanath — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "WATER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form."
+  },
+  {
+   "id": "radiant-tobi-kadachi",
+   "nameEn": "Radiant Tobi-Kadachi",
+   "imageUrl": "",
+   "description": "The Radiant form of Tobi-Kadachi — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Tobi-Kadachi — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "WATER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form. Single-source data."
+  },
+  {
+   "id": "radiant-rathian",
+   "nameEn": "Radiant Rathian",
+   "imageUrl": "",
+   "description": "The Radiant form of Rathian — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Rathian — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "THUNDER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form. Radiant form flips the base weakness from Dragon to Thunder."
+  },
+  {
+   "id": "radiant-paolumu",
+   "nameEn": "Radiant Paolumu",
+   "imageUrl": "",
+   "description": "The Radiant form of Paolumu — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Paolumu — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "FIRE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form."
+  },
+  {
+   "id": "radiant-legiana",
+   "nameEn": "Radiant Legiana",
+   "imageUrl": "",
+   "description": "The Radiant form of Legiana — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Legiana — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "FIRE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form. Radiant form flips the base weakness from Thunder to Fire."
+  },
+  {
+   "id": "radiant-rathalos",
+   "nameEn": "Radiant Rathalos",
+   "imageUrl": "",
+   "description": "The Radiant form of Rathalos — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Rathalos — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "THUNDER": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form. Single-source data (GameWith)."
+  },
+  {
+   "id": "radiant-jyuratodus",
+   "nameEn": "Radiant Jyuratodus",
+   "imageUrl": "",
+   "description": "The Radiant form of Jyuratodus — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Jyuratodus — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "ICE": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form. Single-source data (GameWith)."
+  },
+  {
+   "id": "radiant-tzitzi-ya-ku",
+   "nameEn": "Radiant Tzitzi-Ya-Ku",
+   "imageUrl": "",
+   "description": "The Radiant form of Tzitzi-Ya-Ku — a powered-up variant with shifted elemental weaknesses.",
+   "descriptionFa": "فرم رادیانت Tzitzi-Ya-Ku — نسخهٔ تقویت‌شده با ضعف‌های المنتال جابه‌جاشده.",
+   "elementWeakness": {
+    "DRAGON": 3
+   },
+   "breakableParts": [],
+   "drops": [],
+   "notes": "Radiant form. Single-source data (GameWith)."
+  }
+ ],
+ "teamComps": [
+  {
+   "id": "team-fire",
+   "titleEn": "Fire Resonance (GameWith)",
+   "targetMonsterId": null,
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Unify on Fire for elemental resonance: Midori leads, Ryunosuke amps the squad's fire, a Fire Fated fills DPS, Haze charges everyone's Ultimates. Swap: Raya for Ryunosuke.",
+   "strategyFa": "همه روی آتش برای رزونانس المنتال: Midori لیدر است، Ryunosuke آتش تیم را تقویت می‌کند، Fated آتش DPS را کامل می‌کند و Haze اولتیمیت همه را شارژ می‌کند. جایگزین: Raya به جای Ryunosuke.",
+   "tags": [
+    "element",
+    "source"
+   ]
+  },
+  {
+   "id": "team-water",
+   "titleEn": "Water Resonance (GameWith)",
+   "targetMonsterId": null,
+   "adventurerIds": [
+    "pepper",
+    "fated",
+    "madelyn",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Pepper pressures from the air, a Water Fated holds the front, Madelyn heals and detonates spores, Haze buffs. Swap: Arkaya or Ouyang Varen for Haze.",
+   "strategyFa": "Pepper از هوا فشار می‌آورد، Fated آب جلو را نگه می‌دارد، Madelyn درمان می‌کند و اسپور منفجر می‌کند و Haze باف می‌دهد. جایگزین: Arkaya یا Ouyang Varen به جای Haze.",
+   "tags": [
+    "element",
+    "source"
+   ]
+  },
+  {
+   "id": "team-thunder",
+   "titleEn": "Thunder Resonance (GameWith)",
+   "targetMonsterId": null,
+   "adventurerIds": [
+    "luka",
+    "luxheart",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Luka snipes with Thunder Coatings, Luxheart dazes with fireworks, a Thunder Fated adds Great Sword breaks, Haze keeps Ultimates cycling.",
+   "strategyFa": "Luka با پوشش رعدی شکار می‌کند، Luxheart با آتش‌بازی گیج می‌کند، Fated رعدی با گریت‌سورد نقطه می‌شکند و Haze چرخهٔ اولتیمیت‌ها را نگه می‌دارد.",
+   "tags": [
+    "element",
+    "source"
+   ]
+  },
+  {
+   "id": "team-ice",
+   "titleEn": "Ice Resonance (GameWith)",
+   "targetMonsterId": null,
+   "adventurerIds": [
+    "rhodes",
+    "fated",
+    "haze",
+    "arkaya"
+   ],
+   "buddy": "",
+   "strategy": "Rhodes is the Ice core — pair him with a Hammer Fated for part breaks, Haze for buffs and Arkaya for squad shields.",
+   "strategyFa": "Rhodes هستهٔ یخی تیم است؛ کنارش Fated چکشی برای شکستن نقاط، Haze برای باف و Arkaya برای سپر تیمی.",
+   "tags": [
+    "element",
+    "source"
+   ]
+  },
+  {
+   "id": "team-dragon",
+   "titleEn": "Dragon Core (GameWith)",
+   "targetMonsterId": null,
+   "adventurerIds": [
+    "arkaya",
+    "keres",
+    "pyro",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Arkaya tanks and shields, Keres marks the monster for +13% dragon damage taken, Pyro cashes out with Fervor burst, Haze buffs everyone. Also works with Pyro as the controlled main.",
+   "strategyFa": "Arkaya تانک و سپر است، Keres هیولا را برای ۱۳٪ آسیب اژدهای بیشتر نشان می‌کند، Pyro با انفجار شور کار را تمام می‌کند و Haze به همه باف می‌دهد. با Pyro به‌عنوان شخصیت اصلی هم جواب می‌دهد.",
+   "tags": [
+    "element",
+    "source"
+   ]
+  },
+  {
+   "id": "team-f2p",
+   "titleEn": "F2P Starter (community)",
+   "targetMonsterId": null,
+   "adventurerIds": [
+    "fated",
+    "raya",
+    "ouyang-varen",
+    "madelyn"
+   ],
+   "buddy": "",
+   "strategy": "All free units: a Fire Fated leads, Raya and Ouyang Varen (free SRs) cover damage and defence, Madelyn heals. A solid first squad for every early hunt.",
+   "strategyFa": "همه واحدها رایگان‌اند: Fated آتش لیدر است، Raya و Ouyang Varen (SRهای رایگان) آسیب و دفاع را پوشش می‌دهند و Madelyn درمان می‌کند. تیم شروع خوبی برای شکارهای اول.",
+   "tags": [
+    "f2p",
+    "source"
+   ]
+  },
+  {
+   "id": "anti-great-jagras",
+   "titleEn": "Anti-Great Jagras",
+   "targetMonsterId": "great-jagras",
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Great Jagras is weakest to Fire (★3), so this squad unifies on Fire for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Great Jagras المنت Fire است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-kulu-ya-ku",
+   "titleEn": "Anti-Kulu-Ya-Ku",
+   "targetMonsterId": "kulu-ya-ku",
+   "adventurerIds": [
+    "pepper",
+    "fated",
+    "madelyn",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Kulu-Ya-Ku is weakest to Water (★3), so this squad unifies on Water for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Kulu-Ya-Ku المنت Water است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-pukei-pukei",
+   "titleEn": "Anti-Pukei-Pukei",
+   "targetMonsterId": "pukei-pukei",
+   "adventurerIds": [
+    "luka",
+    "luxheart",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Pukei-Pukei is weakest to Thunder (★3), so this squad unifies on Thunder for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Pukei-Pukei المنت Thunder است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-great-girros",
+   "titleEn": "Anti-Great Girros",
+   "targetMonsterId": "great-girros",
+   "adventurerIds": [
+    "pepper",
+    "fated",
+    "madelyn",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Great Girros is weakest to Water (★3), so this squad unifies on Water for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Great Girros المنت Water است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-barroth",
+   "titleEn": "Anti-Barroth",
+   "targetMonsterId": "barroth",
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Barroth is weakest to Fire (★3), so this squad unifies on Fire for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Barroth المنت Fire است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-jyuratodus",
+   "titleEn": "Anti-Jyuratodus",
+   "targetMonsterId": "jyuratodus",
+   "adventurerIds": [
+    "luka",
+    "luxheart",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Jyuratodus is weakest to Thunder (★3), so this squad unifies on Thunder for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Jyuratodus المنت Thunder است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-anjanath",
+   "titleEn": "Anti-Anjanath",
+   "targetMonsterId": "anjanath",
+   "adventurerIds": [
+    "pepper",
+    "fated",
+    "madelyn",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Anjanath is weakest to Water (★3), so this squad unifies on Water for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Anjanath المنت Water است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-tobi-kadachi",
+   "titleEn": "Anti-Tobi-Kadachi",
+   "targetMonsterId": "tobi-kadachi",
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Tobi-Kadachi is weakest to Fire (★2), so this squad unifies on Fire for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Tobi-Kadachi المنت Fire است (★2)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-rathian",
+   "titleEn": "Anti-Rathian",
+   "targetMonsterId": "rathian",
+   "adventurerIds": [
+    "arkaya",
+    "keres",
+    "pyro",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Rathian is weakest to Dragon (★3), so this squad unifies on Dragon for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Rathian المنت Dragon است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-pink-rathian",
+   "titleEn": "Anti-Pink Rathian",
+   "targetMonsterId": "pink-rathian",
+   "adventurerIds": [
+    "arkaya",
+    "keres",
+    "pyro",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Pink Rathian is weakest to Dragon (★3), so this squad unifies on Dragon for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Pink Rathian المنت Dragon است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-rathalos",
+   "titleEn": "Anti-Rathalos",
+   "targetMonsterId": "rathalos",
+   "adventurerIds": [
+    "arkaya",
+    "keres",
+    "pyro",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Rathalos is ★3 weak to Dragon — the database's best picks are Keres, Pyro and Arkaya, all in this squad. Break the wings to ground it and sever the tail to remove the poison sweeps.",
+   "strategyFa": "Rathalos در برابر اژدها ★۳ ضعیف است و بهترین انتخاب‌های دیتابیس Keres و Pyro و Arkaya هستند که هر سه در این تیم‌اند. بال‌ها را بشکن تا زمین‌گیر شود و دم را ببر تا ضربات سمّی‌اش حذف شود.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-diablos",
+   "titleEn": "Anti-Diablos",
+   "targetMonsterId": "diablos",
+   "adventurerIds": [
+    "rhodes",
+    "fated",
+    "haze",
+    "arkaya"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Diablos is weakest to Ice (★3), so this squad unifies on Ice for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Diablos المنت Ice است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-black-diablos",
+   "titleEn": "Anti-Black Diablos",
+   "targetMonsterId": "black-diablos",
+   "adventurerIds": [
+    "rhodes",
+    "fated",
+    "haze",
+    "arkaya"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Black Diablos is weakest to Ice (★3), so this squad unifies on Ice for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Black Diablos المنت Ice است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-tzitzi-ya-ku",
+   "titleEn": "Anti-Tzitzi-Ya-Ku",
+   "targetMonsterId": "tzitzi-ya-ku",
+   "adventurerIds": [
+    "luka",
+    "luxheart",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Tzitzi-Ya-Ku is weakest to Thunder (★3), so this squad unifies on Thunder for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Tzitzi-Ya-Ku المنت Thunder است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-paolumu",
+   "titleEn": "Anti-Paolumu",
+   "targetMonsterId": "paolumu",
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Paolumu is weakest to Fire (★3), so this squad unifies on Fire for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Paolumu المنت Fire است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-legiana",
+   "titleEn": "Anti-Legiana",
+   "targetMonsterId": "legiana",
+   "adventurerIds": [
+    "luka",
+    "luxheart",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Legiana is weakest to Thunder (★3), so this squad unifies on Thunder for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Legiana المنت Thunder است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-odogaron",
+   "titleEn": "Anti-Odogaron",
+   "targetMonsterId": "odogaron",
+   "adventurerIds": [
+    "rhodes",
+    "fated",
+    "haze",
+    "arkaya"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Odogaron is weakest to Ice (★3), so this squad unifies on Ice for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Odogaron المنت Ice است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radobaan",
+   "titleEn": "Anti-Radobaan",
+   "targetMonsterId": "radobaan",
+   "adventurerIds": [
+    "arkaya",
+    "keres",
+    "pyro",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radobaan is weakest to Dragon (★3), so this squad unifies on Dragon for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radobaan المنت Dragon است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-kushala-daora",
+   "titleEn": "Anti-Kushala Daora",
+   "targetMonsterId": "kushala-daora",
+   "adventurerIds": [
+    "luka",
+    "luxheart",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Kushala Daora is weakest to Thunder (★3), so this squad unifies on Thunder for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Kushala Daora المنت Thunder است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-nergigante",
+   "titleEn": "Anti-Nergigante",
+   "targetMonsterId": "nergigante",
+   "adventurerIds": [
+    "arkaya",
+    "keres",
+    "pyro",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Nergigante's elemental weakness is not published yet, so bring this balanced Dragon-core squad: shields, a damage mark and burst cover most situations.",
+   "strategyFa": "ضعف المنتال Nergigante هنوز منتشر نشده؛ پس این تیم متعادل هستهٔ اژدها را ببر: سپر، نشان آسیب و انفجار بیشتر موقعیت‌ها را پوشش می‌دهد.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-ruger-aidal",
+   "titleEn": "Anti-Ruger Aidal",
+   "targetMonsterId": "ruger-aidal",
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "raya",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Ruger Aidal is ★3 weak to Fire AND Ice. This Fire-resonance squad (Midori + Ryunosuke amp, Raya, Haze) is the database pick — Midori is its top counter. Swap Raya for Rhodes if you prefer the Ice route. Traps do NOT work on Elder Dragons.",
+   "strategyFa": "Ruger Aidal در برابر آتش و یخ هر دو ★۳ ضعیف است. این تیم رزونانس آتش (تقویت Midori و Ryunosuke، Raya و Haze) انتخاب دیتابیس است و Midori بهترین کانتر آن است. برای مسیر یخی، Rhodes را جای Raya بگذار. تله روی اژدهای ارشد کار نمی‌کند.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-great-jagras",
+   "titleEn": "Anti-Radiant Great Jagras",
+   "targetMonsterId": "radiant-great-jagras",
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Great Jagras is weakest to Fire (★3), so this squad unifies on Fire for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Great Jagras المنت Fire است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-kulu-ya-ku",
+   "titleEn": "Anti-Radiant Kulu-Ya-Ku",
+   "targetMonsterId": "radiant-kulu-ya-ku",
+   "adventurerIds": [
+    "pepper",
+    "fated",
+    "madelyn",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Kulu-Ya-Ku is weakest to Water (★3), so this squad unifies on Water for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Kulu-Ya-Ku المنت Water است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-pukei-pukei",
+   "titleEn": "Anti-Radiant Pukei-Pukei",
+   "targetMonsterId": "radiant-pukei-pukei",
+   "adventurerIds": [
+    "luka",
+    "luxheart",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Pukei-Pukei is weakest to Thunder (★3), so this squad unifies on Thunder for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Pukei-Pukei المنت Thunder است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-great-girros",
+   "titleEn": "Anti-Radiant Great Girros",
+   "targetMonsterId": "radiant-great-girros",
+   "adventurerIds": [
+    "arkaya",
+    "keres",
+    "pyro",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Great Girros is weakest to Dragon (★3), so this squad unifies on Dragon for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Great Girros المنت Dragon است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-barroth",
+   "titleEn": "Anti-Radiant Barroth",
+   "targetMonsterId": "radiant-barroth",
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Barroth is weakest to Fire (★3), so this squad unifies on Fire for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Barroth المنت Fire است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-anjanath",
+   "titleEn": "Anti-Radiant Anjanath",
+   "targetMonsterId": "radiant-anjanath",
+   "adventurerIds": [
+    "pepper",
+    "fated",
+    "madelyn",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Anjanath is weakest to Water (★3), so this squad unifies on Water for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Anjanath المنت Water است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-tobi-kadachi",
+   "titleEn": "Anti-Radiant Tobi-Kadachi",
+   "targetMonsterId": "radiant-tobi-kadachi",
+   "adventurerIds": [
+    "pepper",
+    "fated",
+    "madelyn",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Tobi-Kadachi is weakest to Water (★3), so this squad unifies on Water for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Tobi-Kadachi المنت Water است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-rathian",
+   "titleEn": "Anti-Radiant Rathian",
+   "targetMonsterId": "radiant-rathian",
+   "adventurerIds": [
+    "luka",
+    "luxheart",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Rathian is weakest to Thunder (★3), so this squad unifies on Thunder for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Rathian المنت Thunder است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-paolumu",
+   "titleEn": "Anti-Radiant Paolumu",
+   "targetMonsterId": "radiant-paolumu",
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Paolumu is weakest to Fire (★3), so this squad unifies on Fire for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Paolumu المنت Fire است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-legiana",
+   "titleEn": "Anti-Radiant Legiana",
+   "targetMonsterId": "radiant-legiana",
+   "adventurerIds": [
+    "midori",
+    "ryunosuke",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Legiana is weakest to Fire (★3), so this squad unifies on Fire for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Legiana المنت Fire است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-rathalos",
+   "titleEn": "Anti-Radiant Rathalos",
+   "targetMonsterId": "radiant-rathalos",
+   "adventurerIds": [
+    "luka",
+    "luxheart",
+    "fated",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Rathalos is weakest to Thunder (★3), so this squad unifies on Thunder for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Rathalos المنت Thunder است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-jyuratodus",
+   "titleEn": "Anti-Radiant Jyuratodus",
+   "targetMonsterId": "radiant-jyuratodus",
+   "adventurerIds": [
+    "rhodes",
+    "fated",
+    "haze",
+    "arkaya"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Jyuratodus is weakest to Ice (★3), so this squad unifies on Ice for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Jyuratodus المنت Ice است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  },
+  {
+   "id": "anti-radiant-tzitzi-ya-ku",
+   "titleEn": "Anti-Radiant Tzitzi-Ya-Ku",
+   "targetMonsterId": "radiant-tzitzi-ya-ku",
+   "adventurerIds": [
+    "arkaya",
+    "keres",
+    "pyro",
+    "haze"
+   ],
+   "buddy": "",
+   "strategy": "Derived counter-team: Radiant Tzitzi-Ya-Ku is weakest to Dragon (★3), so this squad unifies on Dragon for elemental resonance. Built from the sourced weakness table + community element comps.",
+   "strategyFa": "تیم کانتر مشتق‌شده: بزرگ‌ترین ضعف Radiant Tzitzi-Ya-Ku المنت Dragon است (★3)؛ پس این تیم روی همان المنت یک‌دست شده تا رزونانس بگیرد. ساخته‌شده از جدول ضعف منابع و ترکیب‌های المنتال کامیونیتی.",
+   "tags": [
+    "derived",
+    "counter"
+   ]
+  }
+ ],
+ "rotations": []
 }

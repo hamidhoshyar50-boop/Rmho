@@ -1,5 +1,6 @@
 package ir.rokoi.rmho.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -15,6 +16,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -104,7 +106,8 @@ private fun AdventurerCard(adv: Adventurer, onClick: () -> Unit) {
                     contentScale = ContentScale.Crop,
                     modifier = Modifier
                         .size(64.dp)
-                        .clip(RoundedCornerShape(12.dp))
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.surfaceVariant)
                 )
             } else {
                 Box(
@@ -161,14 +164,20 @@ fun AdventurerDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
         ) {
             if (adv.imageUrl.isNotEmpty()) {
                 item {
-                    AsyncImage(
-                        model = adv.imageUrl,
-                        contentDescription = adv.nameEn,
-                        contentScale = ContentScale.FillWidth,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .clip(RoundedCornerShape(16.dp))
-                    )
+                    Box(
+                        modifier = Modifier.fillMaxWidth(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        AsyncImage(
+                            model = adv.imageUrl,
+                            contentDescription = adv.nameEn,
+                            contentScale = ContentScale.Crop,
+                            modifier = Modifier
+                                .size(168.dp)
+                                .clip(CircleShape)
+                                .background(MaterialTheme.colorScheme.surfaceVariant)
+                        )
+                    }
                 }
             }
             item {
@@ -189,7 +198,10 @@ fun AdventurerDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
                     Text("Skills", style = MaterialTheme.typography.titleMedium)
                     Spacer(Modifier.height(6.dp))
                     adv.skills.forEach { s ->
-                        Text("• ${s.nameEn} — ${s.description}")
+                        Text(
+                            if (s.description.isEmpty()) "• ${s.nameEn}"
+                            else "• ${s.nameEn} — ${s.description}"
+                        )
                     }
                 }
             }

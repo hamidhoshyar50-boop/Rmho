@@ -5,6 +5,7 @@ fun classLabel(v: String): String = when (v) {
     "ASSAULT" -> "Assault"
     "DISRUPTOR" -> "Disruptor"
     "SUPPORT" -> "Support"
+    "FATED" -> "Fated (you)"
     else -> v
 }
 
@@ -17,6 +18,7 @@ fun weaponLabel(v: String): String = when (v) {
     "CHARGE_BLADE" -> "Charge Blade"
     "HEAVY_BOWGUN" -> "Heavy Bowgun"
     "BOW" -> "Bow"
+    "ANY" -> "Any weapon"
     else -> v
 }
 

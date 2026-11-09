@@ -1,5 +1,6 @@
 package ir.rokoi.rmho.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -14,6 +15,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -77,7 +79,8 @@ private fun MonsterCard(mon: Monster, onClick: () -> Unit) {
                     contentScale = ContentScale.Crop,
                     modifier = Modifier
                         .size(64.dp)
-                        .clip(RoundedCornerShape(12.dp))
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.surfaceVariant)
                 )
             } else {
                 Box(
@@ -132,14 +135,20 @@ fun MonsterDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
         ) {
             if (mon.imageUrl.isNotEmpty()) {
                 item {
-                    AsyncImage(
-                        model = mon.imageUrl,
-                        contentDescription = mon.nameEn,
-                        contentScale = ContentScale.FillWidth,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .clip(RoundedCornerShape(16.dp))
-                    )
+                    Box(
+                        modifier = Modifier.fillMaxWidth(),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        AsyncImage(
+                            model = mon.imageUrl,
+                            contentDescription = mon.nameEn,
+                            contentScale = ContentScale.Crop,
+                            modifier = Modifier
+                                .size(168.dp)
+                                .clip(CircleShape)
+                                .background(MaterialTheme.colorScheme.surfaceVariant)
+                        )
+                    }
                 }
             }
             if (mon.description.isNotEmpty()) {
@@ -193,6 +202,38 @@ fun MonsterDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
+                }
+            }
+            val comps = data.teamComps.filter { it.targetMonsterId == mon.id }
+            comps.forEach { comp ->
+                item {
+                    Text(
+                        "Best team for ${mon.nameEn}",
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.secondary
+                    )
+                    Spacer(Modifier.height(6.dp))
+                    if (comp.titleEn.isNotEmpty()) {
+                        Text(comp.titleEn, style = MaterialTheme.typography.titleSmall)
+                    }
+                    comp.adventurerIds.forEach { aid ->
+                        val name = data.adventurers.firstOrNull { it.id == aid }?.nameEn ?: aid
+                        Text("• $name")
+                    }
+                    if (comp.buddy.isNotEmpty()) {
+                        Text(
+                            "Buddy: ${comp.buddy}",
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                    if (comp.strategy.isNotEmpty()) {
+                        Spacer(Modifier.height(6.dp))
+                        Text(comp.strategy, style = MaterialTheme.typography.bodyMedium)
+                    }
+                    if (comp.strategyFa.isNotEmpty()) {
+                        Spacer(Modifier.height(8.dp))
+                        FaSection(comp.strategyFa, title = "استراتژی")
+                    }
                 }
             }
             item { Spacer(Modifier.height(16.dp)) }

@@ -57,10 +57,12 @@ data class Monster(
 @Serializable
 data class TeamComp(
     val id: String,
+    val titleEn: String = "",
     val targetMonsterId: String? = null,
     val adventurerIds: List<String> = emptyList(),
     val buddy: String = "",
     val strategy: String = "",
+    val strategyFa: String = "",
     val tags: List<String> = emptyList()
 )
 

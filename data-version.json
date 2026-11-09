@@ -1,8 +1,8 @@
 {
-  "dataVersion": 1,
-  "apkVersionCode": 2,
-  "apkVersionName": "0.2.0",
-  "apkUrl": "https://github.com/hamidhoshyar50-boop/Rmho/releases/download/v0.2.0/Rmho.apk",
-  "notesEn": "Blue & yellow theme, fixed bottom navigation, Persian description sections, real Monsters tab, in-app updates.",
-  "notesFa": "تم آبی و زرد، اصلاح نوار پایینی، بخش توضیح فارسی، تب واقعی هیولاها و آپدیت درون‌برنامه‌ای."
+  "dataVersion": 2,
+  "apkVersionCode": 3,
+  "apkVersionName": "0.3.0",
+  "apkUrl": "https://github.com/hamidhoshyar50-boop/Rmho/releases/download/v0.3.0/Rmho.apk",
+  "notesEn": "Full data: 13 Adventurers + Fated with portraits, 34 monsters, a counter team for every monster, circular portraits.",
+  "notesFa": "دیتای کامل: ۱۳ ادونچرر و Fated با پرتره، ۳۴ هیولا، تیم مناسب شکست هر هیولا و عکس‌های دایره‌ای."
 }
