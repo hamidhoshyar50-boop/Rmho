@@ -13,12 +13,36 @@ android {
         applicationId = "ir.rokoi.rmho"
         minSdk = 26
         targetSdk = 34
-        versionCode = 3
-        versionName = "0.3.0"
+        versionCode = 4
+        versionName = "0.3.1"
+    }
+
+    // Permanent signing key (GitHub Secrets) so every build shares ONE
+    // signature and updates install over each other. Without the env vars
+    // (local dev), Gradle falls back to the default debug key.
+    val ksPath = System.getenv("RMHO_KEYSTORE") ?: ""
+    if (ksPath.isNotEmpty()) {
+        signingConfigs {
+            create("fixed") {
+                storeFile = file(ksPath)
+                storePassword = System.getenv("RMHO_KS_PASS")
+                keyAlias = System.getenv("RMHO_KEY_ALIAS")
+                keyPassword = System.getenv("RMHO_KEY_PASS")
+                storeType = "PKCS12"
+            }
+        }
     }
 
     buildTypes {
+        debug {
+            if (ksPath.isNotEmpty()) {
+                signingConfig = signingConfigs.getByName("fixed")
+            }
+        }
         release {
+            if (ksPath.isNotEmpty()) {
+                signingConfig = signingConfigs.getByName("fixed")
+            }
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(

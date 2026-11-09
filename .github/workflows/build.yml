@@ -22,7 +22,20 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Restore signing key
+        env:
+          RMHO_KEYSTORE_B64: ${{ secrets.RMHO_KEYSTORE_B64 }}
+        run: |
+          if [ -n "$RMHO_KEYSTORE_B64" ]; then
+            echo "$RMHO_KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/rmho-release.p12"
+            echo "RMHO_KEYSTORE=$RUNNER_TEMP/rmho-release.p12" >> "$GITHUB_ENV"
+          fi
+
       - name: Build debug APK
+        env:
+          RMHO_KS_PASS: ${{ secrets.RMHO_KS_PASS }}
+          RMHO_KEY_ALIAS: ${{ secrets.RMHO_KEY_ALIAS }}
+          RMHO_KEY_PASS: ${{ secrets.RMHO_KEY_PASS }}
         run: ./gradlew assembleDebug --no-daemon --stacktrace
 
       - name: Upload APK artifact

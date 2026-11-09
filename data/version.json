@@ -1,8 +1,8 @@
 {
   "dataVersion": 2,
-  "apkVersionCode": 3,
-  "apkVersionName": "0.3.0",
-  "apkUrl": "https://github.com/hamidhoshyar50-boop/Rmho/releases/download/v0.3.0/Rmho.apk",
-  "notesEn": "Full data: 13 Adventurers + Fated with portraits, 34 monsters, a counter team for every monster, circular portraits.",
-  "notesFa": "دیتای کامل: ۱۳ ادونچرر و Fated با پرتره، ۳۴ هیولا، تیم مناسب شکست هر هیولا و عکس‌های دایره‌ای."
+  "apkVersionCode": 4,
+  "apkVersionName": "0.3.1",
+  "apkUrl": "https://github.com/hamidhoshyar50-boop/Rmho/releases/download/v0.3.1/Rmho.apk",
+  "notesEn": "Signing fix: earlier builds each had a different signature, so updates could not install over each other. Please UNINSTALL the old Rmho once, then install this build — every future update installs in place.",
+  "notesFa": "رفع مشکل امضا: نسخه‌های قبلی هر کدام امضای متفاوتی داشتند و روی هم نصب نمی‌شدند. لطفاً این یک بار Rmho قدیمی را پاک و این نسخه را نصب کن؛ از این به بعد همهٔ آپدیت‌ها روی هم نصب می‌شوند."
 }
