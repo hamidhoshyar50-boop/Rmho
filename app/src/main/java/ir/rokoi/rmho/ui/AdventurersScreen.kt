@@ -152,9 +152,21 @@ fun AdventurerDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
             }
             item {
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    if (adv.rarity.isNotEmpty()) {
+                        SuggestionChip(onClick = {}, label = { Text(adv.rarity) })
+                    }
                     SuggestionChip(onClick = {}, label = { Text(classLabel(adv.classType)) })
                     SuggestionChip(onClick = {}, label = { Text(weaponLabel(adv.weapon)) })
                     SuggestionChip(onClick = {}, label = { Text(elementLabel(adv.element)) })
+                }
+            }
+            if (adv.attack != null && adv.defense != null) {
+                item {
+                    Text(
+                        "Max stats — Attack ${adv.attack} • Defense ${adv.defense}",
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.secondary
+                    )
                 }
             }
             if (adv.description.isNotEmpty()) {
@@ -181,11 +193,97 @@ fun AdventurerDetailScreen(data: DataBundle, id: String, onBack: () -> Unit) {
                     if (u.description.isNotEmpty()) Text(u.description)
                 }
             }
+            if (adv.typeUltimates.isNotEmpty()) {
+                item {
+                    Text("Ultimate by Type", style = MaterialTheme.typography.titleMedium)
+                    Text(
+                        "Your Type (class) decides your Ultimate — your weapon never does.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Spacer(Modifier.height(8.dp))
+                    adv.typeUltimates.forEach { u ->
+                        Text(
+                            "${classLabel(u.type)}: ${u.nameEn}",
+                            style = MaterialTheme.typography.titleSmall
+                        )
+                        if (u.effect.isNotEmpty()) Text(u.effect)
+                        val meta = listOfNotNull(
+                            u.cooldownSec?.let { cd ->
+                                "Cooldown ${if (cd % 1.0 == 0.0) cd.toInt().toString() else cd.toString()}s"
+                            },
+                            if (u.initialEnergy != null && u.maxEnergy != null) {
+                                "Energy ${u.initialEnergy}/${u.maxEnergy}"
+                            } else null
+                        )
+                        if (meta.isNotEmpty()) {
+                            Text(
+                                meta.joinToString(" • "),
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.secondary
+                            )
+                        }
+                        Spacer(Modifier.height(8.dp))
+                    }
+                }
+            }
+            if (adv.signatureTraits.isNotEmpty()) {
+                item {
+                    Text("Signature traits", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    adv.signatureTraits.forEach { t -> Text("• $t") }
+                }
+            }
+            if (adv.weaponSystemNote.isNotEmpty() || adv.weaponSystemPoints.isNotEmpty()) {
+                item {
+                    Text("Weapon system", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    if (adv.weaponSystemNote.isNotEmpty()) Text(adv.weaponSystemNote)
+                    adv.weaponSystemPoints.forEach { p -> Text("• $p") }
+                }
+            }
             if (adv.strengths.isNotEmpty()) {
-                item { Text("Strengths: ${adv.strengths.joinToString(", ")}") }
+                item {
+                    Text("Strengths", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    adv.strengths.forEach { s -> Text("• $s") }
+                }
             }
             if (adv.weaknesses.isNotEmpty()) {
-                item { Text("Weaknesses: ${adv.weaknesses.joinToString(", ")}") }
+                item {
+                    Text("Weaknesses", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    adv.weaknesses.forEach { s -> Text("• $s") }
+                }
+            }
+            if (adv.insightSummary.isNotEmpty()) {
+                item {
+                    Text("Insight system", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    Text(adv.insightSummary)
+                    if (adv.insightHighlights.isNotEmpty()) {
+                        Spacer(Modifier.height(8.dp))
+                        Text("Top Insight per weapon", style = MaterialTheme.typography.titleSmall)
+                        adv.insightHighlights.forEach { h -> Text("• $h") }
+                    }
+                }
+            }
+            if (adv.insightSummaryFa.isNotEmpty()) {
+                item { FaSection(adv.insightSummaryFa, title = "سیستم Insight") }
+            }
+            if (adv.bestClassNote.isNotEmpty()) {
+                item {
+                    Text("Best class", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    Text(adv.bestClassNote)
+                }
+            }
+            if (adv.bestStartersNote.isNotEmpty()) {
+                item {
+                    Text("Best starter weapons", style = MaterialTheme.typography.titleMedium)
+                    Spacer(Modifier.height(6.dp))
+                    Text(adv.bestStartersNote)
+                }
             }
             item { Spacer(Modifier.height(16.dp)) }
         }

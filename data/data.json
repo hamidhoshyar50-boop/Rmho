@@ -1,5 +1,5 @@
 {
- "dataVersion": 4,
+ "dataVersion": 5,
  "adventurers": [
   {
    "id": "midori",
@@ -580,14 +580,78 @@
    "weapon": "ANY",
    "element": "NONE",
    "imageUrl": "",
-   "description": "You — the customizable hunter. Any of the 8 weapon types and any element through gear; in team comps, your element and weapon fill the squad's gaps.",
-   "descriptionFa": "این یکی خودتی! هانتری که خودت ساختی‌اش؛ هر هشت نوع سلاح را می‌تواند دست بگیرد و با تجهیزات، المنتش را عوض کند. در ترکیب‌های تیم، جای خالی‌ها را پر می‌کند.",
+   "description": "You — the hunter you create at the start of the story, and the most flexible Adventurer in Aesoland. The Fated Adventurer is the only one who can wield all 8 weapon types (including the Charge Blade, which no one else can use), switch freely between the Assault, Disruptor and Support classes — which also changes your Ultimate — and take any element through your weapon. Your passive turns affinity and elemental crit into raw damage, Pioneer Follow-Up strikes whenever the monster is suppressed, and every Insight unlocks free through Trial Expeditions instead of recruitment. The catch: bring the wrong element, or a squad without elemental resonance, and your damage falls off. Your power is preparation.",
+   "descriptionFa": "این یکی خودتی — هانتری که اول بازی می‌سازی‌اش و قوی‌ترین شروع ممکن رو داری. تنها ادونچرری‌ای هستی که هر هشت سلاح رو دست می‌گیری (از جمله چارج بلید که هیچ‌کس دیگه‌ای بلدش نیست)، کلاست رو آزادانه بین Assault و Disruptor و Support عوض می‌کنی — و با کلاس، اولتیمیتت هم عوض می‌شه — و المنتت رو از سلاحت می‌گیری. پسیوت Affinity و کریت المنتال رو مستقیم به دمیج تبدیل می‌کنه، Pioneer Follow-Up هر بار که هیولا سرکوب بشه یه ضربهٔ سنگین می‌زنه، و همهٔ Insightهات رو به‌جای گاچا، رایگان از Trial Expedition باز می‌کنی. نقطه‌ضعفت هم معلومه: المنت اشتباه یا تیم بدون رزونانس المنتال، دمیجت رو می‌خوابونه؛ قدرت تو، توی آماده‌سازیه.",
    "skills": [],
    "ultimate": null,
    "strengths": [
-    "Fully flexible"
+    "Only adventurer who can use all 8 weapon types",
+    "Freely switches class (Assault/Disruptor/Support) — and with it his Ultimate — plus any element via weapon",
+    "Only Charge Blade user in the game",
+    "Uses every Heavy Bowgun ammo type, so he can fight at any range",
+    "All Insights unlock free through progression (Trial Expeditions) — no duplicates or banners needed",
+    "Free from the start and top-ranked: SSS with Heavy Bowgun on GameWith's character tier list (joint best with Midori); Game8 rates him Damage ★★★★★ / Versatility ★★★★★ among the top main on-field characters"
    ],
-   "weaknesses": []
+   "weaknesses": [
+    "Damage drops without an elemental weapon and elemental resonance in the squad (repeated on every GameWith build page)",
+    "No personal weapon kit — named Adventurers' unique skills and ultimates stay exclusive to them",
+    "His exclusive Charge Blade has the steepest learning curve of all 8 weapons (Game8 Ease ★★)",
+    "Per-weapon weaknesses are inherited from the weapon itself (e.g. Dual Blades: short reach, no guard, Demon Mode stamina drain; Bow: heavy stamina costs)"
+   ],
+   "rarity": "SSR",
+   "attack": 200,
+   "defense": 490,
+   "typeUltimates": [
+    {
+     "type": "ASSAULT",
+     "nameEn": "Explosive Shot: Spikes",
+     "effect": "Fire 4 sharp projectiles from the slinger that rapidly spread out in front; each projectile deals 3 instances of piercing damage.",
+     "initialEnergy": 20,
+     "maxEnergy": 100,
+     "cooldownSec": 60
+    },
+    {
+     "type": "DISRUPTOR",
+     "nameEn": "Explosive Shot (flash)",
+     "effect": "Fire specially crafted ammo from the slinger that detonates on impact into a blinding flash, knocking flying monsters out of the sky and dazing them to inflict Suppression.",
+     "initialEnergy": 30,
+     "maxEnergy": 80
+    },
+    {
+     "type": "SUPPORT",
+     "nameEn": "Explosive Shot (healing)",
+     "effect": "Launch a medicine pack from the slinger, detonating on impact and spreading a healing mist that continuously recovers health for Adventurers in range (mist lasts 12s per GameWith JP).",
+     "initialEnergy": 0,
+     "maxEnergy": 60
+    }
+   ],
+   "signatureTraits": [
+    "Masterful Adventurer — Having mastered all weapon arts during past adventures, you can use any type of weapon.",
+    "Daytime Hunter — When adventurers in the squad carve during the day, carving speed increases by 50% (cannot stack with traits of the exact same effect).",
+    "Pioneer Follow-Up (209%) — Activates when the Main Adventurer or any ultimate suppresses the monster, following up and dealing heavy sever, ammo, or blunt damage depending on the equipped weapon type. Can only trigger once every 40s.",
+    "Core passive — When the Fated Adventurer activates any elemental specialization, for every 1% affinity, damage increases by 0.25%, up to 22.5%. And when the Fated Adventurer's elemental critical damage exceeds 20%, each additional 1% elemental critical damage increases damage by 0.5%."
+   ],
+   "weaponSystemNote": "Switch weapons any time by tapping the weapon on the equipment screen — you start with one weapon of every type, so all 8 can be tried without crafting. Switch class from the Adventurer screen, the edit-squad screen or the multiplayer lobby. No source documents switching weapons mid-hunt: plan your weapon before the hunt starts.",
+   "weaponSystemPoints": [
+    "Only adventurer who can switch weapon type AND class/type AND element — everyone else is locked to one weapon, one class, one preferred element.",
+    "Only Charge Blade user at launch — no named Adventurer uses the Charge Blade; it was not in the betas and joined at launch.",
+    "With the Heavy Bowgun, the Fated Adventurer can use EVERY ammo type; named HBG Adventurers cannot.",
+    "He has no unique weapon kit of his own: the weapon movesets he plays are the Fated versions (GameWith/Game8 publish them separately because named Adventurers' personal skills modify the same weapons differently)."
+   ],
+   "insightSummary": "Fated's progression system. Insights are unlocked with points earned through play — all of them can be unlocked for free (no gacha duplicates); Trial Expedition first-clears award Insight boxes covering every weapon type (150-stage challenge). Shared by all three Types: Power Charge (Ultimate charge +5%); Hunting Spirit (Damage +5%); Protection (Physical damage taken −8%); Harmony (All elemental resistances +8%). Assault picks: Monsoon — on Ultimate, skill damage +10% and part damage +10% for 20s; Cyclone — each part break gives +5% skill damage, stacking up to 5 times. Disruptor picks: Dust Storm — Ultimate daze duration +50%, dazed monsters take +10% damage; Soother — +15% skill damage vs enraged monsters. Support picks: Rising Spirit — Ultimate healing smoke also restores 10 stamina/s and +10% affinity; Battle Sustenance — healing smoke continuously revives downed Adventurers.",
+   "insightSummaryFa": "Insight سیستم پیشرفت اختصاصی Fated ـه: با امتیازهایی که از بازی‌کردن می‌گیری باز می‌شن و همه‌شون رایگان‌ان — نه گاچا می‌خوان، نه نسخهٔ تکراری کاراکتر. اولین پاک‌سازی هر مرحلهٔ Trial Expedition (چالش ۱۵۰ مرحله‌ای) جعبهٔ Insight برای همهٔ نوع‌های سلاح می‌ده. هر تایپ (Assault و Disruptor و Support) جفت Insight خودش رو داره و چند Insight هم بین هر سه تایپ مشترکه.",
+   "insightHighlights": [
+    "Great Sword — Focused Charge ★★★★★ — charging 20% faster; skill damage +5%/+10%/+20% by charge level",
+    "Long Sword — Spirit Release ★★★★★",
+    "Dual Blades — Enhanced Stamina ★★★★★ — Demon Mode stamina use halved, skill damage +15%",
+    "Hammer — Strike Frenzy ★★★★★ — Big Bang +30% skill damage, one fewer precise tap, Big Bang IV can loop",
+    "Lance — Counter Expert ★★★★★ — guard window 50% longer, counters +20% skill damage",
+    "Charge Blade — Vial Combustion ★★★★★ — vial explosions +20% damage",
+    "Heavy Bowgun — Internal Ammo ★★★★★ — Wyvernheart and gunpowder start fully stocked",
+    "Bow — Martial Harmony ★★★★★ — Rapid Fire/Power Shot/Slide Shot +50% range and 50% less stamina"
+   ],
+   "bestClassNote": "Disruptor, per Game8's dedicated best-class article (suppressions create free damage windows; best long-term damage). GameWith adds that types differ little in performance: Assault is easier damage when you control him; Disruptor or Support when he is a teammate — and its per-weapon pages usually recommend Disruptor for a main-controlled Fated.",
+   "bestStartersNote": "Heavy Bowgun first (top pick in GameWith SS tier and Game8's best-weapon statement; safe distance, all ammo, beginner-friendly), Long Sword as the melee starter (low barrier, very forgiving Foresight Slash parry — Game8)."
   }
  ],
  "monsters": [
@@ -2682,6 +2746,581 @@
    "tips": "Haze's gameplay revolves around accumulating Demon Gauge to enter Archdemon Mode, then spending it through Crimson Fang Slash to deal damage and activate Serpent's Shadow.",
    "tipsFa": "هیز روی نوار دیمون سواره: دیمون مود، Waning Moon و سه ضربهٔ اسکیل ۲ باید همه بخورن تا Archdemon فعال بشه؛ اون‌جا Crimson Fang رو تا خالی‌شدن نوار ادامه بده.",
    "source": "Game8"
+  },
+  {
+   "id": "rot-fated-great-sword",
+   "weapon": "GREAT_SWORD",
+   "adventurerId": "fated",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Tap Basic Attack twice: Charged Slash Lv1, then Strong Charged Slash Lv1 (weave Tackle in between if you don't have Focused Charge yet).",
+     "short": "Attack ×2 (tap)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "(Optional) Tackle (Skill 2) if the monster is about to attack or roar — it preserves your charge and prevents stagger.",
+     "short": "Tackle (optional)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Reach True Charged Slash and charge it to level 3.",
+     "short": "Hold Charge Lv3",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "At level 3 charge, Tackle twice (Skill 2) to perform Supreme Slash.",
+     "short": "Tackle ×2 → Supreme",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "(Optional) During the Supreme Slash animation, use non-combat actions: switch targets, activate your Buddy, or allies' Ultimates.",
+     "short": "Buddy / Ult (opt.)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "Immediately follow with Leaping Wide Slash (Skill 3) — its damage scales with your charge — then reposition.",
+     "short": "Skill 3 (Leap)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "Repeat the rotation.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Against agile monsters, don't charge the first two slashes — tap them quickly with a Tackle in between, charge only the third to Lv3, then double-Tackle into Supreme Slash. Guarding a hit and tapping Basic Attack skips straight to Strong Wide Slash.",
+   "tipsFa": "جلوی هیولاهای چابک دو ضربهٔ اول رو شارژ نکن؛ سریع بزن و بینشون Tackle برو، فقط ضربهٔ سوم رو تا سطح ۳ شارژ کن و با دو Tackle وارد Supreme Slash شو. اگه حمله‌ای رو گارد گرفتی، یه ضربهٔ معمولی تو رو مستقیم می‌بره Strong Wide Slash.",
+   "source": "Game8 + GameWith"
+  },
+  {
+   "id": "rot-fated-long-sword",
+   "weapon": "LONG_SWORD",
+   "adventurerId": "fated",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Full Basic Attack combo — or 3 Basic Attacks plus a Sidestep Slash — then Spirit Slash (Skill 1) ending in Spirit Roundslash to raise the Spirit Gauge by 1 level.",
+     "short": "Combo → Skill 1",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "If the monster attacks mid-combo, counter with Foresight Slash (Skill 2) and end with Spirit Roundslash.",
+     "short": "Skill 2 (counter)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "(Optional) After a Spirit Roundslash, hold Skill 2 to sheathe and use Iai Slash (Basic Attack) or Iai Spirit Slash (Skill 2) — best with Lingering Spirit unlocked.",
+     "short": "Hold Skill 2 (opt.)",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Repeat until the Spirit Gauge reaches level 3 (Red).",
+     "short": "Build to Red ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Spirit Helm Breaker (Skill 3) to spend the gauge for massive rupture damage, then Spirit Armor Cleave (Skill 3).",
+     "short": "Skill 3 (Helm Breaker)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "(Optional) With the Fang Thrust Insight, use Spirit Armor Cleave again.",
+     "short": "Skill 3 (opt.)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "Repeat the rotation.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "The goal is a Red gauge before you spend it. Sidestep Slash builds extra gauge and skips the first Spirit Slash; a parried Iai Spirit Slash grants +1 level and can gain 2 levels at once, and Spirit Armor Cleave's opening parry can refund its cost.",
+   "tipsFa": "هدفت اینه که قبل از خرج‌کردن، نوار روح رو قرمز کنی. Sidestep Slash نوار اضافه می‌سازه و Spirit Slash اول رو رد می‌کنه؛ پریِ موفق با Iai Spirit Slash یه سطح کامل می‌ده و گاهی دو سطح با هم. نوار قرمز که شد، Helm Breaker رو بزن و با Armor Cleave تمومش کن.",
+   "source": "Game8 + GameWith"
+  },
+  {
+   "id": "rot-fated-dual-blades",
+   "weapon": "DUAL_BLADES",
+   "adventurerId": "fated",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Activate Demon Mode (Skill 1) and approach your target.",
+     "short": "Skill 1 (Demon)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Use Dash Attack (Skill 2) to close the gap and deal damage.",
+     "short": "Skill 2 (Dash)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Use Demon Mode: Blade Dance I (Skill 3) on your target.",
+     "short": "Skill 3 (Dance I)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Continue using Blade Dance (Skill 3) until you reach the third attack of the skill.",
+     "short": "Skill 3 ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Once all attacks land and the Demon Gauge is completely filled, turn off Demon Mode and regain your stamina.",
+     "short": "Exit Demon Mode",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Game8 presents this as the opener: refilling the gauge after the first full fill unlocks Archdemon Mode — tap Skill 1 at max gauge to exit Demon Mode into Archdemon. In Archdemon, Demon Flurry (Skill 3) chains back into Demon Mode's final Blade Dance hit; save it for toppled or trapped monsters, and manage stamina (Dash Juice) — Demon Mode drains it fast.",
+   "tipsFa": "این اوپنر Fated با دابل بلیدزه: دیمون مود رو روشن کن، با داش بچسب و Blade Dance رو تا ضربهٔ سوم ادامه بده تا نوار کامل پر بشه. پرشدن دوم نوار، Archdemon رو باز می‌کنه؛ Demon Flurry رو برای هیولای افتاده یا گیرکرده نگه دار و حواست به استامینا باشه — دیمون مود زود خالیش می‌کنه.",
+   "source": "Game8 + GameWith"
+  },
+  {
+   "id": "rot-fated-hammer",
+   "weapon": "HAMMER",
+   "adventurerId": "fated",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Lock on to the monster's head — Hammer only aims there.",
+     "short": "Lock On (head)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Charge (Skill 1) up to charge level 3, closing the distance while charging (never get so close you eat a hit).",
+     "short": "Hold Skill 1 (Lv3)",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "(Optional) With the Continuum Insight, stop at level 2 and use Charged Upswing (Basic Attack or Skill 1) for quick damage and stun.",
+     "short": "Upswing (optional)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "After reaching level 3 charge, use Charge: Breakthrough (Skill 2) to enter Mighty Charge and raise the charge to level 4.",
+     "short": "Skill 2 (Breakthrough)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "(Optional) Near the monster with plenty of stamina, use Spinning Bludgeon (Skill 3) for more blunt damage and stun first.",
+     "short": "Skill 3 (optional)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "At level 4 charge, use Mighty Charged Smash (Basic Attack or Skill 1) — airborne, high blunt damage.",
+     "short": "Attack (Mighty Smash)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "Repeat until the monster is knocked down.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 8,
+     "action": "Once the monster is immobilised, perform Big Bang (Skill 3) 4 times with precise timing to execute another Charged Smash.",
+     "short": "Skill 3 ×4 (Big Bang)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 9,
+     "action": "Repeat the rotation.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Hammer has no guard, parry or Unwavering — only movement while charging; Mighty Charge lets you dodge without losing your charge level. Precise timing = tap when the white circle overlaps the red circle (tap slightly early for input lag). Only weapon that applies Stun (Game8).",
+   "tipsFa": "همر گارد و پری نداره؛ تنها دفاعت حرکت‌کردن موقع شارژه. تا وقتی دایرهٔ سفید روی دایرهٔ قرمز نیفتاده ضربه نزن و برای جبران لگ، یه ذره زودتر بزن. Mighty Charge می‌ذاره بدون از دست‌دادن سطح شارژ جاخالی بدی، و یادت باشه همر تنها سلاحیه که Stun می‌زنه — همیشه سر هیولا.",
+   "source": "Game8 + GameWith"
+  },
+  {
+   "id": "rot-fated-lance",
+   "weapon": "LANCE",
+   "adventurerId": "fated",
+   "steps": [
+    {
+     "order": 1,
+     "action": "(Optional) If you have room, open with Dash Attack (Skill 3) charged to level 3 before the fight for heavy damage.",
+     "short": "Skill 3 Dash Lv3 (opt.)",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Use Thrusts (Basic Attack) while waiting for the monster to attack.",
+     "short": "Attack (Thrusts)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "After each 3 Thrusts, use Guard Counter (Skill 2) and perform a fully charged Counter-Thrust (Basic Attack).",
+     "short": "Counter-Thrust (charged)",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Answer each attack with the correct guard: Guard (Skill 1) if you are mid-thrusts; Guard Counter (Skill 2) if the attack is predictable, aiming for a Counter Double Thrust.",
+     "short": "Guard / Counter",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Continue fishing for monster attacks and react with the appropriate guard skill.",
+     "short": "Fish & React ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "(Optional) Against an unblockable or AoE attack, use Power Guard (Skill 2) to endure it — follow with Counter Cross Slash if near, or Dash Attack (Skill 3) if far.",
+     "short": "Power Guard (opt.)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "Once the enemy is down, use Dash Attack (Skill 3) and run across its body, levelling the dash up to 3 for high damage.",
+     "short": "Skill 3 (Dash ×body)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 8,
+     "action": "Repeat the rotation.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Game8 guard table: Guard (Skill 1) vs fast attacks (swipes, bites, tackles); Guard Counter (Skill 2) vs predictable/telegraphed attacks (tail sweeps, roars, ground pounds); Power Guard vs multi-hit / AoE / unblockable. Power Guard absorbs power levels (Purple → White → Yellow → Red) that transfer into Dash Attack levels.",
+   "tipsFa": "لنس یعنی انتخاب گارد درست: حمله‌های سریع با Guard، حمله‌های قابل پیش‌بینی با Guard Counter و حمله‌های چندضربه‌ای و غیرقابل‌بلاک با Power Guard. هر سه Thrust یه کانتر شارژشده بزن و وقتی هیولا افتاد، Dash Attack سطح ۳ رو از روی بدنش رد کن.",
+   "source": "Game8 + GameWith"
+  },
+  {
+   "id": "rot-fated-charge-blade",
+   "weapon": "CHARGE_BLADE",
+   "adventurerId": "fated",
+   "steps": [
+    {
+     "order": 1,
+     "action": "In Sword Mode, use your Basic Attack combo string until you fill up your Sword Energy gauge.",
+     "short": "Attack (fill gauge)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Once Sword Energy is full, press Skill 2 twice to transfer the energy to your sword and shield — stronger guard, additional damage procs, and no more bouncing off the monster.",
+     "short": "Skill 2 ×2 (empower)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Fill the Sword Energy gauge once again, then convert it to Phials (optionally top the gauge to full first for a smoother rotation later).",
+     "short": "Convert to Phials",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "After obtaining your Phials, press Skill 3 twice, then cancel with Skill 2 before the Amped Element Discharge animation — this powers up and switches you to Axe Mode (Power Axe Mode).",
+     "short": "Skill 3 ×2 → Skill 2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Spam Basic Attacks in Axe Mode, holding the Basic Attack button while swinging to deal multiple instances of damage — stay in Axe Mode as long as you can.",
+     "short": "Hold Attack (Axe)",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "During a long opening, activate Skill 3 to perform Axe: Ultra Amped Element Discharge, consuming your Phials for huge damage.",
+     "short": "Skill 3 (Ultra)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "If you charged Sword Energy to full before switching to Axe Mode, press Skill 3 after the Ultra Amped Element Discharge to instantly charge your Phials again.",
+     "short": "Skill 3 (recharge)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 8,
+     "action": "Swap back to Sword Mode to refill Sword Energy — or keep dealing damage in Axe Mode if you have the Guard Release Insight activated.",
+     "short": "Swap / Stay in Axe",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Principles from the same page: use Guard Points to gain Phials (a Perfect Guard grants 3 Vials), Perfect Dodge while in Axe Mode, and cancel an Amped Discharge with Basic Attack to return to powered Axe Mode at the cost of 1 Phial. After a Perfect Evade in Axe Mode, hold Basic Attack for a charged multi-hit sweeping strike (consumes 1 Phial; another Perfect Evade restores it).",
+   "tipsFa": "چرخهٔ چارج بلید Fated دو فازه: تو حالت شمشیر انرژی جمع کن، دوبار اسکیل ۲ برای تقویت شمشیر و سپر، بعد فیال‌ها رو پر کن و با لغو Discharge برو Power Axe. گارد پرفکت سه فیال می‌ده؛ تا وقتی بازه تو Axe Mode بمون و Ultra رو برای پنجره‌های طولانی نگه دار.",
+   "source": "Game8 + GameWith"
+  },
+  {
+   "id": "rot-fated-heavy-bowgun",
+   "weapon": "HEAVY_BOWGUN",
+   "adventurerId": "fated",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Once you have unlocked Internal Ammo, start with a clip of Special Ammo first — ideally Slicing or Sticky Ammo, depending on the monster's resistance to stun.",
+     "short": "Special Ammo clip",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "After spending a clip, swap to Wyvernheart and empty your ammo to deal massive damage.",
+     "short": "Wyvernheart (empty)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Swap back to Special Ammo and fire it for as long as you can.",
+     "short": "Special Ammo ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Swap to Normal Ammo to replenish Special Ammo and your Wyvernheart gauge.",
+     "short": "Normal Ammo (refill)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Aim for Perfect Guards to reload ammo quickly.",
+     "short": "Perfect Guard (reload)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Hold Skill 2 to swap between all ammo types. A Guard (Skill 1) timed just before a hit instantly reloads ALL loaded ammo — better than the passive auto-guard. Best Special Ammo: Slicing (primary) and Sticky. Hold Basic Attack to fire continuously; stay in Critical Distance (orange reticle). Only the Fated Adventurer can use every ammo type.",
+   "tipsFa": "با Fated به همهٔ مهمات دسترسی داری: از Special Ammo شروع کن (Slicing برای دمیج، Sticky برای سر و استان)، خشاب که خالی شد Wyvernheart رو خالی کن و با Normal Ammo هر دو رو شارژ کن. گاردِ سرِ وقت همهٔ مهمات لودشده رو ریلود می‌کنه و همیشه تو فاصلهٔ بحرانی (نشانهٔ نارنجی) وایسا.",
+   "source": "Game8 + GameWith"
+  },
+  {
+   "id": "rot-fated-bow",
+   "weapon": "BOW",
+   "adventurerId": "fated",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Use Power Shot (Skill 2) four times to deal damage and reach the maximum charge level.",
+     "short": "Skill 2 ×4",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Use Slide Shot (Skill 1) to retain your charge level, then follow up with another Power Shot or a basic charged shot.",
+     "short": "Skill 1 → Shot",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Use Rapid Fire (Basic Attack) four times to reach the maximum charge level, while waiting for your stamina to recover.",
+     "short": "Attack ×4 (Rapid)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Use Slide Shot (Skill 1) to retain your charge level, then continue with either Power Shot or a Charged Shot, depending on your positioning.",
+     "short": "Skill 1 → Shot",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Repeat as necessary until you have filled the Dragon Coating gauge.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "Use Dragon Barrage: Rain (Skill 3) once the Dragon Coating gauge is full.",
+     "short": "Skill 3 (Barrage)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Power Shot is the main gauge builder (most damage of the standard skills); Rapid Fire is filler while stamina recovers or when Power Shot is too dangerous. Dragon Barrage: Rain deals damage over a few seconds and mobile monsters can walk out of it — save it for toppled, exhausted or stationary targets.",
+   "tipsFa": "Power Shot سازندهٔ اصلی نوار شارژه؛ چهار بار بزنش، با Slide Shot سطح شارژ رو نگه دار و موقع برگشتن استامینا با Rapid Fire پر کن. Dragon Barrage رو فقط روی هیولای افتاده، خسته یا ثابت خالی کن — هیولای متحرک از بارش تیرها بیرون می‌ره.",
+   "source": "Game8 + GameWith"
   }
  ]
 }

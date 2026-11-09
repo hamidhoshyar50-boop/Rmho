@@ -27,6 +27,14 @@ The app's content lives in a versioned JSON data bundle, **separate from the cod
 new Adventurers, monsters, team comps, rotations and images are delivered as
 *data updates* — no new APK install required.
 
+## What's in v0.6.0
+
+- **The Fated Adventurer, complete** — your own hunter gets a full profile: bilingual description, rarity (SSR) and max stats (Attack 200 · Defense 490), signature traits (Masterful Adventurer, Daytime Hunter, Pioneer Follow-Up, the affinity passive), the weapon-system notes (switch on the equipment screen; the only Charge Blade user; every Heavy Bowgun ammo), the Insight progression system with the top Insight per weapon, full strengths & weaknesses, best class and best starter weapons.
+- **Ultimates by Type** — Fated's Ultimate is decided by his Type (class), never by his weapon, so the profile shows all three forms side by side: Assault — Explosive Shot: Spikes, Disruptor — Explosive Shot (flash), Support — Explosive Shot (healing), with effects, cooldown and energy costs.
+- **Coach: Fated × all 8 weapons** — 8 new step-by-step rotations (55 steps) from Game8's main-character (MC) weapon guides, each with English + Persian coach tips. The Coach now holds **21 rotations** (140 steps).
+- **Grouped Fated coach UX** — one Fated entry in the Coach list opens the trainer with an in-place weapon selector covering all 8 weapons, keeping the character → weapon → rotation path together; Watch / Follow / Test work exactly as before.
+- Data v5: ships in the bundle and as a remote data update.
+
 ## What's in v0.5.0
 
 - **Rotation Coach — Phase 1** — the Coach tab is live: the published best rotation for all **13 Adventurers** (85 steps, sourced from Game8), each with a coach tip in English and fluent Persian.
@@ -67,6 +75,7 @@ Data sources: mhodb, GameWith and Game8. Weakness tables list the top published 
 - [ ] Items & materials database with search
 - [x] Team compositions per monster and play style
 - [x] Rotation guides as structured, step-by-step timelines
+- [x] Fated Adventurer: complete profile + Coach rotations for all 8 weapons
 - [x] **Coach — phase 1:** rotation practice / trainer mode (Watch / Follow / Test)
 - [ ] **Coach — phase 2:** fight-recording analysis that flags rotation mistakes
       (screen capture confirmed open on the launch build — a recorded hunt plays back fine)

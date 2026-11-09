@@ -83,7 +83,7 @@ fun CoachScreen(data: DataBundle, onOpenRotation: (String) -> Unit) {
                 )
             }
         }
-        items(data.rotations) { rot ->
+        items(data.rotations.filter { it.adventurerId != "fated" }) { rot ->
             val adv = data.adventurers.firstOrNull { it.id == rot.adventurerId }
             Card(
                 modifier = Modifier.fillMaxWidth(),
@@ -128,6 +128,51 @@ fun CoachScreen(data: DataBundle, onOpenRotation: (String) -> Unit) {
                 }
             }
         }
+        // Fated is ONE character with 8 weapon rotations: a single grouped
+        // entry here; the weapon is picked inside the practice screen.
+        val fatedRots = data.rotations.filter { it.adventurerId == "fated" }
+        if (fatedRots.isNotEmpty()) {
+            item {
+                val adv = data.adventurers.firstOrNull { it.id == "fated" }
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = { onOpenRotation(fatedRots.first().id) },
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.surface
+                    )
+                ) {
+                    Row(
+                        modifier = Modifier.padding(16.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        if (adv != null) {
+                            GoldPortrait(adv.imageUrl, adv.nameEn, 64.dp)
+                            Spacer(Modifier.width(14.dp))
+                        }
+                        Column(Modifier.weight(1f)) {
+                            Text(
+                                "Fated Adventurer",
+                                style = MaterialTheme.typography.titleMedium,
+                                fontWeight = FontWeight.Bold
+                            )
+                            Text(
+                                "All 8 weapons • ${fatedRots.sumOf { it.steps.size }} steps",
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.secondary
+                            )
+                            Spacer(Modifier.height(4.dp))
+                            Text(
+                                "Your own hunter — one rotation per weapon. Pick a weapon inside and train it.",
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                maxLines = 2,
+                                overflow = TextOverflow.Ellipsis
+                            )
+                        }
+                    }
+                }
+            }
+        }
         item { Spacer(Modifier.height(8.dp)) }
     }
 }
@@ -137,29 +182,40 @@ private enum class CoachMode { WATCH, FOLLOW, TEST }
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun CoachPracticeScreen(data: DataBundle, rotationId: String, onBack: () -> Unit) {
-    val rot = data.rotations.firstOrNull { it.id == rotationId }
-    if (rot == null) {
+    val entry = data.rotations.firstOrNull { it.id == rotationId }
+    if (entry == null) {
         Column(Modifier.fillMaxSize().padding(20.dp)) {
             Text("Rotation not found.", style = MaterialTheme.typography.bodyLarge)
             TextButton(onClick = onBack) { Text("Back") }
         }
         return
     }
+    // Fated carries one rotation per weapon: the weapon selector on this
+    // screen switches currentId in place; all practice state below is
+    // keyed on currentId, so the Watch/Follow/Test flow resets cleanly
+    // per weapon without touching navigation.
+    var currentId by remember(rotationId) { mutableStateOf(rotationId) }
+    val rot = data.rotations.firstOrNull { it.id == currentId } ?: entry
     val adv = data.adventurers.firstOrNull { it.id == rot.adventurerId }
-    val steps = remember(rot.id) { rot.steps.sortedBy { it.order } }
-    val padLabels = remember(rot.id) {
+    val siblings = remember(data, rot.adventurerId) {
+        if (rot.adventurerId == "fated") {
+            data.rotations.filter { it.adventurerId == "fated" }
+        } else emptyList()
+    }
+    val steps = remember(currentId) { rot.steps.sortedBy { it.order } }
+    val padLabels = remember(currentId) {
         steps.map { stepLabel(it) }.distinct()
     }
 
-    var mode by remember(rot.id) { mutableStateOf(CoachMode.WATCH) }
-    var index by remember(rot.id, mode) { mutableIntStateOf(0) }
-    var playing by remember(rot.id, mode) { mutableStateOf(false) }
-    var flash by remember(rot.id, mode) { mutableStateOf<String?>(null) } // "ok" | "bad"
-    var hint by remember(rot.id, mode) { mutableStateOf("") }
-    var wrongTaps by remember(rot.id, mode) { mutableIntStateOf(0) }
-    var startedAt by remember(rot.id, mode) { mutableLongStateOf(0L) }
-    var lastTapAt by remember(rot.id, mode) { mutableLongStateOf(0L) }
-    val stepTimes = remember(rot.id, mode) { mutableStateListOf<Long>() }
+    var mode by remember(currentId) { mutableStateOf(CoachMode.WATCH) }
+    var index by remember(currentId, mode) { mutableIntStateOf(0) }
+    var playing by remember(currentId, mode) { mutableStateOf(false) }
+    var flash by remember(currentId, mode) { mutableStateOf<String?>(null) } // "ok" | "bad"
+    var hint by remember(currentId, mode) { mutableStateOf("") }
+    var wrongTaps by remember(currentId, mode) { mutableIntStateOf(0) }
+    var startedAt by remember(currentId, mode) { mutableLongStateOf(0L) }
+    var lastTapAt by remember(currentId, mode) { mutableLongStateOf(0L) }
+    val stepTimes = remember(currentId, mode) { mutableStateListOf<Long>() }
     val finished = index >= steps.size
 
     fun reset() {
@@ -229,7 +285,9 @@ fun CoachPracticeScreen(data: DataBundle, rotationId: String, onBack: () -> Unit
             }
             Column {
                 Text(
-                    adv?.nameEn ?: "Rotation",
+                    if (adv != null && adv.weapon == "ANY" && rot.weapon != null) {
+                        "${adv.nameEn} — ${weaponLabel(rot.weapon ?: "")}"
+                    } else adv?.nameEn ?: "Rotation",
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold
                 )
@@ -241,6 +299,29 @@ fun CoachPracticeScreen(data: DataBundle, rotationId: String, onBack: () -> Unit
             }
         }
         Spacer(Modifier.height(14.dp))
+
+        // Weapon selector (Fated only): one character, 8 rotations.
+        if (siblings.size > 1) {
+            Text(
+                "Weapon — the Fated Adventurer fights with all 8",
+                style = MaterialTheme.typography.titleSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            Spacer(Modifier.height(8.dp))
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                siblings.forEach { sib ->
+                    FilterChip(
+                        selected = sib.id == rot.id,
+                        onClick = { currentId = sib.id },
+                        label = { Text(weaponLabel(sib.weapon ?: "")) }
+                    )
+                }
+            }
+            Spacer(Modifier.height(14.dp))
+        }
 
         // Mode picker
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {

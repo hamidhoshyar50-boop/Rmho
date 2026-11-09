@@ -30,7 +30,21 @@ data class Adventurer(
     val skills: List<Skill> = emptyList(),
     val ultimate: Skill? = null,
     val strengths: List<String> = emptyList(),
-    val weaknesses: List<String> = emptyList()
+    val weaknesses: List<String> = emptyList(),
+    // Stage 6 (Fated): rich profile sections. All defaulted so older
+    // data bundles (and other Adventurers) parse unchanged.
+    val rarity: String = "",
+    val attack: Int? = null,
+    val defense: Int? = null,
+    val typeUltimates: List<TypeUltimate> = emptyList(),
+    val signatureTraits: List<String> = emptyList(),
+    val weaponSystemNote: String = "",
+    val weaponSystemPoints: List<String> = emptyList(),
+    val insightSummary: String = "",
+    val insightSummaryFa: String = "",
+    val insightHighlights: List<String> = emptyList(),
+    val bestClassNote: String = "",
+    val bestStartersNote: String = ""
 )
 
 @Serializable
@@ -39,6 +53,18 @@ data class Skill(
     val type: String = "ACTIVE",    // ACTIVE / PASSIVE / ULTIMATE
     val cooldownSec: Double? = null,
     val description: String = ""
+)
+
+/** An Ultimate keyed by class Type (the Fated Adventurer's three forms).
+ *  The Type decides the Ultimate — the equipped weapon never does. */
+@Serializable
+data class TypeUltimate(
+    val type: String,               // ASSAULT / DISRUPTOR / SUPPORT
+    val nameEn: String,
+    val effect: String = "",
+    val cooldownSec: Double? = null,
+    val initialEnergy: Int? = null,
+    val maxEnergy: Int? = null
 )
 
 @Serializable
