@@ -22,6 +22,9 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Run unit tests (aligner regression gate)
+        run: ./gradlew testDebugUnitTest --no-daemon --stacktrace
+
       - name: Restore signing key
         env:
           RMHO_KEYSTORE_B64: ${{ secrets.RMHO_KEYSTORE_B64 }}

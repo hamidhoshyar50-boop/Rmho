@@ -27,6 +27,11 @@ The app's content lives in a versioned JSON data bundle, **separate from the cod
 new Adventurers, monsters, team comps, rotations and images are delivered as
 *data updates* — no new APK install required.
 
+## What's in v0.7.1
+
+- **Hotfix — hunt analysis freeze fixed.** v0.7.0's Coach analysis could hang at "Analysing… 99%" (and trigger an Android "isn't responding" dialog) when the end of a hunt contained only button presses the chosen rotation never expects — the step aligner looped forever on that input, on the main thread. The aligner now always terminates: a rotation cycle that matches nothing ends the analysis and counts as not-reached (never penalised), alignment runs off the main thread, and a JVM regression suite covering the exact hang repro runs in CI before every build.
+- Data stays v5 — no data change.
+
 ## What's in v0.7.0
 
 - **Coach — Phase 2: Analyse a hunt** — import a screen recording of a hunt and the Coach compares your on-screen button inputs against the rotation you followed: matched steps, **skipped steps**, out-of-order signals and rough timing, plus full-cycle counts across the whole hunt.

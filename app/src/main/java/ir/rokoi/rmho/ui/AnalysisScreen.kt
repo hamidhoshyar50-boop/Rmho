@@ -247,7 +247,12 @@ fun HuntAnalysisScreen(data: DataBundle, rotationId: String, onBack: () -> Unit)
                                         HuntAnalyzer(context).analyse(uri) { p -> progress = p }
                                     }
                                     detection = det
-                                    report = HuntAligner.align(det.events, rot)
+                                    progress = 1f
+                                    // Alignment runs OFF the main thread —
+                                    // post-processing must never block the UI.
+                                    report = withContext(Dispatchers.Default) {
+                                        HuntAligner.align(det.events, rot)
+                                    }
                                 } catch (e: kotlinx.coroutines.CancellationException) {
                                     error = "Analysis cancelled."
                                 } catch (e: Exception) {

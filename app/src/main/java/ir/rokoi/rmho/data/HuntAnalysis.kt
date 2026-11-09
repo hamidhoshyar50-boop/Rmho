@@ -62,6 +62,11 @@ data class AlignmentReport(
 
 object HuntAligner {
 
+    // Hard cap on alignment cycles: with the zero-match stop in align()
+    // a hunt can never legitimately need this many; it exists purely
+    // so align() provably terminates on ANY input.
+    private const val MAX_CYCLES = 10000
+
     private val TOKEN = Regex(
         "(ultimate|burst|skills\\s*1\\+2|skill\\s*1|skill\\s*2|skill\\s*3|" +
             "attack(?:\\s*×\\s*(\\d+))?|dash|evade|parry)"
@@ -130,6 +135,11 @@ object HuntAligner {
      * sequence repeats in cycles. A step is SKIPPED when later events
      * exist but none matches inside its window; when the events run
      * out mid-cycle, the remaining steps are NOT_REACHED (unpenalised).
+     * A cycle that completes with zero matches ends the alignment:
+     * the rotation never (re)started in the remaining events, so that
+     * cycle also counts as NOT_REACHED — and align() always
+     * terminates (the v0.7.0 aligner looped forever on exactly that
+     * input; see HuntAlignerTest).
      */
     fun align(
         events: List<HuntEvent>,
@@ -157,9 +167,14 @@ object HuntAligner {
         val gaps = mutableListOf<Double>()
         val firstCycle = mutableListOf<StepResult>()
         var done = false
+        var cycleGuard = 0
 
         while (!done) {
+            // Belt-and-braces termination guard (see MAX_CYCLES).
+            if (++cycleGuard > MAX_CYCLES) break
             var cycleMatched = 0
+            var cycleSkipped = 0
+            val cycleFirstStart = firstCycle.size
             var idx = 0
             while (idx < expected.size) {
                 val item = expected[idx]
@@ -196,6 +211,7 @@ object HuntAligner {
                     ei < ev.size -> {
                         // events remain, but none matched in the window
                         skipped++
+                        cycleSkipped++
                         if (cycles == 0) firstCycle.add(
                             StepResult(item.stepOrder, item.stepLabel, item.cls, StepOutcome.SKIPPED)
                         )
@@ -218,6 +234,26 @@ object HuntAligner {
                         done = true
                     }
                 }
+            }
+            if (!done && cycleMatched == 0) {
+                // A whole cycle scanned with NO match at all: the
+                // rotation never (re)started in the remaining events
+                // (e.g. a tail of only Dash presses against a rotation
+                // with no dash steps). Looping again would never
+                // terminate — ei does not advance on skipped steps —
+                // so stop here, and do not penalise: this cycle counts
+                // as NOT_REACHED, not skipped.
+                skipped -= cycleSkipped
+                notReached += cycleSkipped
+                if (cycles == 0) {
+                    for (k in cycleFirstStart until firstCycle.size) {
+                        val r = firstCycle[k]
+                        if (r.outcome == StepOutcome.SKIPPED) {
+                            firstCycle[k] = r.copy(outcome = StepOutcome.NOT_REACHED)
+                        }
+                    }
+                }
+                done = true
             }
             if (cycleMatched > 0) cycles++
             if (ei >= ev.size) done = true
