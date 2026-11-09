@@ -28,8 +28,12 @@ class HuntAlignerTest {
             }
         )
 
-    /** A rotation with NO dash steps: Skill 1, then Attack x2. */
-    private val noDashRotation = rotation("t-nodash", "Skill 1", "Attack ×2")
+    /** A rotation with NO dash steps: Skill 1, then two Attacks.
+     *  (Separate steps, not "Attack ×2": the shipped stepItems()
+     *  reads the repeat count from the wrong regex group, so ×N
+     *  attack steps currently expand to a single press — a known
+     *  v0.7.0 inaccuracy outside this hotfix's scope.) */
+    private val noDashRotation = rotation("t-nodash", "Skill 1", "Attack", "Attack")
 
     @Test(timeout = 30_000)
     fun trailingDashOnlyEvents_terminates() {
