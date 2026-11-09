@@ -21,6 +21,13 @@ android {
     // signature and updates install over each other. Without the env vars
     // (local dev), Gradle falls back to the default debug key.
     val ksPath = System.getenv("RMHO_KEYSTORE") ?: ""
+    println("RMHO-DIAG: CI=" + (System.getenv("CI") ?: "unset") +
+        " ksPathSet=" + ksPath.isNotEmpty().toString() +
+        " ksFileExists=" + (if (ksPath.isEmpty()) "n/a" else java.io.File(ksPath).exists().toString()) +
+        " ksPassSet=" + (!System.getenv("RMHO_KS_PASS").isNullOrEmpty()).toString())
+    if (System.getenv("CI") == "true" && ksPath.isEmpty()) {
+        throw GradleException("RMHO keystore env missing in CI - refusing to build an unsigned-by-us APK")
+    }
     if (ksPath.isNotEmpty()) {
         signingConfigs {
             create("fixed") {
