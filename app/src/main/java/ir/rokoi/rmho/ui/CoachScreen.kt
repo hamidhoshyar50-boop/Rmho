@@ -53,7 +53,7 @@ import kotlinx.coroutines.delay
 /** Coach tab — Phase 1: rotation trainer (Watch → Follow → Test). */
 
 @Composable
-fun CoachScreen(data: DataBundle, onOpenRotation: (String) -> Unit) {
+fun CoachScreen(data: DataBundle, onOpenRotation: (String) -> Unit, onOpenAnalysis: () -> Unit = {}) {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
@@ -74,6 +74,30 @@ fun CoachScreen(data: DataBundle, onOpenRotation: (String) -> Unit) {
                 "اینجا روتیشنِ هر ادونچرر رو قدم‌به‌قدم یاد می‌گیری: اول تماشا کن، بعد روی دکمه‌های تمرینی همراهش برو، و آخرش بدون راهنما خودت رو امتحان کن. این روتیشن‌ها از راهنماهای معتبر بازی جمع شده‌اند و بدون آپدیت برنامه هم تازه می‌شوند.",
                 title = "مربی روتیشن"
             )
+        }
+        item {
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = { onOpenAnalysis() },
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surfaceVariant
+                )
+            ) {
+                Column(Modifier.padding(16.dp)) {
+                    Text(
+                        "Analyse a hunt — NEW",
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.secondary
+                    )
+                    Spacer(Modifier.height(4.dp))
+                    Text(
+                        "Coach Phase 2: import a screen recording of a hunt and get a mistake report — which rotation steps you hit, which you skipped, and your rough timing. Judged from the on-screen buttons only.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
         }
         if (data.rotations.isEmpty()) {
             item {

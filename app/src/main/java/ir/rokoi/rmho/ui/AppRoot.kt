@@ -393,9 +393,28 @@ fun AppRoot() {
                             }
                         }
                         composable("coach") {
-                            CoachScreen(data) { id ->
-                                navController.navigate("coach/$id")
-                            }
+                            CoachScreen(
+                                data,
+                                onOpenRotation = { id ->
+                                    navController.navigate("coach/$id")
+                                },
+                                onOpenAnalysis = {
+                                    navController.navigate("coach/analyse")
+                                }
+                            )
+                        }
+                        composable("coach/analyse") {
+                            AnalysisPickerScreen(
+                                data,
+                                onPick = { id ->
+                                    navController.navigate("coach/analyse/$id")
+                                },
+                                onBack = { navController.popBackStack() }
+                            )
+                        }
+                        composable("coach/analyse/{id}") { entry ->
+                            val id = entry.arguments?.getString("id") ?: ""
+                            HuntAnalysisScreen(data, id) { navController.popBackStack() }
                         }
                         composable("coach/{id}") { entry ->
                             val id = entry.arguments?.getString("id") ?: ""

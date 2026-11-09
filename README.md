@@ -27,6 +27,14 @@ The app's content lives in a versioned JSON data bundle, **separate from the cod
 new Adventurers, monsters, team comps, rotations and images are delivered as
 *data updates* — no new APK install required.
 
+## What's in v0.7.0
+
+- **Coach — Phase 2: Analyse a hunt** — import a screen recording of a hunt and the Coach compares your on-screen button inputs against the rotation you followed: matched steps, **skipped steps**, out-of-order signals and rough timing, plus full-cycle counts across the whole hunt.
+- **On-device video analysis** — the recording is decoded sequentially on the phone (MediaCodec; nothing is uploaded) and button presses are detected by frame-differencing inside the action-button cluster, calibrated on a real 1280×576 hunt recording. Red screen-flash spikes are reported as **part-break moment candidates** (the moment, never which part).
+- **Honest by design** — skill steps match any skill button (skill icons change per weapon), hold length is not measured yet, and the report states plainly what it cannot judge: positioning, i-frames and damage. Steps the recording never reached are not penalised.
+- Recording inside the app (MediaProjection) is deliberately deferred — import-only in v1 keeps the feature free of capture consent friction and foreground-service failure modes.
+- Data stays v5 — no data change was needed.
+
 ## What's in v0.6.0
 
 - **The Fated Adventurer, complete** — your own hunter gets a full profile: bilingual description, rarity (SSR) and max stats (Attack 200 · Defense 490), signature traits (Masterful Adventurer, Daytime Hunter, Pioneer Follow-Up, the affinity passive), the weapon-system notes (switch on the equipment screen; the only Charge Blade user; every Heavy Bowgun ammo), the Insight progression system with the top Insight per weapon, full strengths & weaknesses, best class and best starter weapons.
@@ -77,8 +85,8 @@ Data sources: mhodb, GameWith and Game8. Weakness tables list the top published 
 - [x] Rotation guides as structured, step-by-step timelines
 - [x] Fated Adventurer: complete profile + Coach rotations for all 8 weapons
 - [x] **Coach — phase 1:** rotation practice / trainer mode (Watch / Follow / Test)
-- [ ] **Coach — phase 2:** fight-recording analysis that flags rotation mistakes
-      (screen capture confirmed open on the launch build — a recorded hunt plays back fine)
+- [x] **Coach — phase 2:** fight-recording analysis that flags rotation mistakes
+      (v1: import a screen recording; on-device button-press detection + step alignment)
 - [ ] **Coach — phase 3:** live on-screen overlay guide during hunts
       (display-only manual-sync design; you always press the buttons yourself)
 - [x] In-app update check for new APK releases

@@ -1,8 +1,1 @@
-{
- "dataVersion": 5,
- "apkVersionCode": 7,
- "apkVersionName": "0.6.0",
- "apkUrl": "https://github.com/hamidhoshyar50-boop/Rmho/releases/download/v0.6.0/Rmho.apk",
- "notesEn": "The Fated update: your own hunter gets a complete profile — Ultimates by Type, the Insight system, signature traits, best class & starter weapons — and the Coach gains Fated rotations for all 8 weapons (21 rotations in total).",
- "notesFa": "اپدیت Fated رسید: شخصیت اصلی پروفایل کامل گرفت — اولتیمیت‌ها بر اساس تایپ، سیستم Insight، ویژگی‌های اختصاصی، بهترین کلاس و سلاح‌های شروع — و مربی برای هر ۸ سلاح Fated روتیشن گرفت؛ مجموع روتیشن‌ها شد ۲۱."
-}
+{"apkUrl":"https://github.com/hamidhoshyar50-boop/Rmho/releases/download/v0.7.0/Rmho.apk","apkVersionCode":8,"apkVersionName":"0.7.0","dataVersion":5,"notesEn":"Coach Phase 2 is here: analyse a hunt. Import a screen recording of a hunt and the Coach checks your on-screen button inputs against the rotation — matched steps, skipped steps and rough timing, all on-device.","notesFa":"فاز ۲ مربی رسید: تحلیل شکار. ویدیوی ضبط‌شدهٔ یک شکار رو وارد کن و مربی ورودی‌های دکمه‌هات رو با روتیشن مقایسه می‌کنه — قدم‌های درست، قدم‌های جاافتاده و زمان‌بندی تقریبی، همه روی خود گوشی."}
