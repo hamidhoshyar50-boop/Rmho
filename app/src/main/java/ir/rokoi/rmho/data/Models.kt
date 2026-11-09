@@ -72,13 +72,17 @@ data class RotationGuide(
     val weapon: String? = null,
     val adventurerId: String? = null,
     val steps: List<RotationStep> = emptyList(),
-    val tips: String = ""
+    val tips: String = "",
+    val tipsFa: String = "",
+    val source: String = ""
 )
 
 @Serializable
 data class RotationStep(
     val order: Int,
     val action: String,
+    val short: String = "",          // short pad-button label, e.g. "Skill 1", "Ultimate", "Attack ×3"
+    val input: String = "TAP",       // TAP / HOLD / SWIPE
     val timestampSec: Double? = null,
     val targetPart: String? = null,
     val notes: String = ""

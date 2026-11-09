@@ -1,5 +1,5 @@
 {
- "dataVersion": 3,
+ "dataVersion": 4,
  "adventurers": [
   {
    "id": "midori",
@@ -1787,5 +1787,901 @@
    ]
   }
  ],
- "rotations": []
+ "rotations": [
+  {
+   "id": "rot-midori",
+   "weapon": "LONG_SWORD",
+   "adventurerId": "midori",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Build your Spirit Gauge by holding the Skill 1 button, then release for a forward slash that raises your Spirit Level.",
+     "short": "Hold Skill 1",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Activate Skill 2 (Blade of Truth) to raise your Spirit Gauge Level. Repeat step 1 or land Basic Attacks until you reach Level 3.",
+     "short": "Skill 2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Use Perfect Evade at every opportunity to reach Level 3 faster, then use Skill 2 (Blade of Truth) again for another level.",
+     "short": "Perfect Evade",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Trigger all squad buffs and enemy debuffs.",
+     "short": "Squad Buffs",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Cast Midori's Ultimate if available.",
+     "short": "Ultimate",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "Chain Skill 3 (Moment of Insight) three times, timed during enemy attack animations to parry — press while the circle is in the red area for even more damage.",
+     "short": "Skill 3 ×3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Midori's rotation is about building and levelling her Spirit Gauge as fast as possible, then cashing out with her Ultimate and the Skill 3 chain.",
+   "tipsFa": "کلید کار میدوری نوار روحشه: با نگه‌داشتن اسکیل ۱ و جاخالی‌های تمیز سریع برسونش به سطح ۳، بعد باف‌های تیم و دباف‌ها رو فعال کن و اولتیمیت و زنجیرهٔ اسکیل ۳ رو روی هیولا خالی کن. اسکیل ۳ رو وسط انیمیشن حملهٔ هیولا بزن تا پری بسازه.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-pyro",
+   "weapon": "GREAT_SWORD",
+   "adventurerId": "pyro",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Tap Basic Attack once for a quick Charged Slash without charging it. What comes next depends on what the monster does.",
+     "short": "Attack (tap)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Read the monster: a quick Strong Charged Slash if a blockable hit is coming; charge to the orange bar if it stays idle; Heat Tackle (Skill 1) to parry an unblockable attack.",
+     "short": "Strong Slash / Parry",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "(Optional) If the monster moves out of range while you charge Fortifying Slash, use Reckless Charge (Skill 2) to reposition and keep the charge.",
+     "short": "Skill 2 (optional)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "At Fervor Level 3, hold Fortifying Slash (Skill 3) to max charge — or let the monster's hit finish the charge — then release for massive airborne damage.",
+     "short": "Hold Skill 3",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "If you fail a parry with Heat Tackle, Pyro's Fervor Level resets to 1. To protect your Fervor, use Reckless Charge Slash instead.",
+   "tipsFa": "پایرو با خوندن حرکت هیولا زندگی می‌کنه؛ اگه پریِ Heat Tackle رو خراب کنی، سطح Fervor برمی‌گرده به ۱. وقتی هیولا آرومه شارژ رو تا نوار نارنجی نگه دار، وقتی نزدیکه با پری جواب بده.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-luka",
+   "weapon": "BOW",
+   "adventurerId": "luka",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Use Thunderous Spin (Skill 1) to deal damage and gain a Thunder Coating.",
+     "short": "Skill 1",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Precise-Tap Thunderous Spin (Skill 1) again to reposition and gain another Thunder Coating.",
+     "short": "Skill 1 (precise)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Use Arc Slash (Skill 2) to reposition, gain a Thunder Coating and regain stamina.",
+     "short": "Skill 2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Repeat Skills 1 and 2 until you hold 4 Thunder Coatings.",
+     "short": "Skills 1+2 ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Use Swift Volley (Skill 3) to expend a Thunder Coating.",
+     "short": "Skill 3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "Precise-Tap Swift Volley (Skill 3) three more times to expend all Thunder Coatings.",
+     "short": "Skill 3 ×3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "Repeat the rotation.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Luka's loop: Thunderous Spin generates Thunder Coatings, Arc Slash tops up stamina, and once four Coatings are stored, Swift Volley spends them one after another.",
+   "tipsFa": "چرخهٔ لوکا ساده‌ست: اسکیل ۱ و ۲ رو بچرخون تا چهار پوشش رعدی جمع بشه، بعد همه رو با اسکیل ۳ خالی کن. اسکیل ۲ استامینا رو هم برمی‌گردونه، پس هر وقت نفست گرفت همون رو بزن.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-pepper",
+   "weapon": "HEAVY_BOWGUN",
+   "adventurerId": "pepper",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Fire Basic Attacks until the magazine is empty to secure 2 points of Concentration.",
+     "short": "Attack (full mag)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Use Bouncy Dash toward the monster to instantly reload and launch into the air.",
+     "short": "Bouncy Dash",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "While airborne, fire Basic Attacks twice, followed immediately by your Burst, Aerial Blast.",
+     "short": "Attack ×2 → Burst",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Before Aerial Blast's recoil pushes you out of range, cast Bouncy Dash back toward the monster.",
+     "short": "Bouncy Dash",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Fire two Basic Attacks again, followed by another Aerial Blast.",
+     "short": "Attack ×2 → Burst",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "Execute Skill 1 to perform an Aerial Slam, so you don't land too far from the monster.",
+     "short": "Skill 1 (Slam)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Pepper's rotation keeps her airborne: empty the magazine for Concentration, dash to reload mid-air, then chain Aerial Blasts — the Aerial Slam keeps her in range instead of landing far away.",
+   "tipsFa": "پپر باید توی هوا بمونه: خشاب رو خالی کن تا تمرکز جمع بشه، با Bouncy Dash بپر و ریلود کن، دو شلیک و Aerial Blast؛ قبل از اینکه پس‌زنی تو رو دور کنه، دوباره داش بزن و برگرد.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-keres",
+   "weapon": "DUAL_BLADES",
+   "adventurerId": "keres",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Always lock on to the monster's weak spot at the start of a fight.",
+     "short": "Lock On",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "You start with zero Demon Gauge — use Wolf Howl (Skill 3) and Chain Slash (Basic Attack) to fill it quickly to 40% and above.",
+     "short": "Skill 3 + Attack",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Enter Demon Mode with Lupine Demon Mode (Skill 1), or parry with Evasive Pang (Skill 2) to enter it immediately and perform Bone Piercer right away.",
+     "short": "Skill 1 / Skill 2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Once in Demon Mode, use Wolf Howl (Skill 3) three times — or parry with Evasive Pang (Skill 2) — to activate Bone Piercer.",
+     "short": "Skill 3 ×3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "(Optional) Weave Chain Slash (Basic Attacks) in between Wolf Howl activations.",
+     "short": "Attack (optional)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "When the monster is about to be immobilised by any means, use Keres' Ultimate to inflict a debuff on its weak spot.",
+     "short": "Ultimate",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "Repeat the rotation.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Whenever you use Bone Piercer you can move freely in mid-air to redirect the damage — especially when it isn't hitting the monster's weak spot.",
+   "tipsFa": "اول قفل روی نقطه‌ضعف. نوار دیمون رو با اسکیل ۳ و حملهٔ معمولی از ۴۰٪ رد کن، وارد دیمون مود شو و Bone Piercer رو فعال کن. اولتیمیت رو نگه دار برای وقتی هیولا داره بی‌حرکت می‌شه.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-luxheart",
+   "weapon": "GREAT_SWORD",
+   "adventurerId": "luxheart",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Begin with a standard Basic Attack — weapon readied or as a draw attack.",
+     "short": "Attack",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Follow it up with Starlight Burst I (Skill 2) to generate your first Heat stack.",
+     "short": "Skill 2 (I)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Use a modified Basic Attack next.",
+     "short": "Modified Attack",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Use Starlight Burst II (Skill 2) to generate two Heat stacks.",
+     "short": "Skill 2 (II)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Use your modified Basic Attack again to continue the combo.",
+     "short": "Modified Attack",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "Use Starlight Burst III (Skill 2) to generate the last three Heat stacks and reach the cap.",
+     "short": "Skill 2 (III)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "Use Grand Performance (Skill 3) to expend all Heat stacks and deal massive damage to all surrounding enemies.",
+     "short": "Skill 3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 8,
+     "action": "Repeat as necessary.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Luxheart's rotation revolves around stacking Heat whenever he can, then expending it all with Grand Performance.",
+   "tipsFa": "لوکس‌هارت یعنی مدیریت استک گرما: بین هر Starlight Burst یه حملهٔ معمولیِ تغییریافته بزن تا به سقف استک برسی، بعد Grand Performance همه رو یه‌جا به دمیج تبدیل می‌کنه.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-raya",
+   "weapon": "DUAL_BLADES",
+   "adventurerId": "raya",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Lock onto an enemy's weak point and spam Chain Dance (Skill 3) and Basic Attacks to enter Demon Mode.",
+     "short": "Skill 3 + Attack",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Execute 3 hits of Chain Dance (Skill 3) and end with Basic Attacks for more hits and access to Rising Whirling Dance.",
+     "short": "Skill 3 ×3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Parry attacks using Whirling Dance (Skill 2) whenever possible — successful parries also lead to Rising Whirling Dance.",
+     "short": "Skill 2 (parry)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Build up your Ultimate and use it when available.",
+     "short": "Ultimate",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Use available squadmate skills and continue spamming Chain Dance.",
+     "short": "Squad Skills",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "Repeat the rotation.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Whirling Dance (Skill 2) must be active first — only then does tapping the skill again parry incoming attacks.",
+   "tipsFa": "رایا با اسپم Chain Dance وارد دیمون مود می‌شه؛ نکته‌اش اینه که Whirling Dance اول باید فعال باشه تا ضربهٔ دومش پری بشه. پریِ موفق یعنی راه Rising Whirling Dance بازه.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-ouyang-varen",
+   "weapon": "LANCE",
+   "adventurerId": "ouyang-varen",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Parry an attack using Defensive Maneuver (Skill 2) to get a stack of Sharpness.",
+     "short": "Skill 2 (parry)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Execute 3 Basic Attacks twice for 2 more Sharpness stacks.",
+     "short": "Attack ×3 ×2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Tap Piercing Thrust (Skill 3).",
+     "short": "Skill 3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Immediately use Defensive Maneuver (Skill 2) to follow up and continue dealing damage.",
+     "short": "Skill 2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Build up your Ultimate and use it when available.",
+     "short": "Ultimate",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Ouyang Varen's Sharpness stacks show in his weapon's colour — always aim for max stacks, when the weapon glows red.",
+   "tipsFa": "وظیفه‌ات خوندن حملهٔ هیولاست: با اسکیل ۲ پری کن تا استک Sharpness بگیری؛ وقتی سلاحت سرخ شد یعنی سه استک کامل شده و وقتشه خرجشون کنی.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-madelyn",
+   "weapon": "BOW",
+   "adventurerId": "madelyn",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Use Basic Attack 3 times to get Catalyst Coating stacks.",
+     "short": "Attack ×3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Use Spore Adhesion (Skill 3) to deal damage and attach 5 spores. Repeat to get 10 spores on the enemy.",
+     "short": "Skill 3 ×2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Perform Slide Shot (Skill 1) to consume all spore stacks, deal damage, and gain Violet Plume Burst.",
+     "short": "Skill 1",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Alternate Basic Attacks and Catalyst Burst (Skill 2) to deal enhanced damage while also applying spore stacks.",
+     "short": "Attack ↔ Skill 2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Use Slide Shot (Skill 1) again to regain Violet Plume Burst. Repeat Basic Attacks and Catalyst Burst (Skill 2).",
+     "short": "Skill 1",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "Build up your Ultimate and use it when available.",
+     "short": "Ultimate",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Madelyn deals damage through spore and stamina management, but she shines most as a squadmate — her kit feeds the whole squad.",
+   "tipsFa": "مادلین با اسپور بازی می‌کنه: ده اسپور روی هیولا بچسبون، با اسکیل ۱ همه رو مصرف کن و بینش با تناوب حمله و اسکیل ۲ اسپورها رو تازه نگه دار. جایگاه اصلیش توی تیم پشتیبانیه تا تک‌روی.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-ryunosuke",
+   "weapon": "LONG_SWORD",
+   "adventurerId": "ryunosuke",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Start with a full Basic Attack combo — or three Basic Attacks and a Sidestep Slash — then Spirit Slash (Skill 1) and Feasting (Skill 1) to raise your Spirit Gauge by 1 and enter the Feasting state.",
+     "short": "Combo → Skill 1",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "If the monster attacks mid-combo, counter with Inebriated (Skill 2) to gain 1 Spirit Gauge level and end in the Feasting state.",
+     "short": "Skill 2 (counter)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Use Inebriated: Torrent (Skill 2) during the Feasting state to gain the Craving stack.",
+     "short": "Skill 2 (Torrent)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Return to the Feasting state with Feasting (Skill 1), then activate Linear Slash (Skill 1) to gain the Feast stack.",
+     "short": "Skill 1 (Linear)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Return to Feasting once more with Feasting (Skill 1), then activate Piercing Flavors (Skill 3) for the final Ravenous stack and the Well-fed state.",
+     "short": "Skill 3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "(Optional) If your Ultimate is ready, use it right after gaining the Well-fed state for more fire damage during its duration.",
+     "short": "Ultimate (optional)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "During Well-fed, use Linear Slash (Skill 1) to deal damage, sometimes switching to Inebriated: Torrent to refresh your Spirit Gauge regeneration.",
+     "short": "Skill 1 / Skill 2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 8,
+     "action": "Once you have max-level Spirit Gauge, use Piercing Flavors (Skill 3) during the Feasting state for even more rupture damage.",
+     "short": "Skill 3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 9,
+     "action": "Repeat until you exit the Well-fed state.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "After gaining all three unique stacks, Ryunosuke enters the Well-fed state, which adds 3 hits to all of his rupture damage.",
+   "tipsFa": "ریونوسکه سه استک متفاوت می‌خواد: Craving و Feast و Ravenous؛ هر سه که جمع شد وارد حالت Well-fed می‌شی و ضربه‌های rupture سه‌تایی می‌شن. ترتیب اسکیل‌ها رو قاطی نکن — کل چرخه همینه.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-arkaya",
+   "weapon": "LANCE",
+   "adventurerId": "arkaya",
+   "steps": [
+    {
+     "order": 1,
+     "action": "(Optional) If you have room for a Driving Assault, use it to perform a Seismic Rupture and start the fight with 1 Battle Spirit stack.",
+     "short": "Driving Assault (opt.)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Use Thrusts (Basic Attack) while waiting for the monster to attack.",
+     "short": "Attack",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Answer with the correct Boulder Stance (Skill 1): if you are mid-thrust, use it immediately; if the attack is predictable, stance before it lands and Basic Attack through it.",
+     "short": "Skill 1 (guard)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Continue fishing for monster attacks and react with the appropriate guard to gain more Battle Spirit stacks.",
+     "short": "Guard ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Once you have 3 Battle Spirit stacks, spend them immediately to deal high damage and shield yourself and your party.",
+     "short": "Spend 3 Stacks",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "(Optional) If the enemy runs away, use Driving Assault to chase it.",
+     "short": "Driving Assault (opt.)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "Once the enemy is down, use Relentless Assault (Skill 3) to deal constant damage while gaining Battle Spirit.",
+     "short": "Skill 3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 8,
+     "action": "Repeat the rotation.",
+     "short": "Repeat ↺",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Boulder Stance is Arkaya's only guard skill — a perfect guard followed by a Basic Attack (Reprisal Finisher) gains 1 Battle Spirit stack.",
+   "tipsFa": "آرکایا تانکِ واکنشی‌ه: حمله نکن، منتظر بمون و حملهٔ هیولا رو با Boulder Stance درست جواب بده تا Battle Spirit جمع بشه؛ سه استک که شد، هم دمیج داری هم سپر برای کل تیم.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-rhodes",
+   "weapon": "HAMMER",
+   "adventurerId": "rhodes",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Approach the enemy and use Charge (Skill 1) to enter the charge state.",
+     "short": "Skill 1 (Charge)",
+     "input": "HOLD",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Once you hit the third charge level, use the Basic Attack button to perform a Big Bang attack, generating Steam energy.",
+     "short": "Attack (Big Bang)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Perform a Basic Attack twice to completely fill the Steam energy gauge.",
+     "short": "Attack ×2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Tap Charge (Skill 1) twice to enter the charge state and switch to Skating Charge state.",
+     "short": "Skill 1 ×2",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Once you reach charge level 3, tap the Basic Attack button to execute the Spinning Big Bang attack.",
+     "short": "Attack (Spin)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 6,
+     "action": "Press the Basic Attack button once the Core Energy gauge is full, ending the Spinning Big Bang with a downward smash.",
+     "short": "Attack (Smash)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 7,
+     "action": "Use Steam Skyrender (Skill 3) to deal massive damage, expending all of your Core Energy.",
+     "short": "Skill 3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 8,
+     "action": "Perform a Basic Attack immediately after Steam Skyrender to perform a Spinning Slam.",
+     "short": "Attack (Slam)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Rhodes's playstyle revolves around generating Steam energy, converting it into Core Energy, and spending it on his strongest attack, Steam Skyrender.",
+   "tipsFa": "رودز یعنی مدیریت دو نوار: اول بخار رو با شارژ و Big Bang پر کن، بعد انرژی هسته رو با Skating Charge؛ وقتی هسته پر شد Steam Skyrender رو بزن و بلافاصله با یه حملهٔ معمولی Spinning Slam رو وصل کن.",
+   "source": "Game8"
+  },
+  {
+   "id": "rot-haze",
+   "weapon": "DUAL_BLADES",
+   "adventurerId": "haze",
+   "steps": [
+    {
+     "order": 1,
+     "action": "Begin by activating Demon Mode (Skill 1) and start moving to your target.",
+     "short": "Skill 1",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 2,
+     "action": "Use Waning Moon (Skill 3) to deal damage to your target and start filling up your Demon Gauge.",
+     "short": "Skill 3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 3,
+     "action": "Follow it up with all three hits of Circling Chain Slash (Skill 2) by tapping it three times.",
+     "short": "Skill 2 ×3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 4,
+     "action": "Use Waning Moon (Skill 3) again — this should trigger Archdemon Mode if all hits landed.",
+     "short": "Skill 3",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    },
+    {
+     "order": 5,
+     "action": "Activate Archdemon Mode, then execute Crimson Fang Slash (Skill 3) by dashing forward. Press it again for the follow-up series, and continue until your Demon Gauge is depleted.",
+     "short": "Skill 3 (Fang)",
+     "input": "TAP",
+     "timestampSec": null,
+     "targetPart": null,
+     "notes": ""
+    }
+   ],
+   "tips": "Haze's gameplay revolves around accumulating Demon Gauge to enter Archdemon Mode, then spending it through Crimson Fang Slash to deal damage and activate Serpent's Shadow.",
+   "tipsFa": "هیز روی نوار دیمون سواره: دیمون مود، Waning Moon و سه ضربهٔ اسکیل ۲ باید همه بخورن تا Archdemon فعال بشه؛ اون‌جا Crimson Fang رو تا خالی‌شدن نوار ادامه بده.",
+   "source": "Game8"
+  }
+ ]
 }

@@ -27,6 +27,13 @@ The app's content lives in a versioned JSON data bundle, **separate from the cod
 new Adventurers, monsters, team comps, rotations and images are delivered as
 *data updates* — no new APK install required.
 
+## What's in v0.5.0
+
+- **Rotation Coach — Phase 1** — the Coach tab is live: the published best rotation for all **13 Adventurers** (85 steps, sourced from Game8), each with a coach tip in English and fluent Persian.
+- **Three practice modes** — *Watch* (the rotation plays out step by step), *Follow* (tap the practice pad in order, guided), and *Test* (perform the whole rotation from memory and get an accuracy + timing report: Perfect ≤ 0.7 s, Good ≤ 1.6 s per step).
+- **Rotations are remote data** (`rotations` in `data.json`, data v4) — rotation fixes and new guides ship without a new APK.
+- The Fated Adventurer has no published per-Adventurer rotation (only per-weapon guides exist), so the Coach honestly covers the 13 named Adventurers.
+
 ## What's in v0.4.0
 
 - **New Home** — hero header, live stats, an Adventurer of the Day and a Monster of the Day, and quick links.
@@ -55,16 +62,17 @@ Data sources: mhodb, GameWith and Game8. Weakness tables list the top published 
 - Remote data bundle loading (version-checked) ready for live updates
 
 **Roadmap**
-- [ ] Full roster: all 13 launch Adventurers with photos
-- [ ] Monsters: elemental weakness tables, breakable parts, loot & farming sources
+- [x] Full roster: all 13 launch Adventurers with photos
+- [x] Monsters: elemental weakness tables, breakable parts, loot & farming sources
 - [ ] Items & materials database with search
-- [ ] Team compositions per monster and play style
-- [ ] Rotation guides as structured, step-by-step timelines
-- [ ] **Coach — phase 1:** rotation practice / trainer mode
+- [x] Team compositions per monster and play style
+- [x] Rotation guides as structured, step-by-step timelines
+- [x] **Coach — phase 1:** rotation practice / trainer mode (Watch / Follow / Test)
 - [ ] **Coach — phase 2:** fight-recording analysis that flags rotation mistakes
+      (screen capture confirmed open on the launch build — a recorded hunt plays back fine)
 - [ ] **Coach — phase 3:** live on-screen overlay guide during hunts
-      (read-only screen reading; you always press the buttons yourself)
-- [ ] In-app update check for new APK releases
+      (display-only manual-sync design; you always press the buttons yourself)
+- [x] In-app update check for new APK releases
 
 ## Tech stack
 

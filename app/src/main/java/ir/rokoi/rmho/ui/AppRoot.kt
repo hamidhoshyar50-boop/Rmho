@@ -317,7 +317,8 @@ fun AppRoot() {
                         NavigationBarItem(
                             selected = current == dest.route ||
                                 (dest.route == "adventurers" && current?.startsWith("adventurer") == true) ||
-                                (dest.route == "monsters" && current?.startsWith("monster") == true),
+                                (dest.route == "monsters" && current?.startsWith("monster") == true) ||
+                                (dest.route == "coach" && current?.startsWith("coach") == true),
                             onClick = {
                                 navController.navigate(dest.route) {
                                     popUpTo(navController.graph.findStartDestination().id) {
@@ -392,10 +393,13 @@ fun AppRoot() {
                             }
                         }
                         composable("coach") {
-                            SectionPlaceholder(
-                                "Rotation Coach",
-                                "The coach ships in three phases: rotation practice, fight-recording analysis with mistake reports, and finally a live on-button guide during hunts."
-                            )
+                            CoachScreen(data) { id ->
+                                navController.navigate("coach/$id")
+                            }
+                        }
+                        composable("coach/{id}") { entry ->
+                            val id = entry.arguments?.getString("id") ?: ""
+                            CoachPracticeScreen(data, id) { navController.popBackStack() }
                         }
                         composable("settings") {
                             SettingsScreen(

@@ -1,8 +1,8 @@
 {
-  "dataVersion": 3,
-  "apkVersionCode": 5,
-  "apkVersionName": "0.4.0",
-  "apkUrl": "https://github.com/hamidhoshyar50-boop/Rmho/releases/download/v0.4.0/Rmho.apk",
-  "notesEn": "Redesign: new Home with daily featured Adventurer & Monster, side drawer menu (Settings / Update / About), gold portraits for Adventurers and red for Monsters, images for ALL 34 monsters, and fully rewritten fluent Persian descriptions.",
-  "notesFa": "بازطراحی کامل: خانهٔ تازه با ادونچرر و هیولای منتخب روز، منوی کشویی کناری (تنظیمات، آپدیت، درباره)، پرتره‌های طلایی برای ادونچررها و قرمز برای هیولاها، عکس برای هر ۳۴ هیولا و بازنویسی همهٔ توضیح‌های فارسی به زبان روان."
+ "dataVersion": 4,
+ "apkVersionCode": 6,
+ "apkVersionName": "0.5.0",
+ "apkUrl": "https://github.com/hamidhoshyar50-boop/Rmho/releases/download/v0.5.0/Rmho.apk",
+ "notesEn": "Coach Phase 1 is here: the Rotation Coach with best rotations for all 13 Adventurers (from Game8) and a three-mode practice trainer — Watch, Follow and Test — with timing scores.",
+ "notesFa": "فاز اول مربی رسید: مربی روتیشن با بهترین روتیشن هر ۱۳ ادونچرر (از Game8) و تمرین سه‌حالتهٔ تماشا، همراهی و آزمون، همراه با امتیاز زمان‌بندی."
 }
