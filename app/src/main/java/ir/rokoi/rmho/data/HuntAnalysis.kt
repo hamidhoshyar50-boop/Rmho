@@ -92,7 +92,10 @@ object HuntAligner {
                 }
                 tok.startsWith("skill") -> out.add(HuntEventClass.SKILL)
                 tok.startsWith("attack") -> {
-                    val n = m.groupValues.getOrNull(1)?.toIntOrNull() ?: 1
+                    // Group 1 is the whole matched token; the ×N repeat
+                    // count is capture group 2. (v0.7.x read group 1, so
+                    // "Attack ×2" always expanded to a single press.)
+                    val n = m.groupValues.getOrNull(2)?.toIntOrNull() ?: 1
                     repeat(n.coerceIn(1, 6)) { out.add(HuntEventClass.BASIC) }
                 }
                 tok.startsWith("dash") || tok.startsWith("evade") ->

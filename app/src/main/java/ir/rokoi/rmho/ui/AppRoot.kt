@@ -78,6 +78,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import coil.imageLoader
 import ir.rokoi.rmho.BuildConfig
+import ir.rokoi.rmho.coach.CoachHubScreen
+import ir.rokoi.rmho.coach.LessonPagerScreen
 import ir.rokoi.rmho.data.DataBundle
 import ir.rokoi.rmho.data.DataRepository
 import ir.rokoi.rmho.data.RemoteVersion
@@ -393,6 +395,19 @@ fun AppRoot() {
                             }
                         }
                         composable("coach") {
+                            CoachHubScreen(
+                                onOpenLesson = { nodeId ->
+                                    navController.navigate("coach/lesson/$nodeId")
+                                },
+                                onOpenClassic = {
+                                    navController.navigate("coach/classic")
+                                },
+                                onOpenAnalysis = {
+                                    navController.navigate("coach/analyse")
+                                }
+                            )
+                        }
+                        composable("coach/classic") {
                             CoachScreen(
                                 data,
                                 onOpenRotation = { id ->
@@ -402,6 +417,10 @@ fun AppRoot() {
                                     navController.navigate("coach/analyse")
                                 }
                             )
+                        }
+                        composable("coach/lesson/{nodeId}") { entry ->
+                            val nodeId = entry.arguments?.getString("nodeId") ?: ""
+                            LessonPagerScreen(nodeId) { navController.popBackStack() }
                         }
                         composable("coach/analyse") {
                             AnalysisPickerScreen(

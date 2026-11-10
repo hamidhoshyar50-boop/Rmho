@@ -1,0 +1,901 @@
+{
+ "schemaVersion": 1,
+ "isTimingPlaceholder": true,
+ "nodes": [
+  {
+   "nodeId": "A1",
+   "weaponId": "UNIVERSAL",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 1,
+   "titleEn": "Touch Input Grammar & Buffering",
+   "subtitleFa": "گرامر ورودی لمسی و بافر کردن",
+   "prerequisiteNodeIds": [],
+   "estimatedMinutes": 8,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "A2",
+   "weaponId": "UNIVERSAL",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 1,
+   "titleEn": "Anatomy of an Attack & Roll-Cancel",
+   "subtitleFa": "آناتومی حمله و رول-کنسل",
+   "prerequisiteNodeIds": [
+    "A1"
+   ],
+   "estimatedMinutes": 10,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "A3",
+   "weaponId": "UNIVERSAL",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 2,
+   "titleEn": "Camera Control & Directional Drift",
+   "subtitleFa": "کنترل دوربین و دریفت جهت‌دار",
+   "prerequisiteNodeIds": [
+    "A2"
+   ],
+   "estimatedMinutes": 8,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "A4",
+   "weaponId": "UNIVERSAL",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 3,
+   "titleEn": "Monster States & Opening Tiers",
+   "subtitleFa": "حالت‌های هیولا و رده‌های فرصت حمله",
+   "prerequisiteNodeIds": [
+    "A3"
+   ],
+   "estimatedMinutes": 9,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "B_LS_1",
+   "weaponId": "LONG_SWORD",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 1,
+   "titleEn": "Spirit Gauge Economy & Aura Levels",
+   "subtitleFa": "اقتصاد گیج روح و سطح‌های اورا",
+   "prerequisiteNodeIds": [
+    "A4"
+   ],
+   "estimatedMinutes": 10,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "B_LS_2",
+   "weaponId": "LONG_SWORD",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 2,
+   "titleEn": "Builder Loop & Fade Slash Shortcut",
+   "subtitleFa": "حلقه‌ی سازنده و میان‌بُر فید اسلش",
+   "prerequisiteNodeIds": [
+    "B_LS_1"
+   ],
+   "estimatedMinutes": 10,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "B_LS_3",
+   "weaponId": "LONG_SWORD",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 2,
+   "titleEn": "Landing Spirit Roundslash Safely",
+   "subtitleFa": "فرود امن اسپیریت رانداسلش",
+   "prerequisiteNodeIds": [
+    "B_LS_2"
+   ],
+   "estimatedMinutes": 9,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "B_LS_4",
+   "weaponId": "LONG_SWORD",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 3,
+   "titleEn": "Opening-Gated Combo Packages",
+   "subtitleFa": "پکیج‌های کومبوی وابسته به فرصت",
+   "prerequisiteNodeIds": [
+    "B_LS_3"
+   ],
+   "estimatedMinutes": 11,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "B_LS_5",
+   "weaponId": "LONG_SWORD",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 4,
+   "titleEn": "Foresight Slash Mechanics",
+   "subtitleFa": "مکانیک فورسایت اسلش",
+   "prerequisiteNodeIds": [
+    "B_LS_4"
+   ],
+   "estimatedMinutes": 11,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "B_LS_6",
+   "weaponId": "LONG_SWORD",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 4,
+   "titleEn": "Special Sheathe & Iai Timing",
+   "subtitleFa": "غلاف ویژه و زمان‌بندی ایای",
+   "prerequisiteNodeIds": [
+    "B_LS_5"
+   ],
+   "estimatedMinutes": 11,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "B_LS_7",
+   "weaponId": "LONG_SWORD",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 4,
+   "titleEn": "360° Counter Aiming",
+   "subtitleFa": "هدف‌گیری ضدحمله‌ی ۳۶۰ درجه",
+   "prerequisiteNodeIds": [
+    "B_LS_6"
+   ],
+   "estimatedMinutes": 10,
+   "cooldownMsFallback": 0
+  },
+  {
+   "nodeId": "B_LS_8",
+   "weaponId": "LONG_SWORD",
+   "combatStyleId": "DEFAULT_GUILD",
+   "stageLadderIndex": 5,
+   "titleEn": "Mobile HUD Mastery & Zero-Roll Positioning",
+   "subtitleFa": "تسلط بر HUD موبایل و جای‌گیری بدون غلت",
+   "prerequisiteNodeIds": [
+    "B_LS_7"
+   ],
+   "estimatedMinutes": 12,
+   "cooldownMsFallback": 0
+  }
+ ],
+ "lessons": {
+  "A1": {
+   "nodeId": "A1",
+   "timingSourceNote": "PLACEHOLDER timings — reconstructed from the design spec, not yet measured from the real game.",
+   "theory": {
+    "headlineEn": "Touch Input Grammar & Buffering",
+    "summaryFa": "بازی سه ورودی لمسی پایه دارد: ضربه (TAP) برای فشار و رهای فوری، نگه‌داشتن (HOLD) برای فشارِ حداقل ۱۲۰ میلی‌ثانیه، و فلیک جهت‌دار (SWIPE) برای حرکت سریع انگشت در یک جهت. موتور بازی آخرین ورودی معتبر را تا ۲۰۰ میلی‌ثانیه (۱۲ فریم) بافر می‌کند؛ یعنی می‌توانی ورودی قدم بعدی را کمی زودتر بزنی تا دقیقاً در اولین فریم ممکن اجرا شود. اما در هر پنجره فقط اولین ورودی پذیرفته می‌شود و ضربه‌های اضافه اسلات بافر را هدر می‌دهند.",
+    "ifConditionFa": "اگر می‌خواهی قدم بعدی کومبو در اولین فریم ممکن اجرا شود،",
+    "thenActionFa": "آن را در پنجره‌ی لغو (Cancel Window) دویست میلی‌ثانیه‌ایِ حرکت قبلی وارد کن.",
+    "neverRuleFa": "هرگز در یک پنجره‌ی ورودی بیش از یک بار ضربه نزن؛ ضربه‌های اضافه نادیده گرفته می‌شوند و ریتم کومبو را می‌شکنند.",
+    "keyTerms": [
+     {
+      "termEn": "Input Buffer",
+      "definitionFa": "صف کوتاه ۲۰۰ میلی‌ثانیه‌ای که ورودی زودهنگام تو را نگه می‌دارد تا در اولین فریم ممکن اجرا شود."
+     },
+     {
+      "termEn": "Cancel Window",
+      "definitionFa": "بخش پایانی ریکاوری که در آن حرکت بعدی یا غلت می‌تواند حرکت فعلی را قطع کند."
+     },
+     {
+      "termEn": "Mash Penalty",
+      "definitionFa": "جریمه‌ی ضربه‌های اضافه: ورودی‌های تکراری اسلات بافر را پر می‌کنند و قدم بعدی از دست می‌رود."
+     },
+     {
+      "termEn": "Flick",
+      "definitionFa": "کشیدن سریع انگشت در یک جهت؛ برای حرکت‌های جهت‌دار و اسپشال‌ها."
+     }
+    ],
+    "comboSteps": [
+     {
+      "stepIndex": 1,
+      "gesture": "TAP_PRIMARY",
+      "moveNameEn": "Light Attack 1",
+      "moveNameFa": "حمله‌ی سبک ۱",
+      "minInputWindowMs": 0,
+      "maxInputWindowMs": 200,
+      "commitFramesMs": 120,
+      "cooldownMs": 0,
+      "coachingCueFa": "یک ضربه‌ی تکی بزن و صبر کن؛ بافر از فریم ۶ باز می‌شود."
+     },
+     {
+      "stepIndex": 2,
+      "gesture": "HOLD_PRIMARY",
+      "moveNameEn": "Charged Follow-Up",
+      "moveNameFa": "ادامه‌ی شارژی",
+      "minInputWindowMs": 80,
+      "maxInputWindowMs": 200,
+      "commitFramesMs": 300,
+      "cooldownMs": 0,
+      "coachingCueFa": "دکمه را حداقل ۱۲۰ میلی‌ثانیه نگه دار."
+     },
+     {
+      "stepIndex": 3,
+      "gesture": "SWIPE_DIR_SPECIAL",
+      "moveNameEn": "Directional Special",
+      "moveNameFa": "اسپشال جهت‌دار",
+      "minInputWindowMs": 50,
+      "maxInputWindowMs": 180,
+      "commitFramesMs": 220,
+      "cooldownMs": 0,
+      "coachingCueFa": "فلیک سریع در جهت هدف؛ حداکثر ۱۸۰ میلی‌ثانیه."
+     },
+     {
+      "stepIndex": 4,
+      "gesture": "TAP_EVADE",
+      "moveNameEn": "Evade Cancel",
+      "moveNameFa": "لغو با غلت",
+      "minInputWindowMs": 0,
+      "maxInputWindowMs": 150,
+      "commitFramesMs": 100,
+      "cooldownMs": 0,
+      "coachingCueFa": "با یک ضربه غلت بزن تا ریکاوری زودتر تمام شود."
+     }
+    ],
+    "coachingCueFa": "یک پنجره، یک ورودی؛ ریتم را با چشم ببین، با انگشت تأیید کن."
+   },
+   "frameLab": {
+    "totalDurationMs": 2800,
+    "defaultPlaybackSpeed": 1.0,
+    "arenaRadiusMeters": 6.0,
+    "playerTrack": [
+     {
+      "segmentId": "A1_P1",
+      "labelEn": "Neutral Stance",
+      "tooltipFa": "حالت خنثی",
+      "startMs": 0,
+      "endMs": 300,
+      "stateType": "STARTUP",
+      "vectorGeometry": {
+       "originX": 0,
+       "originY": 0.35,
+       "targetX": 0,
+       "targetY": 0.35,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": 0.0
+      }
+     },
+     {
+      "segmentId": "A1_P2",
+      "labelEn": "Tap Startup",
+      "tooltipFa": "شروع ضربه",
+      "startMs": 300,
+      "endMs": 420,
+      "stateType": "STARTUP",
+      "vectorGeometry": {
+       "originX": 0,
+       "originY": 0.35,
+       "targetX": 0.25,
+       "targetY": 0.1,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": -20
+      }
+     },
+     {
+      "segmentId": "A1_P3",
+      "labelEn": "Tap Active",
+      "tooltipFa": "فعال شدن ضربه",
+      "startMs": 420,
+      "endMs": 480,
+      "stateType": "ACTIVE_HITBOX",
+      "vectorGeometry": {
+       "originX": 0.25,
+       "originY": 0.1,
+       "targetX": 0.25,
+       "targetY": 0.1,
+       "arcRadius": 0.45,
+       "sweepAngleDeg": 90,
+       "facingAngleDeg": -20
+      }
+     },
+     {
+      "segmentId": "A1_P4",
+      "labelEn": "Tap Recovery",
+      "tooltipFa": "ریکاوری ضربه",
+      "startMs": 480,
+      "endMs": 900,
+      "stateType": "RECOVERY",
+      "vectorGeometry": {
+       "originX": 0.25,
+       "originY": 0.1,
+       "targetX": 0.25,
+       "targetY": 0.1,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": 0.0
+      }
+     },
+     {
+      "segmentId": "A1_P5",
+      "labelEn": "Hold Charge",
+      "tooltipFa": "شارژ نگه‌داشتن",
+      "startMs": 900,
+      "endMs": 1300,
+      "stateType": "STARTUP",
+      "vectorGeometry": {
+       "originX": 0.25,
+       "originY": 0.1,
+       "targetX": 0.3,
+       "targetY": 0.05,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": -15
+      }
+     },
+     {
+      "segmentId": "A1_P6",
+      "labelEn": "Hold Release Hit",
+      "tooltipFa": "ضربه‌ی رها کردن",
+      "startMs": 1300,
+      "endMs": 1420,
+      "stateType": "ACTIVE_HITBOX",
+      "vectorGeometry": {
+       "originX": 0.3,
+       "originY": 0.05,
+       "targetX": 0.3,
+       "targetY": 0.05,
+       "arcRadius": 0.55,
+       "sweepAngleDeg": 100,
+       "facingAngleDeg": -15
+      }
+     },
+     {
+      "segmentId": "A1_P7",
+      "labelEn": "Flick & Recover",
+      "tooltipFa": "فلیک و ریکاوری",
+      "startMs": 1420,
+      "endMs": 2800,
+      "stateType": "RECOVERY",
+      "vectorGeometry": {
+       "originX": 0.3,
+       "originY": 0.05,
+       "targetX": 0.55,
+       "targetY": -0.3,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": -60
+      }
+     }
+    ],
+    "hitboxTrack": [
+     {
+      "segmentId": "A1_H1",
+      "labelEn": "Monster Windup",
+      "tooltipFa": "آماده‌سازی هیولا",
+      "startMs": 0,
+      "endMs": 500,
+      "stateType": "STARTUP",
+      "vectorGeometry": {
+       "originX": 0,
+       "originY": -0.45,
+       "targetX": 0,
+       "targetY": -0.45,
+       "arcRadius": 0.7,
+       "sweepAngleDeg": 120,
+       "facingAngleDeg": 160
+      }
+     },
+     {
+      "segmentId": "A1_H2",
+      "labelEn": "Monster Swipe",
+      "tooltipFa": "چنگ هیولا",
+      "startMs": 500,
+      "endMs": 700,
+      "stateType": "ACTIVE_HITBOX",
+      "vectorGeometry": {
+       "originX": 0,
+       "originY": -0.45,
+       "targetX": 0,
+       "targetY": -0.45,
+       "arcRadius": 0.75,
+       "sweepAngleDeg": 140,
+       "facingAngleDeg": 160
+      }
+     },
+     {
+      "segmentId": "A1_H3",
+      "labelEn": "Monster Recovery",
+      "tooltipFa": "ریکاوری هیولا",
+      "startMs": 700,
+      "endMs": 2800,
+      "stateType": "RECOVERY",
+      "vectorGeometry": {
+       "originX": 0,
+       "originY": -0.45,
+       "targetX": 0,
+       "targetY": -0.45,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": 0.0
+      }
+     }
+    ],
+    "inputWindowTrack": [
+     {
+      "segmentId": "A1_W1",
+      "labelEn": "Tap Buffer Window",
+      "tooltipFa": "پنجره‌ی بافر ضربه",
+      "startMs": 200,
+      "endMs": 440,
+      "stateType": "BUFFER_WINDOW"
+     },
+     {
+      "segmentId": "A1_W2",
+      "labelEn": "Cancel Window",
+      "tooltipFa": "پنجره‌ی لغو",
+      "startMs": 700,
+      "endMs": 900,
+      "stateType": "CANCEL_WINDOW"
+     },
+     {
+      "segmentId": "A1_W3",
+      "labelEn": "Hold Window",
+      "tooltipFa": "پنجره‌ی نگه‌داشتن",
+      "startMs": 1220,
+      "endMs": 1540,
+      "stateType": "BUFFER_WINDOW"
+     },
+     {
+      "segmentId": "A1_W4",
+      "labelEn": "Flick Window",
+      "tooltipFa": "پنجره‌ی فلیک",
+      "startMs": 1600,
+      "endMs": 1940,
+      "stateType": "CANCEL_WINDOW"
+     },
+     {
+      "segmentId": "A1_W5",
+      "labelEn": "Mash Penalty (example)",
+      "tooltipFa": "مثال جریمه‌ی مش",
+      "startMs": 2400,
+      "endMs": 2800,
+      "stateType": "MASH_PENALTY_LOCK"
+     }
+    ],
+    "keyframes": [
+     {
+      "timestampMs": 300,
+      "badgeEn": "TAP NOW",
+      "noteFa": "الان ضربه بزن",
+      "hapticTickType": "LIGHT_TICK"
+     },
+     {
+      "timestampMs": 900,
+      "badgeEn": "HOLD START",
+      "noteFa": "شروع نگه‌داشتن",
+      "hapticTickType": "BUFFER_OPEN"
+     },
+     {
+      "timestampMs": 1380,
+      "badgeEn": "RELEASE",
+      "noteFa": "حالا رها کن",
+      "hapticTickType": "LIGHT_TICK"
+     },
+     {
+      "timestampMs": 1750,
+      "badgeEn": "FLICK",
+      "noteFa": "فلیک جهت‌دار",
+      "hapticTickType": "HEAVY_IMPACT"
+     }
+    ]
+   },
+   "drill": {
+    "type": "TYPE_A_GESTURE_RHYTHM",
+    "drillId": "DRILL_A1_GRAMMAR",
+    "instructionsFa": "در هر دور، سه ورودی را دقیقاً داخل پنجره‌ی سبزشان اجرا کن: اول ضربه، بعد نگه‌داشتن و رها کردن، و در پایان فلیک رو به جلو. ورودی اضافه یعنی مش (Mash) و جریمه دارد.",
+    "passAccuracyPercent": 75,
+    "goldAccuracyPercent": 90,
+    "requiredReps": 4,
+    "loopDurationMs": 2000,
+    "antiMashPenaltyMs": 450,
+    "maxAllowedExtraTapsPerRep": 2,
+    "prompts": [
+     {
+      "promptId": "A1_PR1",
+      "labelEn": "Tap",
+      "hintFa": "یک ضربه‌ی سریع",
+      "idealTimestampMs": 120,
+      "windowStartMs": 0,
+      "windowEndMs": 240,
+      "gestureType": "TAP",
+      "minHoldDurationMs": 0,
+      "angleToleranceDeg": 35.0,
+      "targetZone": "RIGHT_ACTION_PAD"
+     },
+     {
+      "promptId": "A1_PR2",
+      "labelEn": "Hold & Release",
+      "hintFa": "نگه دار و در پایان پنجره رها کن",
+      "idealTimestampMs": 1380,
+      "windowStartMs": 1220,
+      "windowEndMs": 1540,
+      "gestureType": "HOLD_RELEASE",
+      "minHoldDurationMs": 400,
+      "angleToleranceDeg": 35.0,
+      "targetZone": "RIGHT_ACTION_PAD"
+     },
+     {
+      "promptId": "A1_PR3",
+      "labelEn": "Forward Flick",
+      "hintFa": "فلیک رو به جلو (بالا)",
+      "idealTimestampMs": 1770,
+      "windowStartMs": 1600,
+      "windowEndMs": 1940,
+      "gestureType": "DIRECTIONAL_FLICK",
+      "minHoldDurationMs": 0,
+      "expectedFlickAngleDeg": 270.0,
+      "angleToleranceDeg": 40.0,
+      "targetZone": "RIGHT_ACTION_PAD"
+     }
+    ]
+   },
+   "gauntlet": {
+    "gauntletId": "GAUNTLET_A1",
+    "taskChecklistFa": [
+     "در محوطه‌ی تمرین، روی یک هدف ثابت سکانس چهارقدمه را اجرا کن.",
+     "هر سه تکرار باید بدون قفل مش (Mash Lock) تمام شود.",
+     "همه‌ی ورودی‌ها باید داخل پنجره‌ی نقره‌ای (±۲۰۰ میلی‌ثانیه) باشند."
+    ],
+    "combatStyleFallbackNoteFa": "اگر سبک مبارزه‌ی شخصیتت دکمه‌های کول‌داون دارد، همین ریتم را روی همان دکمه‌ها اجرا کن؛ قانون «یک پنجره، یک ورودی» عوض نمی‌شود.",
+    "triageQuestionFa": "سه تکرارت چطور گذشت؟",
+    "triageBranches": [
+     {
+      "branchId": "PASS_A1",
+      "symptomLabelFa": "هر سه تکرار تمیز بود؛ بدون مش و داخل پنجره",
+      "rootCauseFa": "حافظه‌ی عضلانی شکل گرفته است. به درس A2 برو.",
+      "remediationTabIndex": 0,
+      "isPassBranch": true
+     },
+     {
+      "branchId": "MASH_LOCK_A1",
+      "symptomLabelFa": "قفل مش گرفتم؛ ضربه‌های اضافه کار را خراب کرد",
+      "rootCauseFa": "در هر پنجره فقط یک بار بزن. در آزمایشگاه فریم، لحظه‌ی باز شدن بافر (۳۰۰ میلی‌ثانیه) را دوباره ببین و دریل را با شمارش «یک-و-دو» تمرین کن.",
+      "remediationTabIndex": 1,
+      "seekToLabMs": 300
+     },
+     {
+      "branchId": "LATE_INPUT_A1",
+      "symptomLabelFa": "ورودی‌هایم دیر رسید؛ مخصوصاً رها کردن و فلیک",
+      "rootCauseFa": "ورودی را داخل نوار سبز پنجره بده، نه بعد از آن. در آزمایشگاه فریم نقطه‌ی رها کردن (۱۳۸۰ میلی‌ثانیه) را با سرعت نیم‌برابر تماشا کن.",
+      "remediationTabIndex": 1,
+      "seekToLabMs": 1380
+     }
+    ]
+   }
+  },
+  "A2": {
+   "nodeId": "A2",
+   "timingSourceNote": "PLACEHOLDER timings — reconstructed from the design spec, not yet measured from the real game.",
+   "theory": {
+    "headlineEn": "Anatomy of an Attack & Roll-Cancel",
+    "summaryFa": "هر حمله چهار فاز دارد: شروع (Startup) یعنی فریم‌هایی پیش از ظاهر شدن هیت‌باکس، فعال (Active) یعنی زمانی که هیت‌باکس زنده است، هیت‌استاپ (Hitstop) یعنی مکث کوتاه هنگام برخورد، و ریکاوری (Recovery) یعنی برگشت به حالت خنثی. پنجره‌ی لغو (Cancel Window) در بخش پایانی ریکاوری باز می‌شود؛ غلت زدن در این پنجره باقی‌مانده‌ی ریکاوری را حذف می‌کند و فریم‌های مصونیت (i-frame) می‌دهد. فلش هیت‌استاپ مترونوم توست: حدود ۲۰۰ میلی‌ثانیه بعد از فلش، پنجره‌ی لغو باز می‌شود.",
+    "ifConditionFa": "اگر فلش هیت‌استاپ را دیدی،",
+    "thenActionFa": "حدود ۲۰۰ میلی‌ثانیه صبر کن و داخل پنجره‌ی لغو غلت بزن تا ریکاوری کوتاه شود.",
+    "neverRuleFa": "هرگز در فاز شروع یا فعال غلت نزن؛ ضربه‌ات لغو می‌شود و آسیب را از دست می‌دهی.",
+    "keyTerms": [
+     {
+      "termEn": "Startup",
+      "definitionFa": "فریم‌های آماده‌سازی پیش از فعال شدن هیت‌باکس؛ در این فاز آسیب‌پذیرترین هستی."
+     },
+     {
+      "termEn": "Active Frames",
+      "definitionFa": "فریم‌هایی که هیت‌باکس زنده است و می‌تواند به هدف برخورد کند."
+     },
+     {
+      "termEn": "Hitstop",
+      "definitionFa": "مکث چندفریمی هنگام برخورد؛ فلش آن بهترین نشانه‌ی زمان‌بندی برای قدم بعدی است."
+     },
+     {
+      "termEn": "Recovery",
+      "definitionFa": "برگشت به حالت خنثی بعد از ضربه؛ معمولاً طولانی‌ترین بخش حمله‌های سنگین."
+     },
+     {
+      "termEn": "Cancel Window",
+      "definitionFa": "پنجره‌ی پایانی ریکاوری که غلت یا حرکت بعدی می‌تواند باقی‌مانده‌ی آن را حذف کند."
+     },
+     {
+      "termEn": "i-frames",
+      "definitionFa": "فریم‌های مصونیت هنگام غلت؛ در این فریم‌ها آسیب نمی‌بینی."
+     }
+    ],
+    "comboSteps": [
+     {
+      "stepIndex": 1,
+      "gesture": "TAP_PRIMARY",
+      "moveNameEn": "True Charged Slash Lv1",
+      "moveNameFa": "ترو چارجد اسلش سطح ۱",
+      "minInputWindowMs": 0,
+      "maxInputWindowMs": 150,
+      "commitFramesMs": 180,
+      "cooldownMs": 0,
+      "coachingCueFa": "شروع زنجیره‌ی شارژ؛ PLACEHOLDER یازده فریم."
+     },
+     {
+      "stepIndex": 2,
+      "gesture": "HOLD_PRIMARY",
+      "moveNameEn": "True Charged Slash Lv2",
+      "moveNameFa": "ترو چارجد اسلش سطح ۲",
+      "minInputWindowMs": 100,
+      "maxInputWindowMs": 250,
+      "commitFramesMs": 420,
+      "cooldownMs": 0,
+      "coachingCueFa": "نگه دار تا شارژ به سطح ۲ برسد."
+     },
+     {
+      "stepIndex": 3,
+      "gesture": "TAP_PRIMARY",
+      "moveNameEn": "True Charged Slash Lv3",
+      "moveNameFa": "ترو چارجد اسلش سطح ۳",
+      "minInputWindowMs": 50,
+      "maxInputWindowMs": 200,
+      "commitFramesMs": 360,
+      "cooldownMs": 0,
+      "coachingCueFa": "رها کن؛ فلش هیت‌استاپ را تماشا کن."
+     },
+     {
+      "stepIndex": 4,
+      "gesture": "TAP_EVADE",
+      "moveNameEn": "Roll-Cancel",
+      "moveNameFa": "رول-کنسل",
+      "minInputWindowMs": 300,
+      "maxInputWindowMs": 500,
+      "commitFramesMs": 120,
+      "cooldownMs": 0,
+      "coachingCueFa": "داخل پنجره‌ی لغو غلت بزن؛ ۱۲ فریم مصونیت می‌گیری."
+     }
+    ],
+    "coachingCueFa": "فلش را ببین، بشمار «یک-دو»، بعد غلت بزن."
+   },
+   "frameLab": {
+    "totalDurationMs": 1720,
+    "defaultPlaybackSpeed": 1.0,
+    "arenaRadiusMeters": 6.0,
+    "playerTrack": [
+     {
+      "segmentId": "A2_P1",
+      "labelEn": "TCS Charge Chain",
+      "tooltipFa": "زنجیره‌ی شارژ TCS",
+      "startMs": 600,
+      "endMs": 1020,
+      "stateType": "STARTUP",
+      "vectorGeometry": {
+       "originX": 0,
+       "originY": 0.35,
+       "targetX": 0.2,
+       "targetY": 0.1,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": -25
+      }
+     },
+     {
+      "segmentId": "A2_P2",
+      "labelEn": "TCS Lv3 Active + Hitstop",
+      "tooltipFa": "فعال + هیت‌استاپ",
+      "startMs": 1020,
+      "endMs": 1120,
+      "stateType": "ACTIVE_HITBOX",
+      "vectorGeometry": {
+       "originX": 0.2,
+       "originY": 0.1,
+       "targetX": 0.2,
+       "targetY": 0.1,
+       "arcRadius": 0.6,
+       "sweepAngleDeg": 100,
+       "facingAngleDeg": -25
+      }
+     },
+     {
+      "segmentId": "A2_P3",
+      "labelEn": "TCS Recovery",
+      "tooltipFa": "ریکاوری TCS",
+      "startMs": 1120,
+      "endMs": 1400,
+      "stateType": "RECOVERY",
+      "vectorGeometry": {
+       "originX": 0.2,
+       "originY": 0.1,
+       "targetX": 0.2,
+       "targetY": 0.1,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": 0.0
+      }
+     },
+     {
+      "segmentId": "A2_P4",
+      "labelEn": "Roll-Cancel i-frames",
+      "tooltipFa": "مصونیت رول-کنسل",
+      "startMs": 1400,
+      "endMs": 1720,
+      "stateType": "IFRAME",
+      "vectorGeometry": {
+       "originX": 0.2,
+       "originY": 0.1,
+       "targetX": 0.55,
+       "targetY": -0.25,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": -50
+      }
+     }
+    ],
+    "hitboxTrack": [
+     {
+      "segmentId": "A2_H1",
+      "labelEn": "Monster Rear-Up Roar",
+      "tooltipFa": "غرش و بلند شدن هیولا",
+      "startMs": 0,
+      "endMs": 600,
+      "stateType": "STARTUP",
+      "vectorGeometry": {
+       "originX": 0,
+       "originY": -0.45,
+       "targetX": 0,
+       "targetY": -0.45,
+       "arcRadius": 0.8,
+       "sweepAngleDeg": 160,
+       "facingAngleDeg": 180
+      }
+     },
+     {
+      "segmentId": "A2_H2",
+      "labelEn": "Monster Watching",
+      "tooltipFa": "هیولا تماشا می‌کند",
+      "startMs": 600,
+      "endMs": 1720,
+      "stateType": "RECOVERY",
+      "vectorGeometry": {
+       "originX": 0,
+       "originY": -0.45,
+       "targetX": 0,
+       "targetY": -0.45,
+       "arcRadius": 0.0,
+       "sweepAngleDeg": 0.0,
+       "facingAngleDeg": 0.0
+      }
+     }
+    ],
+    "inputWindowTrack": [
+     {
+      "segmentId": "A2_W1",
+      "labelEn": "Hitstop Flash",
+      "tooltipFa": "فلش هیت‌استاپ",
+      "startMs": 1020,
+      "endMs": 1120,
+      "stateType": "BUFFER_WINDOW"
+     },
+     {
+      "segmentId": "A2_W2",
+      "labelEn": "Roll-Cancel Window",
+      "tooltipFa": "پنجره‌ی رول-کنسل",
+      "startMs": 1400,
+      "endMs": 1720,
+      "stateType": "CANCEL_WINDOW"
+     }
+    ],
+    "keyframes": [
+     {
+      "timestampMs": 1020,
+      "badgeEn": "HITSTOP FLASH",
+      "noteFa": "فلش برخورد — شمارش را شروع کن",
+      "hapticTickType": "HEAVY_IMPACT"
+     },
+     {
+      "timestampMs": 1120,
+      "badgeEn": "RECOVERY START",
+      "noteFa": "شروع ریکاوری",
+      "hapticTickType": "LIGHT_TICK"
+     },
+     {
+      "timestampMs": 1400,
+      "badgeEn": "CANCEL WINDOW OPEN",
+      "noteFa": "پنجره‌ی لغو باز شد — غلت بزن",
+      "hapticTickType": "BUFFER_OPEN"
+     },
+     {
+      "timestampMs": 1720,
+      "badgeEn": "WINDOW CLOSED",
+      "noteFa": "پنجره بسته شد",
+      "hapticTickType": "ERROR_BUZZ"
+     }
+    ]
+   },
+   "drill": {
+    "type": "TYPE_A_GESTURE_RHYTHM",
+    "drillId": "DRILL_A2_FLASH_ROLL",
+    "instructionsFa": "زنجیره‌ی شارژ را اجرا کن و روی فلش هیت‌استاپ غلت بزن: ضربه، نگه‌داشتن، ضربه‌ی آزادکننده، و غلت در پنجره‌ی پایانی. غلت زودهنگام ضربه را لغو می‌کند.",
+    "passAccuracyPercent": 75,
+    "goldAccuracyPercent": 90,
+    "requiredReps": 4,
+    "loopDurationMs": 2400,
+    "antiMashPenaltyMs": 450,
+    "maxAllowedExtraTapsPerRep": 2,
+    "prompts": [
+     {
+      "promptId": "A2_PR1",
+      "labelEn": "Charge Tap",
+      "hintFa": "ضربه‌ی شروع شارژ",
+      "idealTimestampMs": 500,
+      "windowStartMs": 350,
+      "windowEndMs": 650,
+      "gestureType": "TAP",
+      "minHoldDurationMs": 0,
+      "angleToleranceDeg": 35.0,
+      "targetZone": "RIGHT_ACTION_PAD"
+     },
+     {
+      "promptId": "A2_PR2",
+      "labelEn": "Hold to Lv2",
+      "hintFa": "نگه دار تا سطح ۲",
+      "idealTimestampMs": 1000,
+      "windowStartMs": 850,
+      "windowEndMs": 1250,
+      "gestureType": "HOLD_RELEASE",
+      "minHoldDurationMs": 350,
+      "angleToleranceDeg": 35.0,
+      "targetZone": "RIGHT_ACTION_PAD"
+     },
+     {
+      "promptId": "A2_PR3",
+      "labelEn": "Release TCS",
+      "hintFa": "ضربه‌ی آزادکننده‌ی TCS",
+      "idealTimestampMs": 1600,
+      "windowStartMs": 1450,
+      "windowEndMs": 1750,
+      "gestureType": "TAP",
+      "minHoldDurationMs": 0,
+      "angleToleranceDeg": 35.0,
+      "targetZone": "RIGHT_ACTION_PAD"
+     },
+     {
+      "promptId": "A2_PR4",
+      "labelEn": "Evade — Roll",
+      "hintFa": "غلت داخل پنجره‌ی لغو",
+      "idealTimestampMs": 2050,
+      "windowStartMs": 1900,
+      "windowEndMs": 2250,
+      "gestureType": "TAP",
+      "minHoldDurationMs": 0,
+      "angleToleranceDeg": 35.0,
+      "targetZone": "RIGHT_ACTION_PAD"
+     }
+    ]
+   },
+   "gauntlet": {
+    "gauntletId": "GAUNTLET_A2",
+    "taskChecklistFa": [
+     "با گریت‌سورد، TCS سطح ۳ را روی هدف ثابت بزن.",
+     "بلافاصله بعد از فلش هیت‌استاپ، داخل پنجره‌ی لغو غلت بزن.",
+     "هر سه تکرار باید هم برخورد TCS را داشته باشد و هم غلت داخل پنجره را."
+    ],
+    "combatStyleFallbackNoteFa": "اگر شخصیتت غلت ندارد، همان زمان‌بندی را با دش یا حرکت جاخالیِ خودش اجرا کن؛ پنجره همان پنجره است.",
+    "triageQuestionFa": "غلت‌هایت کِی اتفاق افتاد؟",
+    "triageBranches": [
+     {
+      "branchId": "PASS_A2",
+      "symptomLabelFa": "هر سه تکرار تمیز بود؛ TCS خورد و غلت داخل پنجره بود",
+      "rootCauseFa": "تو صاحب کوتاه‌کردن ریکاوری هستی. به درس A3 برو.",
+      "remediationTabIndex": 0,
+      "isPassBranch": true
+     },
+     {
+      "branchId": "EARLY_ROLL_A2",
+      "symptomLabelFa": "غلتم زود بود؛ یا ضربه لغو شد یا غلت به هیچ‌جا رفت",
+      "rootCauseFa": "فقط به فلش نگاه کن و با شمارش «فلش… یک… دو… غلت» حدود ۲۰۰ میلی‌ثانیه صبر کن؛ به هانتر نگاه نکن. نقطه‌ی فلش در آزمایشگاه فریم ۱۰۲۰ میلی‌ثانیه است.",
+      "remediationTabIndex": 1,
+      "seekToLabMs": 1020
+     },
+     {
+      "branchId": "LATE_ROLL_A2",
+      "symptomLabelFa": "غلتم دیر بود؛ کل ریکاوری را خوردم",
+      "rootCauseFa": "در آزمایشگاه فریم با سرعت نیم‌برابر، غلت را در ابتدای نوار سبز (۱۴۰۰ میلی‌ثانیه، شروع پنجره) تمرین کن، نه در انتهایش.",
+      "remediationTabIndex": 1,
+      "seekToLabMs": 1400
+     }
+    ]
+   }
+  }
+ }
+}

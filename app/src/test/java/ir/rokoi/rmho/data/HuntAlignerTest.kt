@@ -28,12 +28,35 @@ class HuntAlignerTest {
             }
         )
 
-    /** A rotation with NO dash steps: Skill 1, then two Attacks.
-     *  (Separate steps, not "Attack ×2": the shipped stepItems()
-     *  reads the repeat count from the wrong regex group, so ×N
-     *  attack steps currently expand to a single press — a known
-     *  v0.7.0 inaccuracy outside this hotfix's scope.) */
+    /** A rotation with NO dash steps: Skill 1, then two Attacks. */
     private val noDashRotation = rotation("t-nodash", "Skill 1", "Attack", "Attack")
+
+    @Test(timeout = 30_000)
+    fun attackTimesN_expandsToNPresses() {
+        // Regression for the v0.7.x parser bug: stepItems() read the
+        // ×N repeat count from regex group 1 (the whole token) instead
+        // of group 2 (the digits), so "Attack ×N" expanded to 1 press.
+        val step2 = RotationStep(order = 1, action = "Attack ×2", short = "Attack ×2")
+        assertEquals(
+            listOf(HuntEventClass.BASIC, HuntEventClass.BASIC),
+            HuntAligner.stepItems(step2)
+        )
+        val step3 = RotationStep(order = 2, action = "Attack ×3", short = "Attack ×3")
+        assertEquals(3, HuntAligner.stepItems(step3).size)
+        val plain = RotationStep(order = 3, action = "Attack", short = "Attack")
+        assertEquals(1, HuntAligner.stepItems(plain).size)
+        // End-to-end: a ×2 step aligns against two real BASIC events.
+        val rep = HuntAligner.align(
+            listOf(
+                HuntEvent(1.0, HuntEventClass.SKILL),
+                HuntEvent(2.0, HuntEventClass.BASIC),
+                HuntEvent(3.0, HuntEventClass.BASIC)
+            ),
+            rotation("t-x2", "Skill 1", "Attack ×2")
+        )
+        assertEquals(3, rep.expandedCount)
+        assertEquals(3, rep.matched)
+    }
 
     @Test(timeout = 30_000)
     fun trailingDashOnlyEvents_terminates() {
