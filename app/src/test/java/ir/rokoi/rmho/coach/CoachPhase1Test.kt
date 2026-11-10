@@ -73,6 +73,49 @@ class CoachPhase1Test {
     }
 
     @Test(timeout = 30_000)
+    fun drillTimings_haveReactionLeadIn() {
+        // v0.8.1 hotfix: no prompt window may open before the player has
+        // had time to read the cue — A1 P1 moved from 0-240 ms to 500-800.
+        val bundle = loadBundle()
+        val a1 = bundle.lessons.getValue("A1").drill as TypeAGestureRhythm
+        assertEquals(3600L, a1.loopDurationMs)
+        assertEquals(450L, a1.antiMashPenaltyMs)
+        assertEquals(75, a1.passAccuracyPercent)
+        assertEquals(90, a1.goldAccuracyPercent)
+        assertEquals(4, a1.requiredReps)
+        val a1ByGesture = a1.prompts.associateBy { it.gestureType }
+        val tap = a1ByGesture.getValue(GestureKind.TAP)
+        assertEquals(500L, tap.windowStartMs)
+        assertEquals(800L, tap.windowEndMs)
+        assertEquals(650L, tap.idealTimestampMs)
+        val hold = a1ByGesture.getValue(GestureKind.HOLD_RELEASE)
+        assertEquals(2000L, hold.windowStartMs)
+        assertEquals(2500L, hold.windowEndMs)
+        assertEquals(2250L, hold.idealTimestampMs)
+        assertEquals(400L, hold.minHoldDurationMs)
+        val flick = a1ByGesture.getValue(GestureKind.DIRECTIONAL_FLICK)
+        assertEquals(2750L, flick.windowStartMs)
+        assertEquals(3150L, flick.windowEndMs)
+        assertEquals(2950L, flick.idealTimestampMs)
+        assertEquals(270.0f, flick.expectedFlickAngleDeg!!, 0.01f)
+        assertEquals(40.0f, flick.angleToleranceDeg, 0.01f)
+
+        // A2 shifted by the same lead-in: loop 3000, windows +500 ms,
+        // ideals centered, everything inside the loop.
+        val a2 = bundle.lessons.getValue("A2").drill as TypeAGestureRhythm
+        assertEquals(3000L, a2.loopDurationMs)
+        assertEquals(850L, a2.prompts[0].windowStartMs)
+        assertEquals(2750L, a2.prompts.last().windowEndMs)
+        for (p in a2.prompts) {
+            assertTrue(p.windowStartMs >= 500L)
+            assertTrue(p.windowEndMs <= a2.loopDurationMs)
+            assertEquals(
+                (p.windowStartMs + p.windowEndMs) / 2, p.idealTimestampMs
+            )
+        }
+    }
+
+    @Test(timeout = 30_000)
     fun unlockChain_followsSilverRule() {
         val bundle = loadBundle()
         val byId = bundle.nodes.associateBy { it.nodeId }
