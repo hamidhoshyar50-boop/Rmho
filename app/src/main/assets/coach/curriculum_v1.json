@@ -829,7 +829,7 @@
       "promptId": "A2_PR2",
       "labelEn": "Hold to Lv2",
       "hintFa": "نگه دار تا سطح ۲",
-      "idealTimestampMs": 1500,
+      "idealTimestampMs": 1550,
       "windowStartMs": 1350,
       "windowEndMs": 1750,
       "gestureType": "HOLD_RELEASE",
